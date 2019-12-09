@@ -1,0 +1,28 @@
+/*Indholdsfortegnelse*/
+/*Menu*/
+
+/***Menu***/
+.hidden {
+    visibility: none;
+}
+
+.menuknap {
+    cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-family: 'Monserrat', sans-serif;
+    padding: 10px;
+    line-height: 1;
+
+}
+
+#menu {
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    margin: 0;
+}
