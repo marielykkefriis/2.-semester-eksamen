@@ -9,11 +9,20 @@
 /******                   *******/
 /******                   *******/
 
-
+*,
+html * {
+    box-sizing: border-box;
+}
 
 body {
     padding: 0;
     margin: 0;
+}
+
+.header_billede {
+    width: 100vw;
+    height: 90px;
+    background-color: aqua;
 }
 
 
@@ -97,7 +106,42 @@ header li a:hover {
 
 /******   Footer   *******/
 
-footer {
+.instagram_wrapper {
+    background-color: #aaa8cc;
+    text-align: center;
+    padding: 10px 0 0;
+    margin: auto;
+
+}
+
+.insta_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.insta_sprite {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.insta_billede {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+.footer_signatur {
+    width: 150px;
+    height: 80px;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+.footer {
     background-color: #43afb7;
     width: 100vw;
     padding: 20px;
@@ -112,12 +156,12 @@ footer a {
     color: white;
 }
 
-#footer_3 {
+.footer_4 {
     display: flex;
     width: 50px;
 }
 
-#footer_3:hover {
+.footer_3:hover {
     transform: scale(1.08);
     transition: 0.5s;
 }
@@ -127,6 +171,57 @@ footer a {
 }
 
 .instagram {}
+
+/******   Kontakt  ******/
+#kontakt {}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.formel_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#kontakt_nyhedsbrev {
+    height: 200px;
+    background-color: aquamarine;
+}
 
 
 /******   Media   ******/
@@ -175,6 +270,26 @@ footer a {
         text-align: right;
         height: 100px;
         width: 70%;
+    }
+
+    .insta_billede {
+        height: 150px;
+        width: 150px;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align:
+    }
+
+    .footer_col {
+        flex-basis: 150px;
+        flex-grow: 1;
+        text-align: center;
+
+
     }
 
 
