@@ -167,23 +167,36 @@ footer a {
 }
 
 .SoMe-ikon {
-    padding: 5px 20px;
+    background-color: beige;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 .instagram {}
 
 /******   Kontakt  ******/
-#kontakt {}
+#kontakt {
+    margin: 10px;
+}
+
+.kontakt_billede {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: aqua;
+}
 
 input[type=text],
 select,
 textarea {
+    background-color: #afbefa;
+    box-shadow: 0px 7px 8px #888888;
+    border: none;
     width: 100%;
     /* Full width */
     padding: 12px;
     /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
     box-sizing: border-box;
@@ -198,12 +211,13 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #2d2d83;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -214,7 +228,6 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .formel_container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
 }
 
@@ -288,8 +301,6 @@ input[type=submit]:hover {
         flex-basis: 150px;
         flex-grow: 1;
         text-align: center;
-
-
     }
 
 
@@ -301,14 +312,13 @@ input[type=submit]:hover {
     height: 50vh;
     top: 0px;
     right: 200px;
-    z-index: 0;
     position: relative;
     background-color: red;
 }
 
 #splash {
     color: black;
-    /*    overflow: hidden;*/
+    /*   overflow: hidden;*/
     position: relative;
     padding: 0;
 }
@@ -414,7 +424,7 @@ input[type=submit]:hover {
     left: -10px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) {
 
     #forside_nyhed {
         padding: 3rem 2rem;
@@ -516,6 +526,24 @@ input[type=submit]:hover {
         {
         text-align: right;
     }
+
+    /** Kontakt **/
+
+    #kontakt {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kontakt_billede {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
+    .kontakt_col {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
 
 
 }
