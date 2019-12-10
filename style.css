@@ -1,28 +1,182 @@
 /*Indholdsfortegnelse*/
-/*Menu*/
 
-/***Menu***/
+/******            *******/
+/******   Menu     *******/
+/******   Footer   *******/
+/******            *******/
+/******            *******/
+/******            *******/
+/******            *******/
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/**** HEADER ****/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
+    background-color: beige;
+}
+
+.logo {
+    background-image: url();
+    background-size: cover;
+    background-color: azure;
+    margin: 10px 10px;
+    width: 200px;
+    height: 70px;
+}
+
+
+/** NAV **/
 .hidden {
-    visibility: none;
+    display: none;
 }
 
-.menuknap {
-    cursor: pointer;
-    font-size: 3rem;
+#menuknap {
+    font-size: 2.5rem;
     position: absolute;
-    right: 30px;
-    top: 30px;
-    font-family: 'Monserrat', sans-serif;
-    padding: 10px;
-    line-height: 1;
-
+    right: 35px;
+    top: 20px;
+    line-height: 1.5;
+    color: white;
+    cursor: pointer;
 }
+
+#menuknap.hidden {
+    color: white;
+}
+
 
 #menu {
-    padding: 0;
-    list-style-type: none;
     position: absolute;
+    padding: 0px 0px;
+    list-style-type: none;
     right: 0;
-    top: 110px;
     margin: 0;
+    background-color: #696c6c;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+header li {
+    width: 100%;
+    margin: 20px;
+}
+
+header li:first-child {
+    margin-top: 120px;
+}
+
+header li a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.4;
+    margin-left: 50px;
+    color: #ffffff;
+}
+
+header li a:hover {
+    color: rgba(255, 132, 77, 0.24);
+}
+
+
+
+/******   Footer   *******/
+
+footer {
+    background-color: #43afb7;
+    width: 100vw;
+    padding: 20px;
+    color: white;
+}
+
+footer p {
+    margin: 0 0 5px 0;
+}
+
+footer a {
+    color: white;
+}
+
+#footer_3 {
+    display: flex;
+    width: 50px;
+}
+
+#footer_3:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.SoMe-ikon {
+    padding: 5px 20px;
+}
+
+.instagram {}
+
+
+/******   Media   ******/
+
+@media only screen and (min-width: 750px) {
+    header {
+        position: sticky;
+
+    }
+
+    header li a {
+        color: #ffffff;
+        font-size: 1rem;
+        margin-left: 35px;
+
+    }
+
+    header li a:hover {
+        color: #92a7bc;
+    }
+
+    header li {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+    }
+
+    header li:first-child {
+        margin-top: 40px;
+    }
+
+    header ul li:last-child {
+        margin-right: 20px;
+    }
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: inherit;
+    }
+
+    #menu {
+        text-align: right;
+        height: 100px;
+        width: 70%;
+    }
+
+
+
+
 }
