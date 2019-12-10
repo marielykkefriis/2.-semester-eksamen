@@ -32,13 +32,12 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 100px;
-    background-color: beige;
 }
 
 .logo {
     background-image: url();
     background-size: cover;
-    background-color: azure;
+    background-color: #8a7fe2;
     margin: 10px 10px;
     width: 200px;
     height: 70px;
@@ -56,13 +55,9 @@ header {
     right: 35px;
     top: 20px;
     line-height: 1.5;
-    color: white;
+    color: #444C59;
     cursor: pointer;
     z-index: 3;
-}
-
-#menuknap.hidden {
-    color: white;
 }
 
 
@@ -72,7 +67,7 @@ header {
     list-style-type: none;
     right: 0;
     margin: 0;
-    background-color: #696c6c;
+    background-color: white;
     height: 100vh;
     width: 100vw;
     z-index: 2;
@@ -97,7 +92,7 @@ header li a {
     font-size: 1.5rem;
     line-height: 2.4;
     margin-left: 50px;
-    color: #ffffff;
+    color: #444C59;
 }
 
 header li a:hover {
@@ -144,7 +139,7 @@ header li a:hover {
 }
 
 .footer {
-    background-color: #43afb7;
+    background-color: #444B5B;
     width: 100vw;
     padding: 20px;
     color: white;
@@ -169,23 +164,36 @@ footer a {
 }
 
 .SoMe-ikon {
-    padding: 5px 20px;
+    background-color: beige;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 .instagram {}
 
 /******   Kontakt  ******/
-#kontakt {}
+#kontakt {
+    margin: 10px;
+}
+
+.kontakt_billede {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: aqua;
+}
 
 input[type=text],
 select,
 textarea {
+    background-color: #afbefa;
+    box-shadow: 0px 7px 8px #888888;
+    border: none;
     width: 100%;
     /* Full width */
     padding: 12px;
     /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
     box-sizing: border-box;
@@ -200,12 +208,13 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #2d2d83;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -216,13 +225,50 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .formel_container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
 }
 
 #kontakt_nyhedsbrev {
-    height: 200px;
+    padding: 10px;
+}
+
+.nyhedsbrev_container {
+    padding: 20px;
+
+}
+
+.nyhedsbrev_container input[type=text],
+.nyhedsbrev_container select,
+.nyhedsbrev_container textarea {
+    background-color: #afbefa;
+    box-shadow: 0px 7px 8px 2px #888888;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    width: 50%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    box-sizing: border-box;
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.nyhedsbrev_container input[type=submit] {
+    background-color: #2d2d83;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    width: 50%;
+    box-shadow: 0px 7px 8px 3px #888888;
+
+}
+
+#kontakt_nyhedsbrev {
     background-color: aquamarine;
+    text-align: center;
 }
 
 
@@ -290,8 +336,6 @@ input[type=submit]:hover {
         flex-basis: 150px;
         flex-grow: 1;
         text-align: center;
-
-
     }
 
 
@@ -303,6 +347,7 @@ input[type=submit]:hover {
     height: 50vh;
     top: 0px;
     right: 200px;
+    position: relative;
     z-index: 0;
     /*    position: relative;*/
     background-color: red;
@@ -310,6 +355,7 @@ input[type=submit]:hover {
 
 #splash {
     color: black;
+    /*   overflow: hidden;*/
     overflow: hidden;
     position: relative;
     padding: 0;
@@ -415,7 +461,7 @@ input[type=submit]:hover {
     left: -10px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) {
 
     #forside_nyhed {
         padding: 3rem 2rem;
@@ -515,6 +561,24 @@ input[type=submit]:hover {
         {
         text-align: right;
     }
+
+    /** Kontakt **/
+
+    #kontakt {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kontakt_billede {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
+    .kontakt_col {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+
 
 
 }
