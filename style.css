@@ -314,22 +314,16 @@ input[type=submit]:hover {
     height: 50vh;
     top: 0px;
     right: 200px;
-<<<<<<< HEAD
     position: relative;
-=======
     z-index: 0;
     /*    position: relative;*/
->>>>>>> origin/master
     background-color: red;
 }
 
 #splash {
     color: black;
-<<<<<<< HEAD
     /*   overflow: hidden;*/
-=======
     overflow: hidden;
->>>>>>> origin/master
     position: relative;
     padding: 0;
 }
