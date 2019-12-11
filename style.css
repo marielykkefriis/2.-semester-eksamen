@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
 .header_billede {
     width: 100vw;
     height: 90px;
@@ -951,25 +955,18 @@ input[type=submit]:hover {
 
 /******* vaerker ********/
 
+.layout {}
+
 .filterTekst {
-    margin-top: 80px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 
-.filter_knapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 10px;
-    position: relative;
-    font-family: 'helvetica';
-
-}
+.filter_knapper {}
 
 button {
-    background-color: transparent;
-    border: 2px solid #3B3B3B;
+    background-color: #E1E9F3;
     width: 100%;
     height: 45px;
     font-size: 16px;
@@ -981,15 +978,15 @@ button {
 
 
 .valgt {
-    background-color: #6A7550;
-    border-color: white;
-    color: white;
+    background-color: #E1E9F3;
+    border-color: #6762aa;
+    color: #3B3B3B;
 }
 
 .data_container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     max-width: 900px;
     text-align: center;
     margin: 10px auto;
@@ -1008,15 +1005,15 @@ button {
     transform: scale(1.05);
 }
 
-
-article {
+#vaerker article {
     padding: 10px;
 }
 
-article p,
-article h2 {
+
+#vaerker article h2,
+#vaerker article p {
     text-align: left;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 
 .produkter_article {
@@ -1034,4 +1031,24 @@ article h2 {
 .seudstillinger_knap {
     width: 250px;
     margin: auto;
+}
+
+@media only screen and (min-width: 750px) {
+    .data_container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .filter_knapper {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    button {
+        width: 200px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
