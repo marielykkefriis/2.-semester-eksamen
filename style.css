@@ -1035,3 +1035,12 @@ article h2 {
     width: 250px;
     margin: auto;
 }
+
+/****** Enkeltside ******/
+
+#enkeltside img {
+    padding: 2rem;
+    width: 400px;
+    height: 400px;
+
+}
