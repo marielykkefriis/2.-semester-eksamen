@@ -40,6 +40,7 @@
         </nav>
     </header>
     <main>
+        <div class="header_billede"></div>
         <section id="enkeltside">
             <button class="tilbage">←</button>
             <article class="liste">
@@ -47,10 +48,16 @@
                 <div class="billede">
                     <img id="img">
                 </div>
-                <p class="maal"></p>
-                <p class="materiale"></p>
+                <div class="specifikationer">
+                    <p class="maal"></p>
+                    <p class="materiale"></p>
+                </div>
                 <p class="pris"></p>
-                <button class="knap">KONTAKT MIG</button>
+                <p class="udsalgspris">Vejl. udsalgspris inkl. moms</p>
+                <div class="enkeltside_kontakt">
+                    <p>Interesseret i værket? Tag endelig kontakt</p>
+                    <button class="knap">KONTAKT MIG</button>
+                </div>
                 <div class="enkeltside_billede"></div>
             </article>
         </section>
@@ -129,9 +136,9 @@
 
 
             liste.querySelector(".navn").textContent = vaerk.navn;
-            liste.querySelector(".maal").textContent = vaerk.maal;
-            liste.querySelector(".materiale").textContent = vaerk.materiale;
-            liste.querySelector(".pris").textContent = "DKK " + vaerk.pris + ",-";
+            liste.querySelector(".maal").textContent = "Mål: " + vaerk.maal;
+            liste.querySelector(".materiale").textContent = "Materiale: " + vaerk.materiale;
+            liste.querySelector(".pris").textContent = "PRIS DKK " + vaerk.pris + ",-";
             liste.querySelector("img").src = vaerk.billede_front.guid;
             liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
 
@@ -141,7 +148,6 @@
             });
 
         }
-
     </script>
 </body>
 
