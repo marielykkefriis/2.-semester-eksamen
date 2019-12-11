@@ -41,8 +41,9 @@
     </header>
     <main>
         <div class="header_billede"></div>
+        <button class="tilbage">←</button>
+
         <section id="enkeltside">
-            <button class="tilbage">←</button>
             <article class="liste">
                 <h1 class="navn"></h1>
                 <div class="billede">
@@ -52,14 +53,16 @@
                     <p class="maal"></p>
                     <p class="materiale"></p>
                 </div>
-                <p class="pris"></p>
-                <p class="udsalgspris">Vejl. udsalgspris inkl. moms</p>
-                <div class="enkeltside_kontakt">
-                    <p>Interesseret i værket? Tag endelig kontakt</p>
-                    <button class="knap">KONTAKT MIG</button>
+                <div class="pris_container">
+                    <p class="pris"></p>
+                    <p class="udsalgspris">Vejl. udsalgspris inkl. moms</p>
+                    <div class="enkeltside_kontakt">
+                        <p>Interesseret i værket? Tag endelig kontakt</p>
+                        <button class="knap">KONTAKT MIG</button>
+                    </div>
                 </div>
-                <div class="enkeltside_billede"></div>
             </article>
+            <div class="enkeltside_billede"></div>
         </section>
 
     </main>
@@ -148,6 +151,7 @@
             });
 
         }
+
     </script>
 </body>
 
