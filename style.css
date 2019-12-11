@@ -953,7 +953,6 @@ input[type=submit]:hover {
 
 }
 
-<<<<<<< HEAD
 /****** Enkeltside ******/
 
 #enkeltside img {
@@ -965,29 +964,98 @@ input[type=submit]:hover {
 }
 
 /***********ISABELLA*************/
+
 /******* vaerker ********/
 
 
-.grid_container {}
-
 
 .filterTekst {
-    margin-top: 80px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 
+.filter_knapper {
+    grid-area: filter;
+}
 
+button {
+    background-color: #E1E9F3;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: #3B3B3B;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.valgt {
+    background-color: #E1E9F3;
+    border-color: #6762aa;
+    color: #3B3B3B;
+}
+
+.data_container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.billed_ramme {
+    overflow: hidden;
+}
+
+.billed_ramme img {
+    transition: all .2s ease-in-out;
+}
+
+.billed_ramme img:hover {
+    transform: scale(1.05);
+}
+
+#vaerker article {
+    padding: 10px;
+}
+
+
+#vaerker article h2,
+#vaerker article p {
+    text-align: left;
+    margin: 5px 0px;
+}
+
+.produkter_article {
+    cursor: pointer;
+}
+
+#link_til_udstillinger {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    background-color: aqua;
+    align-content: center;
+}
+
+.seudstillinger_knap {
+    width: 250px;
+    margin: auto;
+}
 
 @media only screen and (min-width: 750px) {
     .data_container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
 
     }
 
     .filter_knapper {
-        display: flex;
-        flex-direction: row;
-        margin: auto;
+        grid-area: sidebar;
     }
 
     button {
@@ -997,83 +1065,4 @@ input[type=submit]:hover {
         margin-right: 10px;
     }
 
-
-    /******* vaerker ********/
-
-    .layout {}
-
-    .filterTekst {
-        margin-top: 40px;
-        text-align: center;
-    }
-
-
-    .filter_knapper {}
-
-    button {
-        background-color: #E1E9F3;
-        width: 100%;
-        height: 45px;
-        font-size: 16px;
-        color: #3B3B3B;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-
-    .valgt {
-        background-color: #E1E9F3;
-        border-color: #6762aa;
-        color: #3B3B3B;
-    }
-
-    .data_container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 900px;
-        text-align: center;
-        margin: 10px auto;
-        padding: 10px;
-    }
-
-    .billed_ramme {
-        overflow: hidden;
-    }
-
-    .billed_ramme img {
-        transition: all .2s ease-in-out;
-    }
-
-    .billed_ramme img:hover {
-        transform: scale(1.05);
-    }
-
-    #vaerker article {
-        padding: 10px;
-    }
-
-
-    #vaerker article h2,
-    #vaerker article p {
-        text-align: left;
-        margin: 5px 0px;
-    }
-
-    .produkter_article {
-        cursor: pointer;
-    }
-
-    #link_til_udstillinger {
-        display: flex;
-        width: 100vw;
-        height: 200px;
-        background-color: aqua;
-        align-content: center;
-    }
-
-    .seudstillinger_knap {
-        width: 250px;
-        margin: auto;
-    }
+}
