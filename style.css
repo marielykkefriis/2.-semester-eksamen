@@ -1113,7 +1113,7 @@ input[type=submit]:hover {
     margin: auto;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) {
     .data_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1130,14 +1130,14 @@ input[type=submit]:hover {
 
     .sidebar {
         position: fixed;
-        top: 8vw;
-        left: 8vw;
+        top: 250px;
+        left: 0;
         grid-area: sidebar;
         width: 22vw;
     }
 
-    sidebar .button {
-        width: 200px;
+    .sidebar button {
+        width: 100%;
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
