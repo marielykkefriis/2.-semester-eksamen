@@ -1,3 +1,5 @@
+/****** Burgermenu ******/
+
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
