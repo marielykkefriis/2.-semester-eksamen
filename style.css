@@ -781,9 +781,9 @@ input[type=submit]:hover {
     }
 
 
-
-
 }
+
+/******* vaerker ********/
 
 .filterTekst {
     margin-top: 80px;
@@ -855,4 +855,17 @@ article h2 {
 
 .produkter_article {
     cursor: pointer;
+}
+
+#link_til_udstillinger {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    background-color: aqua;
+    align-content: center;
+}
+
+.seudstillinger_knap {
+    width: 250px;
+    margin: auto;
 }
