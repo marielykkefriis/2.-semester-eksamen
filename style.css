@@ -142,7 +142,7 @@ header li a:hover {
 /******   Footer   *******/
 
 .instagram_wrapper {
-    background-color: #aaa8cc;
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0 0;
     margin: auto;
@@ -185,6 +185,7 @@ header li a:hover {
 
 footer p {
     margin: 0 0 5px 0;
+    color: white;
 }
 
 footer a {
@@ -1037,53 +1038,23 @@ input[type=submit]:hover {
 
 /******* vaerker ********/
 
-
-
 .filterTekst {
-    margin-top: 40px;
     text-align: center;
-}
-
-
-.filter_knapper {
-    grid-area: filter;
-}
-
-button {
-    background-color: #E1E9F3;
-    width: 100%;
-    height: 45px;
-    font-size: 16px;
-    color: #3B3B3B;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 5px;
-}
-
-
-.valgt {
-    background-color: #E1E9F3;
-    border-color: #6762aa;
-    color: #3B3B3B;
 }
 
 .data_container {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 900px;
-    text-align: center;
-    margin: 10px auto;
-    padding: 10px;
 }
 
-.billed_ramme {
-    overflow: hidden;
+.filter_knapper button {
+    padding: 15px;
+    width: 100vw;
+    background-color: #707493;
+    border: none;
+    margin: 4px;
+    color: white;
 }
-
-
-
-/******* vaerker ********/
 
 .billed_ramme img {
     transition: all .2s ease-in-out;
@@ -1126,14 +1097,26 @@ button {
     .data_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-area: liste;
 
     }
 
-    .filter_knapper {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-areas: "sidebar liste liste liste"
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 8vw;
+        left: 8vw;
         grid-area: sidebar;
+        width: 22vw;
     }
 
-    button {
+    sidebar .button {
         width: 200px;
         text-align: center;
         margin-left: 10px;
