@@ -35,10 +35,10 @@
         </nav>
     </header>
 
-    <main>
+    <main id="vaerker">
         <div class="header_billede"></div>
 
-
+       <div class="layout">
 
         <h2 class="filterTekst">MALERIER</h2>
 
@@ -51,6 +51,8 @@
 
         <!--    tom section til grid visning af indhold-->
         <section class="data_container"></section>
+
+        </div>
 
         <!--   template indeholder hvordan data skal placeres iforhold til hinanden-->
         <template>
@@ -158,7 +160,7 @@
 
                     klon.querySelector("article h2").textContent = vaerk.navn;
 
-                    klon.querySelector("article p").textContent = vaerk.pris;
+                    klon.querySelector("article p").textContent = vaerk.maal;
 
 
                     listevisning.appendChild(klon);
@@ -208,5 +210,8 @@
             }
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
