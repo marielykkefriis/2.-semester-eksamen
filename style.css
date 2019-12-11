@@ -230,6 +230,9 @@ footer a {
     height: 150px;
     background-color: aqua;
     margin: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .vaelgkunst_col2 {
@@ -237,11 +240,21 @@ footer a {
     height: 150px;
     background-color: aqua;
     margin: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .vaelgkunst_knap {
+    width: 200px;
+    height: 50px;
+    margin: auto;
     color: white;
     padding: 15px;
+    background-color: #4b4742;
+    border: none;
+    cursor: pointer;
+
 
 
 }
