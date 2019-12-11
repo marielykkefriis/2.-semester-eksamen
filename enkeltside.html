@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Catrine Brink</title>
+</head>
+
+
+
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <nav>
+            <ul id="menu" class="hidden">
+                <li>
+                    <a href="vaerker.html">Værker</a>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="kunst_i_virksomheden.html">Kunst i Virksomheden</a>
+                </li>
+                <li>
+                    <a href="om.html">Om</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+            <div id="menuknap">☰</div>
+        </nav>
+    </header>
+    <main>
+        <section id="enkeltside">
+            <button class="tilbage">←</button>
+            <article class="liste">
+                <h1 class="navn"></h1>
+                <div class="billede">
+                    <img id="img">
+                </div>
+                <p class="maal"></p>
+                <p class="materiale"></p>
+                <p class="pris"></p>
+                <button class="knap">KONTAKT MIG</button>
+                <div class="enkeltside_billede"></div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="instagram_wrapper">
+            <h2>FØLG MIG PÅ INSTAGRAM</h2>
+            <div class="insta_container">
+                <div class="insta_sprite">
+                    <div class="insta_billede"></div>
+                    <div class="insta_billede"></div>
+                    <div class="insta_billede"></div>
+                </div>
+                <div class="insta_sprite">
+                    <div class="insta_billede"></div>
+                    <div class="insta_billede"></div>
+                    <div class="insta_billede"></div>
+                </div>
+            </div>
+            <div class="footer_signatur"></div>
+        </div>
+        <div class="footer">
+            <div class="footer_1 footer_col">
+                <p><a href="">cb@catrinebrink.dk</a></p>
+            </div>
+            <div class="footer_2 footer_col">
+                <p>Tlf: <a href="tel: 53 55 81 69">53 55 81 69</a></p>
+
+            </div>
+            <div class="footer_3 footer_col">
+                <p>2400 KØBENHAVN NV</p>
+
+            </div>
+            <div class="footer_4 footer_col">
+                <a href="https://www.instagram.com/catrinebrink/?hl=da" target="_blank">
+                    <div class="instagram SoMe-ikon"></div>
+                </a>
+                <a href="https://www.facebook.com/bycatrinebrink" target="_blank">
+                    <div class="facebook SoMe-ikon"></div>
+                </a>
+                <a href="https://dk.linkedin.com/in/catrinebrink" target="_blank">
+                    <div class="linkedin SoMe-ikon"></div>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        let vaerk;
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+        const url = "http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/vaerker/" + id;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            getJson();
+        }
+
+        async function getJson() {
+            const response = await fetch(url);
+
+            vaerk = await response.json();
+            console.log(vaerk);
+            visVaerk();
+        }
+
+        function visVaerk() {
+
+
+            const liste = document.querySelector(".liste");
+
+
+            liste.querySelector(".navn").textContent = vaerk.navn;
+            liste.querySelector(".maal").textContent = vaerk.maal;
+            liste.querySelector(".materiale").textContent = vaerk.materiale;
+            liste.querySelector(".pris").textContent = "DKK " + vaerk.pris + ",-";
+            liste.querySelector("img").src = vaerk.billede_front.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+
+            document.querySelector(".tilbage").addEventListener("click", () => {
+                history.back();
+
+            });
+
+        }
+
+    </script>
+</body>
+
+</html>
