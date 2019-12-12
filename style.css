@@ -457,12 +457,11 @@ input[type=submit] {
     }
 
     header li a:hover {
-        color: #E36293;
-        text-decoration: underline #E36293;
+        transform: scale(1.2);
     }
 
-    header li a:active {
-        text-decoration: underline #E36293;
+    .menupunkt_valgt {
+        text-decoration: underline solid #E36293;
     }
 
 
@@ -1248,8 +1247,9 @@ input[type=submit] {
     border: none;
     margin: 4px;
     color: #444B5B;
-
 }
+
+
 
 .billed_ramme {
     overflow: hidden;
