@@ -83,7 +83,6 @@ img {
     height: 90px;
     box-shadow: 0px 2px 6px 1px #888888;
 
-
 }
 
 
@@ -93,6 +92,7 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 100px;
+
 }
 
 .logo {
@@ -142,10 +142,8 @@ header {
     z-index: 2;
 }
 
-header .forside {
+.forside #menu {
     background-color: transparent;
-    position: relative;
-    z-index: 0;
 }
 
 .forside li a {
@@ -531,13 +529,11 @@ input[type=submit] {
 #video {
     background-image: url(img/IMG_2539.JPG);
     background-size: cover;
-    width: 200vw;
-    height: 50vh;
-    right: 200px;
-    top: 0px;
+    width: 100vw;
+    height: 70vh;
+    top: -40;
+    right: -10;
     position: relative;
-    z-index: 1;
-
 
 
 }
