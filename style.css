@@ -614,10 +614,12 @@ input[type=submit] {
     background-image: url(img/nyhed.JPG);
     box-shadow: 0px 7px 8px #888888;
     background-size: cover;
-    width: 25vw;
-    height: 50vh;
-    margin-bottom: 1rem;
     opacity: 80%;
+    width: px;
+    height: 50vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
 }
 
 /*
@@ -629,13 +631,19 @@ input[type=submit] {
 */
 
 #forside_vaerker {
+    display: flex;
+    justify-content: center;
     background-image: url(img/se_vaerker.jpg);
     background-size: cover;
+    background-position: center;
+    height: 150px;
 
 }
 
 .forside_vaerker_container {
     padding: 15px 32px;
+    margin-top: 30px;
+
 }
 
 #forside_kiv {
@@ -645,21 +653,21 @@ input[type=submit] {
     margin: 0 1rem;
 }
 
-.kiv_billede {
-    background-image: url(img/virksomhed_1-web-ready.JPG);
-    box-shadow: 0px 7px 8px #888888;
+.forside_kiv_billede {
+    background-image: url(img/virksomhed_1.jpg);
     background-size: cover;
-    background-position: 20px;
-    width: 25vw;
-    height: 50vh;
     opacity: 80%;
+    width: 300px;
+    height: 50vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
 }
 
 
 #forside_om {
     background-image: url(img/om_kort.jpg);
     background-size: cover;
-    background-position: 0px -250px;
     padding: 2rem 1rem;
 
 }
@@ -739,7 +747,7 @@ input[type=submit] {
         align-items:
     }
 
-    .kiv_billede {
+    .forside_kiv_billede {
         flex-basis: 200px;
         flex-grow: 1;
     }
@@ -829,7 +837,7 @@ input[type=submit] {
 
 @media only screen and (min-width: 900px) {
     .kontakt_billede {
-        margin-top: 16vh;
+        margin-top: 22vh;
     }
 }
 
@@ -846,8 +854,9 @@ input[type=submit] {
     background-image: url(img/om_kort.jpg);
     background-size: cover;
     opacity: 80%;
-
-    margin-bottom: 1rem;
+    width: 300px;
+    height: 300px;
+    margin: 25px 15px;
 }
 
 /*
@@ -877,6 +886,10 @@ input[type=submit] {
 
 }
 
+.passion_tekst_col {
+    margin-bottom: 20px;
+}
+
 .passion_billede_col {
     display: flex;
     flex-wrap: wrap;
@@ -887,8 +900,8 @@ input[type=submit] {
     background-image: url(img/nyhed.JPG);
     background-size: cover;
     box-shadow: 0px 7px 8px #888888;
-    width: 50vw;
-    height: 50vh;
+    width: 300px;
+    height: 300px;
     /*    margin-bottom: 5rem;*/
     opacity: 80%;
 }
@@ -905,12 +918,12 @@ input[type=submit] {
     background-image: url(img/vaersted_3.JPG);
     background-size: cover;
     box-shadow: 0px 7px 8px #888888;
-    width: 20vw;
-    height: 25vh;
+    width: 170px;
+    height: 170px;
     margin-bottom: 1rem;
     opacity: 80%;
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     margin: 20px 10px 10px 0px;
 
 
@@ -920,27 +933,32 @@ input[type=submit] {
     background-image: url(img/IMG_2539.JPG);
     background-size: cover;
     box-shadow: 0px 7px 8px #888888;
-    width: 20vw;
-    height: 25vh;
+    width: 170px;
+    height: 170px;
     margin-bottom: 1rem;
     opacity: 80%;
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     margin: 20px 0px 10px 10px;
 
 
 }
 
 #om_udstillinger {
+    display: flex;
+    justify-content: center;
     background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: center;
+    height: 150px;
 
 }
 
 .om_udstillinger_container,
 .knap {
+    margin-top: 30px;
     padding: 15px 32px;
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -974,6 +992,12 @@ input[type=submit] {
         flex-wrap: nowrap;
     }
 
+    .passion_billede1 {
+        width: 650px;
+
+    }
+
+
     #om_udstillinger {
         display: flex;
         justify-content: center;
@@ -1005,20 +1029,29 @@ input[type=submit] {
 }
 
 .kiv_billede_col {
-    background-color: blue;
+    background-image: url(img/virksomhed_1-web-ready.JPG);
+    box-shadow: 0px 7px 8px #888888;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 25vh;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
+
 }
 
 #kiv_vaerker {
+    background-image: url(img/se_vaerker.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    background-color: deeppink;
+    height: 100px;
+
 
 }
 
 .kiv_vaerker_container {
+    margin-top: 10px;
     padding: 15px 32px;
 }
 
@@ -1199,7 +1232,9 @@ input[type=submit] {
 }
 
 .enkeltside_billede {
-    background-color: purple;
+    background-image: url(img/afsnitsdeling.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 25vh;
     margin-bottom: 1rem;
@@ -1270,7 +1305,6 @@ input[type=submit] {
 }
 
 
-
 .billed_ramme {
     overflow: hidden;
 }
@@ -1301,11 +1335,18 @@ input[type=submit] {
 
 
 #link_til_udstillinger {
-    /*    display: flex;*/
+    background-image: url(img/se_udstillinger.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100vw;
-    height: 200px;
-    background-color: aqua;
-    align-content: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#link_til_udstillinger button {
+    margin-top: 50px;
 }
 
 /*
