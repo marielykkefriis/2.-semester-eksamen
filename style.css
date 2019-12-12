@@ -150,9 +150,7 @@ header li a {
     color: #444C59;
 }
 
-header li a:hover {
-    color: rgba(255, 132, 77, 0.24);
-}
+
 
 
 
@@ -196,7 +194,7 @@ header li a:hover {
 .footer {
     background-color: #444B5B;
     width: 100vw;
-    padding: 20px;
+    padding: 25px;
     color: white;
 }
 
@@ -211,19 +209,32 @@ footer a {
 
 .footer_4 {
     display: flex;
-    width: 50px;
 }
 
+.footer_1,
+.footer_2,
+.footer_3,
+.footer_4 {
+    margin: 17px 0;
+}
+
+.footer_1:hover,
+.footer_2:hover,
 .footer_3:hover {
-    transform: scale(1.08);
+    transform: scale(1.08) translateY(-4px);
     transition: 0.5s;
 }
 
 .SoMe-ikon {
-    margin: 0px 20px;
+    margin: 0px 50px 0 0;
     width: 22px;
     height: 22px;
     background-size: cover;
+}
+
+.SoMe-ikon:hover {
+    transform: scale(1.40) translateY(-4px);
+    transition: 0.5s;
 }
 
 .instagram {
@@ -406,21 +417,26 @@ input[type=submit]:hover {
     }
 
     header li a {
-        color: #c66262;
         font-size: 1rem;
         margin-left: 35px;
-
     }
 
-    header li a:hover {
-        color: #92a7bc;
-    }
 
     header li {
         display: inline-block;
         width: auto;
         margin: 0;
     }
+
+    header li a:hover {
+        color: #E36293;
+        text-decoration: underline #E36293;
+    }
+
+    header li a:active {
+        text-decoration: underline #E36293;
+    }
+
 
     header li:first-child {
         margin-top: 40px;
@@ -748,6 +764,8 @@ input[type=submit]:hover {
     #kontakt {
         display: flex;
         flex-wrap: wrap;
+        max-width: 1100px;
+        margin: auto;
     }
 
     .kontakt_billede {
