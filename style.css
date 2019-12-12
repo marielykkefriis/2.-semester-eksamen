@@ -479,6 +479,8 @@ input[type=submit]:hover {
 
 /******   Forside   ******/
 #video {
+    background-image: url(img/IMG_2539.JPG);
+    background-size: cover;
     width: 200vw;
     height: 50vh;
     top: 0px;
@@ -495,6 +497,12 @@ input[type=submit]:hover {
     overflow: hidden;
     position: relative;
     padding: 0;
+}
+
+#splash h1,
+#splash h2,
+#splash p {
+    color: white;
 }
 
 .splash_container {
