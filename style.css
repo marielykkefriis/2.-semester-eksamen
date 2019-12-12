@@ -83,7 +83,15 @@ header {
     background-size: cover;
     background-color: #8a7fe2;
     margin: 10px 10px;
-    width: 200px;
+    width: 220px;
+    height: 70px;
+}
+
+.logo2 {
+    background-image: url(img/logo_blue.svg);
+    background-size: cover;
+    margin: 10px 10px;
+    width: 220px;
     height: 70px;
 }
 
@@ -176,10 +184,10 @@ header li a:hover {
 }
 
 .footer_signatur {
-    width: 150px;
-    height: 80px;
-    background-color: antiquewhite;
+    background-image: url(img/logo_signature_blaa.svg);
     margin: auto;
+    width: 220px;
+    height: 70px;
 }
 
 .footer {
@@ -190,7 +198,7 @@ header li a:hover {
 }
 
 footer p {
-    margin: 0 0 5px 0;
+    margin: 0px;
     color: white;
 }
 
@@ -209,13 +217,26 @@ footer a {
 }
 
 .SoMe-ikon {
-    background-color: beige;
-    margin: 10px;
-    width: 10px;
-    height: 10px;
+    margin: 0px 20px;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
 }
 
-.instagram {}
+.instagram {
+    background-image: url(img/instagram_logo_white.png);
+
+}
+
+.facebook {
+    background-image: url(img/facebook_logo_white.png);
+
+}
+
+
+.linkedin {
+    background-image: url(img/linkedin_logo_white.png);
+}
 
 /******   vaelgkunst  ******/
 
@@ -507,6 +528,10 @@ input[type=submit]:hover {
     transform: translateZ(-1px) scale(2);
 }
 */
+
+.logo {
+    background-image: url(img/logo_white.svg);
+}
 
 #forside_nyhed {
     display: flex;
