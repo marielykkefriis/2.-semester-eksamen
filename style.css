@@ -1044,6 +1044,10 @@ input[type=submit]:hover {
 }
 
 /****** Enkeltside ******/
+.indhold {
+    display: grid;
+}
+
 .navn {
     padding: 0 1.5rem;
 }
@@ -1092,28 +1096,33 @@ input[type=submit]:hover {
 
 @media only screen and (min-width: 600px) {
 
-    .liste {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .indhold {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "venstre op"
+            "venstre midt"
+            "venstre bund";
+
     }
 
-    .liste .navn {
-        grid-area: 1 / 2 / 1 / 2;
+    .indhold .navn {
+        grid-area: op;
 
     }
 
-    .liste img {
-        grid-area: 1 / 1 / 5 / 1;
+    .indhold .billede {
+        grid-area: venstre;
         margin-left: 50px;
 
     }
 
-    .liste .specifikationer {
-        grid-area: 2 / 2 / 2 / 2;
+    .indhold .specifikationer {
+        grid-area: midt;
     }
 
-    .liste .pris_container {
-        grid-area: 3 / 2 / 3 / 2;
+    .indhold .pris_container {
+        grid-area: bund;
     }
 
     .enkeltside_kontakt {
