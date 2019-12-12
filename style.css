@@ -45,6 +45,11 @@ button {
 
 }
 
+button:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: 0.5s;
+}
+
 @media only screen and (min-width: 750px) {
     h1 {
         font-size: 3.8rem;
@@ -341,6 +346,22 @@ textarea {
         /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.kontakt_col input[type=submit]:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: 0.5s;
+
+}
+
+.nyhedsbrev_container:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: 0.5s;
+}
+
+
+
+
+
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #444B5B;
@@ -351,12 +372,6 @@ input[type=submit] {
 
 }
 
-
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
 
 /* Add a background color and some padding around the form */
 .formel_container {
@@ -373,11 +388,12 @@ input[type=submit]:hover {
 
 }
 
+
 .nyhedsbrev_container input[type=text],
 .nyhedsbrev_container select,
 .nyhedsbrev_container textarea {
     background-color: white;
-    box-shadow: 0px 7px 8px 2px #444B5B;
+    box-shadow: 0px 5px 7px rgba(68, 75, 91, 0.65);
     border: none;
     margin: 0;
     border-radius: 0;
@@ -1201,19 +1217,21 @@ input[type=submit]:hover {
 .filter_knapper button {
     padding: 15px;
     width: 100vw;
-    background-color: #707493;
+    background-color: #E1E9F3;
     border: none;
     margin: 4px;
-    color: white;
+    color: #444B5B;
 
+}
 
-
+.billed_ramme {
+    overflow: hidden;
 }
 
 .billed_ramme img {
     transition: all .2s ease-in-out;
+    object-fit: cover;
 }
-
 
 .billed_ramme img:hover {
     transform: scale(1.05);
@@ -1230,9 +1248,10 @@ input[type=submit]:hover {
     margin: 5px 0px;
 }
 
-.produkter_article {
+.produkt_article {
     cursor: pointer;
 }
+
 
 #link_til_udstillinger {
     /*    display: flex;*/
