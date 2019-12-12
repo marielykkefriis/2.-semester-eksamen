@@ -14,7 +14,7 @@
 h1 {
     font-family: 'avenir';
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #444B5B;
     margin: 10px 0px;
 }
@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-family: 'avenir';
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #444B5B;
     margin: 10px 0px;
 }
@@ -33,13 +33,15 @@ p {
     font-size: 0.8rem;
 }
 
-.knap {
-    height: 10vh;
+button {
+    padding: 15px 30px;
     background-color: #444B5B;
     border: none;
     color: white;
     font-size: 1rem;
     font-weight: 200;
+    box-shadow: 0px 7px 8px rgba(68, 75, 91, 0.65);
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -549,11 +551,13 @@ input[type=submit]:hover {
     margin-bottom: 1rem;
 }
 
+/*
 .knap {
     text-transform: uppercase;
     padding: 15px 32px;
     margin: 1rem 0;
 }
+*/
 
 #forside_vaerker {
     background-color: deeppink;
@@ -693,15 +697,20 @@ input[type=submit]:hover {
         margin: 0 50px;
     }
 */
+    /*
+
     .knap {
         padding: 20px 42px;
 
     }
+*/
+
 
     .nyhed_knap,
     .kiv_knap,
         {
         text-align: right;
+
     }
 
     /** vaelkunst **/
@@ -752,11 +761,13 @@ input[type=submit]:hover {
     margin-bottom: 1rem;
 }
 
+/*
 .knap {
     text-transform: uppercase;
     padding: 15px 32px;
     margin: 1rem 0;
 }
+*/
 
 #video_om {
     background-color: hotpink;
@@ -1084,7 +1095,7 @@ input[type=submit]:hover {
 }
 
 .enkeltside_kontakt p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .enkeltside_billede {
@@ -1123,13 +1134,17 @@ input[type=submit]:hover {
 
     .indhold .pris_container {
         grid-area: bund;
+
     }
+
 
     .enkeltside_kontakt {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        max-width: 250px;
     }
+
 }
 
 /***********ISABELLA*************/
@@ -1152,6 +1167,8 @@ input[type=submit]:hover {
     border: none;
     margin: 4px;
     color: white;
+
+
 }
 
 .billed_ramme img {
@@ -1179,17 +1196,19 @@ input[type=submit]:hover {
 }
 
 #link_til_udstillinger {
-    display: flex;
+    /*    display: flex;*/
     width: 100vw;
     height: 200px;
     background-color: aqua;
     align-content: center;
 }
 
+/*
 .seudstillinger_knap {
     width: 250px;
     margin: auto;
 }
+*/
 
 @media only screen and (min-width: 600px) {
     .data_container {
