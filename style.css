@@ -72,9 +72,13 @@ img {
 }
 
 .header_billede {
+    background-image: url(img/pink_lady_60x80.jpg);
+    background-size: cover;
     width: 100vw;
     height: 90px;
-    background-color: aqua;
+    box-shadow: 0px 2px 6px 1px #888888;
+
+
 }
 
 
@@ -133,7 +137,15 @@ header {
     z-index: 2;
 }
 
+header .forside {
+    background-color: transparent;
+    position: relative;
+    z-index: 0;
+}
 
+.forside li a {
+    color: white;
+}
 
 header li {
     width: 100%;
@@ -505,20 +517,21 @@ input[type=submit] {
         max-width: 400px;
     }
 
-
-
 }
 
 /******   Forside   ******/
 #video {
+    background-image: url(img/IMG_2539.JPG);
+    background-size: cover;
     width: 200vw;
     height: 50vh;
-    top: 0px;
     right: 200px;
+    top: 0px;
     position: relative;
-    z-index: 0;
-    /*    position: relative;*/
-    background-color: red;
+    z-index: 1;
+
+
+
 }
 
 #splash {
@@ -527,6 +540,13 @@ input[type=submit] {
     overflow: hidden;
     position: relative;
     padding: 0;
+
+}
+
+#splash h1,
+#splash h2,
+#splash p {
+    color: white;
 }
 
 .splash_container {
@@ -538,7 +558,7 @@ input[type=submit] {
     margin: 0 1rem;
     position: absolute;
     z-index: 1;
-    top: 20px;
+    top: 0px;
     left: -10px;
 }
 
@@ -589,6 +609,7 @@ input[type=submit] {
     width: 25vw;
     height: 50vh;
     margin-bottom: 1rem;
+    opacity: 80%;
 }
 
 /*
@@ -600,7 +621,8 @@ input[type=submit] {
 */
 
 #forside_vaerker {
-    background-color: deeppink;
+    background-image: url(img/se_vaerker.jpg);
+    background-size: cover;
 
 }
 
@@ -616,16 +638,20 @@ input[type=submit] {
 }
 
 .kiv_billede {
+    background-image: url(img/virksomhed_1-web-ready.JPG);
     box-shadow: 0px 7px 8px #888888;
-    background-color: purple;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 1rem;
+    background-size: cover;
+    background-position: 20px;
+    width: 25vw;
+    height: 50vh;
+    opacity: 80%;
 }
 
 
 #forside_om {
-    background-color: yellow;
+    background-image: url(img/om_kort.jpg);
+    background-size: cover;
+    background-position: 0px -250px;
     padding: 2rem 1rem;
 
 }
@@ -809,9 +835,10 @@ input[type=submit] {
 }
 
 .catrine_billede {
-    background-color: blue;
-    width: 100%;
-    height: 25vh;
+    background-image: url(img/om_kort-web-ready.JPG);
+    background-size: cover;
+    opacity: 80%;
+
     margin-bottom: 1rem;
 }
 
