@@ -290,11 +290,16 @@ footer a {
 /******   Kontakt  ******/
 #kontakt {
     margin: 10px;
+
+}
+
+.kontakt_col {
+    margin: auto;
 }
 
 .kontakt_billede {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     background-color: aqua;
 }
@@ -309,13 +314,11 @@ textarea {
     /* Full width */
     padding: 12px;
     /* Some padding */
-    border-radius: 4px;
-    /* Rounded borders */
     box-sizing: border-box;
     /* Make sure that padding and width stays in place */
-    margin-top: 6px;
+    margin-top: 3px;
     /* Add a top margin */
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     /* Bottom margin */
     resize: vertical
         /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -327,10 +330,11 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 
 }
+
+
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
@@ -723,17 +727,26 @@ input[type=submit]:hover {
     }
 
     .kontakt_billede {
-        flex-basis: 300px;
+        flex-basis: 250px;
         flex-grow: 1;
     }
 
     .kontakt_col {
-        flex-basis: 300px;
+        flex-basis: 250px;
         flex-grow: 1;
+        margin: 50px;
     }
 
+    .formel_container {
+        max-width: 400px;
+    }
 
+}
 
+@media only screen and (min-width: 900px) {
+    .kontakt_billede {
+        margin-top: 16vh;
+    }
 }
 
 /******   Om   ******/
