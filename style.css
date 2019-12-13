@@ -608,6 +608,7 @@ input[type=submit] {
     .dropdown {
         position: relative;
         display: inline-block;
+        z-index: 1000;
     }
 
     /* Dropdown Content (Hidden by Default) */
@@ -643,16 +644,11 @@ input[type=submit] {
     /**   dropdown menu slut **/
 
 
-    .insta_billede {
-        height: 150px;
-        width: 150px;
-    }
 
     .footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        text-align:
     }
 
     .footer_col {
@@ -669,6 +665,58 @@ input[type=submit] {
     .vaelgkunst_col2 {
         max-height: 400px;
         max-width: 400px;
+    }
+
+}
+
+/*instagram desktop*/
+
+@media only screen and (min-width: 900px) {
+
+    .insta_billede_1,
+    .insta_billede_2,
+    .insta_billede_3,
+    .insta_billede_4,
+    .insta_billede_5,
+    .insta_billede_6 {
+        height: 120px;
+        width: 120px;
+
+    }
+
+    .insta_1,
+    .insta_2,
+    .insta_3,
+    .insta_4,
+    .insta_5,
+    .insta_6 {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .insta_billede_1,
+    .insta_billede_2,
+    .insta_billede_3,
+    .insta_billede_4,
+    .insta_billede_5,
+    .insta_billede_6 {
+        height: 180px;
+        width: 180px;
+
+    }
+
+    .insta_1,
+    .insta_2,
+    .insta_3,
+    .insta_4,
+    .insta_5,
+    .insta_6 {
+        width: 180px;
+        height: 180px;
     }
 
 }
