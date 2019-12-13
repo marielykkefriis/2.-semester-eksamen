@@ -203,10 +203,10 @@ header li a {
 }
 
 .dropdown_pil {
-    background-color: #8900ff;
+    background-image: url(img/pink_pil.svg);
     width: 20px;
-    height: 20px;
-    margin: 10px;
+    height: 12px;
+    margin: 17px 15px 0;
     cursor: pointer;
 }
 
@@ -537,7 +537,7 @@ input[type=submit] {
     }
 
     header li a {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-left: 35px;
     }
 
@@ -601,8 +601,7 @@ input[type=submit] {
     /**   dropdown menu start  **/
 
     .dropdown_pil {
-        width: 15px;
-        height: 15px;
+        margin: 10px 10px;
     }
 
     /* The container <div> - needed to position the dropdown content */
@@ -611,70 +610,65 @@ input[type=submit] {
         display: inline-block;
     }
 
-}
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.87);
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 9000;
+        margin: 0 0 0 -10px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        padding: 4px 8px;
+        margin-right: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:first-child {
+        border-bottom: solid 1px grey;
+    }
 
 
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.86);
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin: 0 0 0 -10px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    padding: 4px 8px;
-    margin-right: 5px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:first-child {
-    border-bottom: solid 1px grey;
-}
+    /**   dropdown menu slut **/
 
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+    .insta_billede {
+        height: 150px;
+        width: 150px;
+    }
 
-/**   dropdown menu slut **/
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align:
+    }
 
+    .footer_col {
+        flex-basis: 150px;
+        flex-grow: 1;
+        text-align: center;
+    }
 
+    .vaelgkunst_col1 {
+        max-height: 400px;
+        max-width: 400px;
+    }
 
-.insta_billede {
-    height: 150px;
-    width: 150px;
-}
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align:
-}
-
-.footer_col {
-    flex-basis: 150px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-.vaelgkunst_col1 {
-    max-height: 400px;
-    max-width: 400px;
-}
-
-.vaelgkunst_col2 {
-    max-height: 400px;
-    max-width: 400px;
-}
+    .vaelgkunst_col2 {
+        max-height: 400px;
+        max-width: 400px;
+    }
 
 }
 
