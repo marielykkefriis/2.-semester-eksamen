@@ -372,14 +372,15 @@ header li a {
 
 #forside_vaerker {
     text-align: center;
-    background-image: url(img/se_vaerker.jpg);
-    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
-    height: 150px;
-    margin-top: 0vw;
-    background-repeat: no-repeat;
+    background-image: url(img/se_vaerker.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    margin: 20px 0;
+
 }
 
 #forside_vaerker img {
@@ -387,8 +388,7 @@ header li a {
 }
 
 .forside_vaerker_container {
-    padding: auto;
-    padding-top: 60px;
+    padding: 45px;
     height: 120px;
 }
 
@@ -499,12 +499,12 @@ header li a {
 */
 
 .vaelgkunst_billede {
-    background-image: url(img/afsnitsdeling.jpg);
+    background-image: url(img/afsnitsfoto.png);
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 180px;
-    margin-bottom: 1rem;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
     opacity: 80%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
@@ -526,8 +526,8 @@ header li a {
     background-size: cover;
     background-position: right;
     opacity: 80%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: auto;
 
 }
@@ -753,17 +753,19 @@ input[type=submit] {
 #om_udstillinger {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_udstillinger.jpg);
+    background-image: url(img/se_udstillinger.png);
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 120px;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
 .om_udstillinger_container,
 .knap {
-    margin-top: 22px;
+    margin-top: 35px;
     padding: 15px 32px;
 
 }
@@ -803,13 +805,12 @@ input[type=submit] {
 #kiv_vaerker {
     background-image: url(img/se_vaerker.jpg);
     background-size: cover;
-    background-position: 0 -162px;
-    display: flex;
-    justify-content: center;
-    height: 120px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    opacity: 80%;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
 }
 
 .kiv_vaerker_container {
@@ -841,13 +842,13 @@ input[type=submit] {
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_udstillinger.jpg);
+    background-image: url(img/se_udstillinger.png);
     background-size: cover;
-
-    height: 120px;
-    opacity: 80%;
-
-
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 .kiv_udstillinger_container {
@@ -963,15 +964,15 @@ input[type=submit] {
 }
 
 .enkeltside_billede {
-    background-image: url(img/afsnitsdeling.jpg);
+    background-image: url(img/afsnitsfoto.png);
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 180px;
-    margin-bottom: 1rem;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
     opacity: 80%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    margin-top: 20px;
+
 }
 
 
@@ -1030,14 +1031,15 @@ input[type=submit] {
 
 
 #link_til_udstillinger {
-    background-image: url(img/se_udstillinger.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 150px;
     display: flex;
     justify-content: center;
-    opacity: 80%;
+    background-image: url(img/se_udstillinger.png);
+    background-size: cover;
+    background-position: bottom;
+    width: auto;
+    height: 150px;
+    padding-bottom: 20px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 #link_til_udstillinger button {
@@ -1221,6 +1223,13 @@ footer a {
 @media only screen and (min-width: 600px) {
 
 
+    #forside_vaerker,
+    #om_udstillinger,
+    .vaelgkunst_billede {
+        height: 250px;
+        padding: 70px;
+    }
+
     #forside_nyhed {
         padding: 15px 32px;
         margin: 50px 1px;
@@ -1297,7 +1306,7 @@ footer a {
 
     #forside_om {
         padding: 15px 32px;
-        background-position: 0 -250px;
+        background-position: 0 -330px;
     }
 
     .forside_om_col {
@@ -1338,9 +1347,10 @@ footer a {
     }
 
     .kontakt_billede {
-        flex-basis: 250px;
+        flex-basis: 500px;
         flex-grow: 1;
     }
+
 
     .kontakt_col {
         flex-basis: 250px;
