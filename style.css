@@ -668,6 +668,7 @@ input[type=submit] {
 }
 
 /*instagram desktop*/
+
 @media only screen and (min-width: 900px) {
 
     .insta_billede_1,
@@ -676,8 +677,8 @@ input[type=submit] {
     .insta_billede_4,
     .insta_billede_5,
     .insta_billede_6 {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
 
     }
 
@@ -687,13 +688,13 @@ input[type=submit] {
     .insta_4,
     .insta_5,
     .insta_6 {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
 
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
 
     .insta_billede_1,
     .insta_billede_2,
@@ -701,8 +702,8 @@ input[type=submit] {
     .insta_billede_4,
     .insta_billede_5,
     .insta_billede_6 {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
 
     }
 
@@ -712,8 +713,8 @@ input[type=submit] {
     .insta_4,
     .insta_5,
     .insta_6 {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
 }
