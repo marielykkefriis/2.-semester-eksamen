@@ -865,8 +865,8 @@ input[type=submit] {
 #om_catrine {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    padding: 15px 32px;
+    margin: 0 1px;
 }
 
 .catrine_billede {
@@ -875,7 +875,12 @@ input[type=submit] {
     opacity: 80%;
     width: 300px;
     height: 300px;
-    margin: 25px 15px;
+    margin: auto;
+
+}
+
+.om_catrine_col {
+    margin-bottom: 30px;
 }
 
 /*
@@ -888,25 +893,24 @@ input[type=submit] {
 
 #video_om {
     background-color: hotpink;
-    width: 200vw;
-    height: 50vh;
-    top: 0px;
-    right: 200px;
+    width padding: 15px 32px;
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
 
 }
 
 #om_passion {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
-    padding: 15px 32px;
+    margin: 0 1px;
 
 
 }
 
 .passion_tekst_col {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .passion_billede_col {
@@ -969,13 +973,14 @@ input[type=submit] {
     background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: center;
-    height: 150px;
+    width: 100%;
+    height: 120px;
 
 }
 
 .om_udstillinger_container,
 .knap {
-    margin-top: 30px;
+    margin-top: 22px;
     padding: 15px 32px;
 
 }
@@ -983,7 +988,8 @@ input[type=submit] {
 @media only screen and (min-width: 750px) {
 
     #om_catrine {
-        padding: 3rem 2rem;
+        margin: 50px 130px;
+        padding: 3px 2px;
     }
 
     .om_catrine_container {
@@ -1000,19 +1006,25 @@ input[type=submit] {
         margin: 0 50px;
     }
 
+
     .catrine_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        width: 300px;
+        height: 460px;
+        margin-top: 15px;
     }
 
+
     #om_passion {
-        padding: 3rem 2rem;
+        margin: 50px 130px;
+        padding: 3px 2px;
         display: flex;
         flex-wrap: nowrap;
     }
 
     .passion_billede1 {
-        width: 650px;
+        width: 550px;
 
     }
 
@@ -1020,15 +1032,8 @@ input[type=submit] {
     #om_udstillinger {
         display: flex;
         justify-content: center;
-        width: 100%;
-        height: 35vh;
+
     }
-
-    .om_udstillinger_container {
-        padding: 80px;
-    }
-
-
 
 }
 
@@ -1169,7 +1174,7 @@ input[type=submit] {
     background-position: center;
     opacity: 80%;
     width: 100%;
-    height: 20vh;
+    height: 120px;
     /*
     padding: 15px 32px;
 
