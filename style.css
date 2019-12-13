@@ -11,6 +11,8 @@
 
 /****** Generelle regler ******/
 
+
+
 h1 {
     font-family: 'avenir';
     font-weight: 100;
@@ -40,7 +42,7 @@ button {
     color: white;
     font-size: 1rem;
     font-weight: 200;
-    box-shadow: 0px 7px 8px rgba(68, 75, 91, 0.65);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 
 }
@@ -50,17 +52,7 @@ button:hover {
     transition: 0.5s;
 }
 
-@media only screen and (min-width: 750px) {
-    h1 {
-        font-size: 2.5rem;
 
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.5;
-    }
-}
 
 *,
 html * {
@@ -81,7 +73,8 @@ img {
     background-size: cover;
     width: 100vw;
     height: 90px;
-    box-shadow: 0px 2px 6px 1px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -147,7 +140,6 @@ header {
     width: 100vw;
     z-index: 2;
     font-family: 'avenir';
-    font-style: uppercase;
     color: #444C59;
 }
 
@@ -175,12 +167,11 @@ header {
 }
 
 .forside #menuknap {
-    color: white;
+    color: #444C59;
 }
 
 .forside li a {
     color: #444C59;
-    font-style: uppercase;
 }
 
 header li {
@@ -220,7 +211,6 @@ header li a {
 }
 
 
-
 /******   Footer   *******/
 
 .instagram_wrapper {
@@ -241,14 +231,63 @@ header li a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    object-fit: cover;
 
 }
 
-.insta_billede {
+.insta_billede_1,
+.insta_billede_2,
+.insta_billede_3,
+.insta_billede_4,
+.insta_billede_5,
+.insta_billede_6 {
     height: 100px;
     width: 100px;
-    background-color: antiquewhite;
     margin: 10px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
+}
+
+.insta_1 {
+    background-image: url(img/instagram_1.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_2 {
+    background-image: url(img/instagram_2.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_3 {
+    background-image: url(img/instagram_3.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_4 {
+    background-image: url(img/instagram_4.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_5 {
+    background-image: url(img/instagram_5.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_6 {
+    background-image: url(img/instagram_6.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
 }
 
 .footer_signatur {
@@ -306,12 +345,11 @@ footer a {
 
 .instagram {
     background-image: url(img/instagram_logo_white.png);
-
 }
+
 
 .facebook {
     background-image: url(img/facebook_logo_white.png);
-
 }
 
 
@@ -396,7 +434,7 @@ input[type=text],
 select,
 textarea {
     background-color: #E1E9F3;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     border: none;
     width: 100%;
     /* Full width */
@@ -459,7 +497,7 @@ input[type=submit] {
 .nyhedsbrev_container select,
 .nyhedsbrev_container textarea {
     background-color: white;
-    box-shadow: 0px 5px 7px rgba(68, 75, 91, 0.65);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     border: none;
     margin: 0;
     border-radius: 0;
@@ -468,8 +506,8 @@ input[type=submit] {
     padding: 12px;
     /* Some padding */
     box-sizing: border-box;
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 .nyhedsbrev_container input[type=submit] {
@@ -480,7 +518,7 @@ input[type=submit] {
     cursor: pointer;
     border-radius: 0;
     width: 50%;
-    box-shadow: 0px 7px 8px 3px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -633,7 +671,7 @@ input[type=submit] {
 
 /******   Forside   ******/
 #video {
-    background-image: url(img/IMG_2539.JPG);
+    background-image: url(img/forside_video.png);
     background-size: cover;
     width: 100vw;
     height: 70vh;
@@ -715,7 +753,7 @@ input[type=submit] {
 
 .nyhed_billede {
     background-image: url(img/nyhed.JPG);
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     opacity: 80%;
     width: px;
@@ -739,7 +777,9 @@ input[type=submit] {
     background-size: cover;
     background-position: center;
     height: 150px;
-    background-image: url(img/pink_lady_60x80.jpg);
+    background-image: url(img/se_vaerker.jpg);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -749,11 +789,13 @@ input[type=submit] {
 
 }
 
+
 #forside_kiv {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 1rem 0;
     margin: 0 1rem;
+
 }
 
 .forside_kiv_billede {
@@ -764,6 +806,7 @@ input[type=submit] {
     height: 50vh;
     margin-bottom: 30px;
     margin-top: 30px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -772,8 +815,10 @@ input[type=submit] {
     background-image: url(img/om_kort.jpg);
     background-size: cover;
     padding: 2rem 1rem;
-
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
+
 
 #forside_om h1 {
     color: white;
@@ -790,6 +835,7 @@ input[type=submit] {
     max-width: 1200px;
     margin: 0 1rem;
     left: -10px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 @media only screen and (min-width: 600px) {
@@ -960,6 +1006,7 @@ input[type=submit] {
     width: 300px;
     height: 300px;
     margin: 25px 15px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 /*
@@ -1002,7 +1049,7 @@ input[type=submit] {
 .passion_billede1 {
     background-image: url(img/nyhed.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 300px;
     height: 300px;
     /*    margin-bottom: 5rem;*/
@@ -1020,7 +1067,7 @@ input[type=submit] {
 .passion_billede2 {
     background-image: url(img/vaersted_3.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
     height: 170px;
     margin-bottom: 1rem;
@@ -1035,7 +1082,7 @@ input[type=submit] {
 .passion_billede3 {
     background-image: url(img/IMG_2539.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
     height: 170px;
     margin-bottom: 1rem;
@@ -1129,16 +1176,14 @@ input[type=submit] {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-}
-
-.kiv_billede_col {
     background-image: url(img/virksomhed_1-web-ready.JPG);
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 25vh;
     margin-bottom: 30px;
+    opacity: 80%;
 
 }
 
@@ -1149,6 +1194,8 @@ input[type=submit] {
     display: flex;
     justify-content: center;
     height: 100px;
+    opacity: 80%;
+
 
 
 }
@@ -1170,12 +1217,17 @@ input[type=submit] {
     width: 100%;
     height: 25vh;
     margin-bottom: 1rem;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
+
 }
 
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
     background-color: deeppink;
+    opacity: 80%;
+
 
 }
 
@@ -1240,6 +1292,7 @@ input[type=submit] {
     padding: 15px 32px;
     width: 100%;
     height: 25vh;
+    opacity: 80%;
 
 }
 
@@ -1255,6 +1308,8 @@ input[type=submit] {
     width: 100%;
     height: 25vh;
     margin-bottom: 1rem;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 #events_workshops_billede {
@@ -1264,6 +1319,8 @@ input[type=submit] {
     padding: 15px 32px;
     width: 100%;
     height: 25vh;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1410,6 +1467,8 @@ input[type=submit] {
 
 .billed_ramme {
     overflow: hidden;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    height: 28vw;
 }
 
 .billed_ramme img {
@@ -1445,11 +1504,12 @@ input[type=submit] {
     height: 150px;
     display: flex;
     justify-content: center;
-
+    opacity: 80%;
 }
 
 #link_til_udstillinger button {
     margin-top: 50px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 /*
@@ -1489,4 +1549,16 @@ input[type=submit] {
         margin-right: 10px;
     }
 
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 2.5rem;
+
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
 }
