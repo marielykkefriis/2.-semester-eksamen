@@ -1175,6 +1175,8 @@ input[type=submit] {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
+        padding: 3px 2px;
+        margin: 0 20px;
 
     }
 
@@ -1186,12 +1188,13 @@ input[type=submit] {
     }
 
 
+
     .catrine_billede {
         flex-basis: 200px;
         flex-grow: 1;
         width: 300px;
         height: 460px;
-        margin-top: 15px;
+        margin: 0 50px 0 0;
     }
 
 
@@ -1202,8 +1205,17 @@ input[type=submit] {
         flex-wrap: nowrap;
     }
 
+    .passion_tekst_col {
+        margin: 0 20px;
+    }
+
+    .passion_billede_col {
+        margin-left: 80px;
+    }
+
     .passion_billede1 {
-        width: 550px;
+        width: 500px;
+        height: 300px;
 
     }
 
@@ -1282,7 +1294,6 @@ input[type=submit] {
 
 .styrkbrand_knap {
     margin-bottom: 30px;
-    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
 
 }
