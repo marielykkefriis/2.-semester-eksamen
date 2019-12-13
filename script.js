@@ -7,7 +7,6 @@ function sidenVises() {
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-
 }
 
 
