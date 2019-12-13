@@ -74,6 +74,7 @@ img {
     width: 100vw;
     height: 90px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -207,6 +208,7 @@ header li a {
     width: 100px;
     margin: 10px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 .insta_1 {
@@ -691,9 +693,9 @@ input[type=submit] {
     background-size: cover;
     background-position: center;
     height: 150px;
-    background-image: url(img/pink_lady_60x80.jpg);
+    background-image: url(img/se_vaerker.jpg);
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-
+    opacity: 80%;
 }
 
 .forside_vaerker_container {
@@ -728,6 +730,7 @@ input[type=submit] {
     background-size: cover;
     padding: 2rem 1rem;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 
@@ -1087,9 +1090,6 @@ input[type=submit] {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-}
-
-.kiv_billede_col {
     background-image: url(img/virksomhed_1-web-ready.JPG);
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
@@ -1097,6 +1097,7 @@ input[type=submit] {
     width: 100%;
     height: 25vh;
     margin-bottom: 30px;
+    opacity: 80%;
 
 }
 
@@ -1107,6 +1108,8 @@ input[type=submit] {
     display: flex;
     justify-content: center;
     height: 100px;
+    opacity: 80%;
+
 
 
 }
@@ -1129,12 +1132,16 @@ input[type=submit] {
     height: 25vh;
     margin-bottom: 1rem;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
+
 }
 
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
     background-color: deeppink;
+    opacity: 80%;
+
 
 }
 
@@ -1199,6 +1206,7 @@ input[type=submit] {
     padding: 15px 32px;
     width: 100%;
     height: 25vh;
+    opacity: 80%;
 
 }
 
@@ -1215,6 +1223,7 @@ input[type=submit] {
     height: 25vh;
     margin-bottom: 1rem;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 #events_workshops_billede {
@@ -1225,6 +1234,7 @@ input[type=submit] {
     width: 100%;
     height: 25vh;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1408,6 +1418,7 @@ input[type=submit] {
     height: 150px;
     display: flex;
     justify-content: center;
+    opacity: 80%;
 }
 
 #link_til_udstillinger button {
