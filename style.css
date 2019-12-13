@@ -608,7 +608,6 @@ input[type=submit] {
     .dropdown {
         position: relative;
         display: inline-block;
-        z-index: 1000;
     }
 
     /* Dropdown Content (Hidden by Default) */
@@ -642,7 +641,6 @@ input[type=submit] {
     }
 
     /**   dropdown menu slut **/
-
 
 
     .footer {
