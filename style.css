@@ -12,7 +12,62 @@
 
 /****** Generelle regler ******/
 
+/***** Breadcrumbs - *****/
 
+#breadcrumbs {
+    padding: 1rem 0;
+    display: block;
+}
+
+
+#breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0rem 2rem;
+}
+
+#breadcrumbs li {
+    display: inline;
+    color: #444B5B;
+    /*    color: var(--twelve-color);*/
+    font-size: 1rem;
+}
+
+#breadcrumbs ul li + li:before {
+    padding: 8px;
+    color: inherit;
+    content: "/\00a0";
+}
+
+/*
+#breadcrumb li:before {
+    content: " / "
+}*/
+
+#breadcrumbs li:first-child:before {
+    content: normal;
+}
+
+#breadcrumbs li a {
+    color: #444B5B;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+#breadcrumbs li:last-child a {
+    color: #E36293;
+}
+
+#breadcrumbs li:hover a,
+#breadcrumbs li:hover {
+    color: #838383;
+}
+
+
+
+/***** Breadcrumbs - Slut *****/
 
 h1 {
     font-family: 'avenir';
@@ -407,6 +462,8 @@ header li a {
     cursor: pointer;
     background-size: cover;
     justify-content: center;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 .vaelgkunst_col2 {
@@ -420,6 +477,8 @@ header li a {
     background-position: center;
     background-size: cover;
     justify-content: center;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -447,6 +506,8 @@ header li a {
     height: 180px;
     margin-bottom: 1rem;
     opacity: 80%;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
 }
 
 
@@ -863,6 +924,7 @@ input[type=submit] {
 
 #enkeltside .billede {
     background-position: cover;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -908,6 +970,8 @@ input[type=submit] {
     height: 180px;
     margin-bottom: 1rem;
     opacity: 80%;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    margin-top: 20px;
 }
 
 
