@@ -552,12 +552,12 @@ input[type=submit] {
         transform: scale(1.2);
     }
 
-    <<<<<<< HEAD <<<<<<< HEAD .menupunkt_valgt {
+    .menupunkt_valgt {
         text-decoration: none;
         border-bottom: solid #E36293;
     }
 
-    ======= > > > > > > > origin/master======= > > > > > > > origin/master header li:first-child {
+    header li:first-child {
         margin-top: 40px;
     }
 
@@ -591,7 +591,7 @@ input[type=submit] {
         height: 100px;
         width: 70%;
         margin-right: 20px;
-        <<<<<<< HEAD
+
     }
 
     .burger_logo {
@@ -611,27 +611,9 @@ input[type=submit] {
         display: inline-block;
     }
 
-    =======
 }
 
-.burger_logo {
-    display: none;
-}
 
-/**   dropdown menu start  **/
-
-.dropdown_pil {
-    width: 15px;
-    height: 15px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-> > > > > > > origin/master
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -1057,8 +1039,8 @@ input[type=submit] {
 #om_catrine {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    padding: 15px 32px;
+    margin: 0 1px;
 }
 
 .catrine_billede {
@@ -1067,8 +1049,17 @@ input[type=submit] {
     opacity: 80%;
     width: 300px;
     height: 300px;
+    margin: auto;
+
+}
+
+.om_catrine_col {
+    margin-bottom: 30px;
+
+    /*
     margin: 25px 15px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+*/
 }
 
 /*
@@ -1081,25 +1072,24 @@ input[type=submit] {
 
 #video_om {
     background-color: hotpink;
-    width: 200vw;
-    height: 50vh;
-    top: 0px;
-    right: 200px;
+    width padding: 15px 32px;
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
 
 }
 
 #om_passion {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
-    padding: 15px 32px;
+    margin: 0 1px;
 
 
 }
 
 .passion_tekst_col {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .passion_billede_col {
@@ -1162,13 +1152,14 @@ input[type=submit] {
     background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: center;
-    height: 150px;
+    width: 100%;
+    height: 120px;
 
 }
 
 .om_udstillinger_container,
 .knap {
-    margin-top: 30px;
+    margin-top: 22px;
     padding: 15px 32px;
 
 }
@@ -1176,7 +1167,8 @@ input[type=submit] {
 @media only screen and (min-width: 750px) {
 
     #om_catrine {
-        padding: 3rem 2rem;
+        margin: 50px 130px;
+        padding: 3px 2px;
     }
 
     .om_catrine_container {
@@ -1193,19 +1185,25 @@ input[type=submit] {
         margin: 0 50px;
     }
 
+
     .catrine_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        width: 300px;
+        height: 460px;
+        margin-top: 15px;
     }
 
+
     #om_passion {
-        padding: 3rem 2rem;
+        margin: 50px 130px;
+        padding: 3px 2px;
         display: flex;
         flex-wrap: nowrap;
     }
 
     .passion_billede1 {
-        width: 650px;
+        width: 550px;
 
     }
 
@@ -1213,72 +1211,77 @@ input[type=submit] {
     #om_udstillinger {
         display: flex;
         justify-content: center;
-        width: 100%;
-        height: 35vh;
+
     }
-
-    .om_udstillinger_container {
-        padding: 80px;
-    }
-
-
 
 }
 
 /******   Kunst i virksomheden   ******/
 
 #kiv_kiv {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    margin: 0 1px;
+}
+
+.kiv_tekst_col {
+    margin-bottom: 30px;
 }
 
 .kiv_billede_col {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
     background-image: url(img/virksomhed_1-web-ready.JPG);
-    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 30px;
     opacity: 80%;
+    box-shadow: 0px 7px 8px #888888;
+    width: 350px;
+    height: 240px;
+    margin: auto;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
+    /*
+    display: flex;
+    flex-wrap: wrap;
+*/
 
 }
 
 #kiv_vaerker {
     background-image: url(img/se_vaerker.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 0 -162px;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     opacity: 80%;
-
-
-
 }
 
 .kiv_vaerker_container {
-    margin-top: 10px;
+    margin-top: 22px;
     padding: 15px 32px;
 }
 
 #kiv_styrkbrand {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    margin: 0 1px;
 }
 
 .styrkbrand_billede {
-    background-color: blue;
+    background-image: url(img/bluewawes%20med%20baggrund.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 25vh;
-    margin-bottom: 1rem;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.styrkbrand_knap {
+    margin-bottom: 30px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
 
@@ -1287,22 +1290,32 @@ input[type=submit] {
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
-    background-color: deeppink;
+    background-image: url(img/se_udstillinger.jpg);
+    background-size: cover;
+
+    height: 120px;
     opacity: 80%;
 
 
 }
 
 .kiv_udstillinger_container {
+    margin-top: 22px;
     padding: 15px 32px;
 }
 
 @media only screen and (min-width: 750px) {
     #kiv_kiv {
+        padding: 15px 32px;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row-reverse;
         padding: 80px;
+
+    }
+
+    .kiv_billede_col {
+        width: 400px;
+        margin: 0 50px;
 
     }
 
@@ -1313,15 +1326,10 @@ input[type=submit] {
         margin: 0 50px;
     }
 
-    .kiv_billede_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
 
     #kiv_styrkbrand {
-        padding: 3rem 2rem;
+        padding: 15px 32px;
+        padding: 80px;
     }
 
     .kiv_styrkbrand_container {
@@ -1334,44 +1342,61 @@ input[type=submit] {
         flex-basis: 200px;
         flex-grow: 1;
         margin: 0 50px;
+
     }
 
     .styrkbrand_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        margin: 0 50px;
     }
 }
 
 /******   Events   ******/
 #events_udstillinger {
     padding: 15px 32px;
+
 }
 
 #events_billede {
-    display: flex;
-    justify-content: center;
-    background-color: deeppink;
-    padding: 15px 32px;
-    width: 100%;
-    height: 25vh;
+    background-image: url(img/workshop_1.jpg);
+    background-size: cover;
+    background-position: center;
     opacity: 80%;
+    width: 100%;
+    height: 120px;
+    /*
+    padding: 15px 32px;
+
+*/
 
 }
 
 #events_workshops {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+
+}
+
+.workshops_knap {
+    margin-bottom: 25px;
 }
 
 .workshops_billede {
-    background-color: blue;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 1rem;
-    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    background-image: url(img/daase.jpg);
+    background-size: cover;
+    background-position: center;
     opacity: 80%;
+    width: 300px;
+    height: 40px;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin: auto;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
 }
 
 #events_workshops_billede {
@@ -1380,14 +1405,27 @@ input[type=submit] {
     background-color: deeppink;
     padding: 15px 32px;
     width: 100%;
-    height: 25vh;
+    height: 25px;
+    margin-top: 25px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
 }
 
 @media only screen and (min-width: 750px) {
+
+    #events_udstillinger {
+        margin: 50px 130px;
+        padding: 3px 2px;
+
+    }
+
+    #events_billede {
+        margin-bottom: 30px;
+    }
+
     #events_workshops {
-        padding: 3rem 2rem;
+        margin: 50px 80px;
+        padding: 3px 2px;
     }
 
     .events_workshops_container {
@@ -1402,9 +1440,18 @@ input[type=submit] {
         margin: 0 50px;
     }
 
+    .workshops_knap {
+        margin-top: 115px;
+    }
+
     .workshops_billede {
+        background-position: center;
+        margin-top: 20px;
         flex-basis: 200px;
         flex-grow: 1;
+        height: 400px;
+        min-height: 400px;
+
     }
 
 }
