@@ -552,19 +552,12 @@ input[type=submit] {
         transform: scale(1.2);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .menupunkt_valgt {
+    <<<<<<< HEAD <<<<<<< HEAD .menupunkt_valgt {
         text-decoration: none;
         border-bottom: solid #E36293;
     }
 
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-
-    header li:first-child {
+    ======= > > > > > > > origin/master======= > > > > > > > origin/master header li:first-child {
         margin-top: 40px;
     }
 
@@ -598,7 +591,7 @@ input[type=submit] {
         height: 100px;
         width: 70%;
         margin-right: 20px;
-<<<<<<< HEAD
+        <<<<<<< HEAD
     }
 
     .burger_logo {
@@ -618,94 +611,93 @@ input[type=submit] {
         display: inline-block;
     }
 
-=======
-    }
+    =======
+}
 
-    .burger_logo {
-        display: none;
-    }
+.burger_logo {
+    display: none;
+}
 
-    /**   dropdown menu start  **/
+/**   dropdown menu start  **/
 
-    .dropdown_pil {
-        width: 15px;
-        height: 15px;
-    }
+.dropdown_pil {
+    width: 15px;
+    height: 15px;
+}
 
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
->>>>>>> origin/master
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.86);
-        min-width: 50px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        margin: 0 0 0 -10px;
-    }
+> > > > > > > origin/master
 
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        padding: 4px 8px;
-        margin-right: 5px;
-        text-decoration: none;
-        display: block;
-    }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.86);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0 0 0 -10px;
+}
 
-    .dropdown-content a:first-child {
-        border-bottom: solid 1px grey;
-    }
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 4px 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    display: block;
+}
 
-
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    /**   dropdown menu slut **/
+.dropdown-content a:first-child {
+    border-bottom: solid 1px grey;
+}
 
 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    .insta_billede {
-        height: 150px;
-        width: 150px;
-    }
+/**   dropdown menu slut **/
 
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align:
-    }
 
-    .footer_col {
-        flex-basis: 150px;
-        flex-grow: 1;
-        text-align: center;
-    }
 
-    .vaelgkunst_col1 {
-        max-height: 400px;
-        max-width: 400px;
-    }
+.insta_billede {
+    height: 150px;
+    width: 150px;
+}
 
-    .vaelgkunst_col2 {
-        max-height: 400px;
-        max-width: 400px;
-    }
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align:
+}
+
+.footer_col {
+    flex-basis: 150px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.vaelgkunst_col1 {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.vaelgkunst_col2 {
+    max-height: 400px;
+    max-width: 400px;
+}
 
 }
 
 /******   Forside   ******/
 #video {
-    background-image: url(img/forside_video.png);
-    background-size: cover;
     width: 100vw;
     height: 70vh;
     top: -40;
@@ -722,7 +714,7 @@ input[type=submit] {
     left: 0;
     padding: 0;
     height: 400px;
-
+    background-image: url(img/forside_video.png)
 }
 
 #splash h1,
@@ -801,7 +793,6 @@ input[type=submit] {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     opacity: 80%;
-    width: px;
     height: 50vh;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -1057,6 +1048,7 @@ input[type=submit] {
 
     #splash {
         height: 500px;
+        background-image: url(img/forside_video.png)
     }
 }
 
@@ -1538,7 +1530,7 @@ input[type=submit] {
 .billed_ramme {
     overflow: hidden;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    height: 28vw;
+    height: 60vw;
 }
 
 .billed_ramme img {
@@ -1595,6 +1587,10 @@ input[type=submit] {
         grid-template-columns: repeat(3, 1fr);
         grid-area: liste;
 
+    }
+
+    .billed_ramme {
+        height: 28vw;
     }
 
     .grid_container {
