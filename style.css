@@ -1035,76 +1035,92 @@ input[type=submit] {
 /******   Kunst i virksomheden   ******/
 
 #kiv_kiv {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    margin: 0 1px;
 }
 
-.kiv_billede_col {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.kiv_tekst_col {
+    margin-bottom: 30px;
 }
 
 .kiv_billede_col {
     background-image: url(img/virksomhed_1-web-ready.JPG);
-    box-shadow: 0px 7px 8px #888888;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: 30px;
+    opacity: 80%;
+    box-shadow: 0px 7px 8px #888888;
+    width: 350px;
+    height: 240px;
+    margin: auto;
 
 }
 
 #kiv_vaerker {
     background-image: url(img/se_vaerker.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 0 -162px;
     display: flex;
     justify-content: center;
-    height: 100px;
-
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
 .kiv_vaerker_container {
-    margin-top: 10px;
+    margin-top: 22px;
     padding: 15px 32px;
 }
 
 #kiv_styrkbrand {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+    margin: 0 1px;
 }
 
 .styrkbrand_billede {
-    background-color: blue;
+    background-image: url(img/bluewawes%20med%20baggrund.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 25vh;
-    margin-bottom: 1rem;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.styrkbrand_knap {
+    margin-bottom: 30px;
 }
 
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
-    background-color: deeppink;
+    background-image: url(img/se_udstillinger.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120px;
 
 }
 
 .kiv_udstillinger_container {
+    margin-top: 22px;
     padding: 15px 32px;
 }
 
 @media only screen and (min-width: 750px) {
     #kiv_kiv {
+        padding: 15px 32px;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row-reverse;
         padding: 80px;
+
+    }
+
+    .kiv_billede_col {
+        width: 400px;
+        margin: 0 50px;
 
     }
 
@@ -1115,15 +1131,10 @@ input[type=submit] {
         margin: 0 50px;
     }
 
-    .kiv_billede_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
 
     #kiv_styrkbrand {
-        padding: 3rem 2rem;
+        padding: 15px 32px;
+        padding: 80px;
     }
 
     .kiv_styrkbrand_container {
@@ -1136,17 +1147,20 @@ input[type=submit] {
         flex-basis: 200px;
         flex-grow: 1;
         margin: 0 50px;
+
     }
 
     .styrkbrand_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        margin: 0 50px;
     }
 }
 
 /******   Events   ******/
 #events_udstillinger {
     padding: 15px 32px;
+
 }
 
 #events_billede {
@@ -1164,10 +1178,10 @@ input[type=submit] {
 }
 
 #events_workshops {
+    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+
 }
 
 .workshops_knap {
@@ -1175,13 +1189,17 @@ input[type=submit] {
 }
 
 .workshops_billede {
+    display: flex;
+    align-items: center;
     background-image: url(img/daase.jpg);
     background-size: cover;
     background-position: center;
     opacity: 80%;
     width: 300px;
-    height: 40vh;
-    margin-bottom: 25px;
+    height: 40px;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    margin: auto;
 }
 
 #events_workshops_billede {
@@ -1190,12 +1208,25 @@ input[type=submit] {
     background-color: deeppink;
     padding: 15px 32px;
     width: 100%;
-    height: 25vh;
+    height: 25px;
+    margin-top: 25px;
 }
 
 @media only screen and (min-width: 750px) {
+
+    #events_udstillinger {
+        margin: 50px 130px;
+        padding: 3px 2px;
+
+    }
+
+    #events_billede {
+        margin-bottom: 30px;
+    }
+
     #events_workshops {
-        padding: 3rem 2rem;
+        margin: 50px 80px;
+        padding: 3px 2px;
     }
 
     .events_workshops_container {
@@ -1210,9 +1241,18 @@ input[type=submit] {
         margin: 0 50px;
     }
 
+    .workshops_knap {
+        margin-top: 115px;
+    }
+
     .workshops_billede {
+        background-position: center;
+        margin-top: 20px;
         flex-basis: 200px;
         flex-grow: 1;
+        height: 400px;
+        min-height: 400px;
+
     }
 
 }
