@@ -11,6 +11,8 @@
 
 /****** Generelle regler ******/
 
+
+
 h1 {
     font-family: 'avenir';
     font-weight: 100;
@@ -40,7 +42,7 @@ button {
     color: white;
     font-size: 1rem;
     font-weight: 200;
-    box-shadow: 0px 7px 8px rgba(68, 75, 91, 0.65);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 
 }
@@ -50,17 +52,7 @@ button:hover {
     transition: 0.5s;
 }
 
-@media only screen and (min-width: 750px) {
-    h1 {
-        font-size: 2.5rem;
 
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.5;
-    }
-}
 
 *,
 html * {
@@ -81,7 +73,8 @@ img {
     background-size: cover;
     width: 100vw;
     height: 90px;
-    box-shadow: 0px 2px 6px 1px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -124,6 +117,7 @@ header {
 
 #menuknap {
     font-size: 2.5rem;
+    font-family: 'avenir';
     position: absolute;
     right: 35px;
     top: 20px;
@@ -131,6 +125,7 @@ header {
     color: #444C59;
     cursor: pointer;
     z-index: 3;
+
 }
 
 
@@ -145,8 +140,26 @@ header {
     width: 100vw;
     z-index: 2;
     font-family: 'avenir';
-    font-style: uppercase;
     color: #444C59;
+}
+
+.menupunkt_valgt {
+    text-decoration: underline solid #E36293;
+}
+
+#menu li:last-child {
+    margin: auto;
+}
+
+.burger_logo {
+    margin: auto;
+}
+
+.burger_logo div {
+    background-image: url(img/logo_signature_blaa.svg);
+    width: 250px;
+    height: 90px;
+    margin: auto;
 }
 
 .forside #menu {
@@ -154,12 +167,11 @@ header {
 }
 
 .forside #menuknap {
-    color: white;
+    color: #444C59;
 }
 
 .forside li a {
     color: #444C59;
-    font-style: uppercase;
 }
 
 header li {
@@ -168,20 +180,35 @@ header li {
 }
 
 header li:first-child {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 header li a {
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.4;
     margin-left: 50px;
     color: #444C59;
     font-style: uppercase;
 }
 
+.dropdown-content {
+    margin-left: 40px;
+}
+
+.dropdown-content a {
+    line-height: 50px;
+}
+
+.dropdown_pil {
+    background-color: #8900ff;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
 
 
 /******   Footer   *******/
@@ -204,14 +231,63 @@ header li a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    object-fit: cover;
 
 }
 
-.insta_billede {
+.insta_billede_1,
+.insta_billede_2,
+.insta_billede_3,
+.insta_billede_4,
+.insta_billede_5,
+.insta_billede_6 {
     height: 100px;
     width: 100px;
-    background-color: antiquewhite;
     margin: 10px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
+}
+
+.insta_1 {
+    background-image: url(img/instagram_1.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_2 {
+    background-image: url(img/instagram_2.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_3 {
+    background-image: url(img/instagram_3.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_4 {
+    background-image: url(img/instagram_4.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_5 {
+    background-image: url(img/instagram_5.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.insta_6 {
+    background-image: url(img/instagram_6.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
 }
 
 .footer_signatur {
@@ -269,12 +345,11 @@ footer a {
 
 .instagram {
     background-image: url(img/instagram_logo_white.png);
-
 }
+
 
 .facebook {
     background-image: url(img/facebook_logo_white.png);
-
 }
 
 
@@ -359,7 +434,7 @@ input[type=text],
 select,
 textarea {
     background-color: #E1E9F3;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     border: none;
     width: 100%;
     /* Full width */
@@ -422,7 +497,7 @@ input[type=submit] {
 .nyhedsbrev_container select,
 .nyhedsbrev_container textarea {
     background-color: white;
-    box-shadow: 0px 5px 7px rgba(68, 75, 91, 0.65);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     border: none;
     margin: 0;
     border-radius: 0;
@@ -431,8 +506,8 @@ input[type=submit] {
     padding: 12px;
     /* Some padding */
     box-sizing: border-box;
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 .nyhedsbrev_container input[type=submit] {
@@ -443,7 +518,7 @@ input[type=submit] {
     cursor: pointer;
     border-radius: 0;
     width: 50%;
-    box-shadow: 0px 7px 8px 3px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -455,7 +530,7 @@ input[type=submit] {
 
 /******   Media   ******/
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
     header {
         position: sticky;
 
@@ -478,9 +553,9 @@ input[type=submit] {
     }
 
     .menupunkt_valgt {
-        text-decoration: underline solid #E36293;
+        text-decoration: none;
+        border-bottom: solid #E36293;
     }
-
 
     header li:first-child {
         margin-top: 40px;
@@ -515,42 +590,96 @@ input[type=submit] {
         text-align: right;
         height: 100px;
         width: 70%;
+        margin-right: 20px;
+
     }
 
-    .insta_billede {
-        height: 150px;
-        width: 150px;
+    .burger_logo {
+        display: none;
     }
 
-    .footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align:
+    /**   dropdown menu start  **/
+
+    .dropdown_pil {
+        width: 15px;
+        height: 15px;
     }
 
-    .footer_col {
-        flex-basis: 150px;
-        flex-grow: 1;
-        text-align: center;
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
     }
 
-    .vaelgkunst_col1 {
-        max-height: 400px;
-        max-width: 400px;
-    }
+}
 
-    .vaelgkunst_col2 {
-        max-height: 400px;
-        max-width: 400px;
-    }
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.86);
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 0 0 0 -10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 4px 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:first-child {
+    border-bottom: solid 1px grey;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/**   dropdown menu slut **/
+
+
+
+.insta_billede {
+    height: 150px;
+    width: 150px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align:
+}
+
+.footer_col {
+    flex-basis: 150px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.vaelgkunst_col1 {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.vaelgkunst_col2 {
+    max-height: 400px;
+    max-width: 400px;
+}
 
 }
 
 /******   Forside   ******/
 #video {
-    background-image: url(img/IMG_2539.JPG);
-    background-size: cover;
     width: 100vw;
     height: 70vh;
     top: -40;
@@ -562,12 +691,12 @@ input[type=submit] {
 
 #splash {
     color: black;
-    /*   overflow: hidden;*/
     overflow: hidden;
     top: 0;
     left: 0;
     padding: 0;
-
+    height: 400px;
+    background-image: url(img/forside_video.png)
 }
 
 #splash h1,
@@ -581,12 +710,24 @@ input[type=submit] {
     max-width: 1200px;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-row-gap: 1rem;
+    grid-row-gap: 0rem;
     margin: 0 1rem;
     position: absolute;
     z-index: 1;
-    top: 0px;
+    top: 80px;
     left: -10px;
+}
+
+#splash h1 {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    letter-spacing: 1rem;
+
+}
+
+#splash p {
+    font-style: oblique;
+    font-size: 1rem;
 }
 
 /*
@@ -631,10 +772,9 @@ input[type=submit] {
 
 .nyhed_billede {
     background-image: url(img/nyhed.JPG);
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     opacity: 80%;
-    width: px;
     height: 50vh;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -655,7 +795,9 @@ input[type=submit] {
     background-size: cover;
     background-position: center;
     height: 150px;
-    background-image: url(img/pink_lady_60x80.jpg);
+    background-image: url(img/se_vaerker.jpg);
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 
 }
 
@@ -665,11 +807,13 @@ input[type=submit] {
 
 }
 
+
 #forside_kiv {
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 1rem 0;
     margin: 0 1rem;
+
 }
 
 .forside_kiv_billede {
@@ -680,6 +824,7 @@ input[type=submit] {
     height: 50vh;
     margin-bottom: 30px;
     margin-top: 30px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
 
@@ -688,8 +833,10 @@ input[type=submit] {
     background-image: url(img/om_kort.jpg);
     background-size: cover;
     padding: 2rem 1rem;
-
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
+
 
 #forside_om h1 {
     color: white;
@@ -706,9 +853,12 @@ input[type=submit] {
     max-width: 1200px;
     margin: 0 1rem;
     left: -10px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 @media only screen and (min-width: 600px) {
+
+
 
     #forside_nyhed {
         padding: 3rem 2rem;
@@ -858,6 +1008,30 @@ input[type=submit] {
     .kontakt_billede {
         margin-top: 22vh;
     }
+
+    .splash_container {
+        padding: 2rem 1rem 0;
+        max-width: 800px;
+        top: 60px;
+        left: 65px;
+    }
+
+    #splash h1 {
+        font-size: 7rem;
+        line-height: 6rem;
+        letter-spacing: 1rem;
+
+    }
+
+    #splash p {
+        font-style: oblique;
+        font-size: 1.5rem;
+    }
+
+    #splash {
+        height: 500px;
+        background-image: url(img/forside_video.png)
+    }
 }
 
 /******   Om   ******/
@@ -881,6 +1055,11 @@ input[type=submit] {
 
 .om_catrine_col {
     margin-bottom: 30px;
+
+    /*
+    margin: 25px 15px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+*/
 }
 
 /*
@@ -922,7 +1101,7 @@ input[type=submit] {
 .passion_billede1 {
     background-image: url(img/nyhed.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 300px;
     height: 300px;
     /*    margin-bottom: 5rem;*/
@@ -940,7 +1119,7 @@ input[type=submit] {
 .passion_billede2 {
     background-image: url(img/vaersted_3.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
     height: 170px;
     margin-bottom: 1rem;
@@ -955,7 +1134,7 @@ input[type=submit] {
 .passion_billede3 {
     background-image: url(img/IMG_2539.JPG);
     background-size: cover;
-    box-shadow: 0px 7px 8px #888888;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
     height: 170px;
     margin-bottom: 1rem;
@@ -1059,6 +1238,12 @@ input[type=submit] {
     width: 350px;
     height: 240px;
     margin: auto;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
+    /*
+    display: flex;
+    flex-wrap: wrap;
+*/
 
 }
 
@@ -1071,7 +1256,7 @@ input[type=submit] {
     height: 120px;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    opacity: 80%;
 }
 
 .kiv_vaerker_container {
@@ -1097,6 +1282,9 @@ input[type=submit] {
 
 .styrkbrand_knap {
     margin-bottom: 30px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
+
 }
 
 #kiv_udstillinger {
@@ -1104,8 +1292,10 @@ input[type=submit] {
     justify-content: center;
     background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
-    background-position: center;
+
     height: 120px;
+    opacity: 80%;
+
 
 }
 
@@ -1205,6 +1395,8 @@ input[type=submit] {
     background-repeat: no-repeat;
     min-height: 400px;
     margin: auto;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+
 }
 
 #events_workshops_billede {
@@ -1215,6 +1407,8 @@ input[type=submit] {
     width: 100%;
     height: 25px;
     margin-top: 25px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1382,6 +1576,8 @@ input[type=submit] {
 
 .billed_ramme {
     overflow: hidden;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    height: 60vw;
 }
 
 .billed_ramme img {
@@ -1417,11 +1613,12 @@ input[type=submit] {
     height: 150px;
     display: flex;
     justify-content: center;
-
+    opacity: 80%;
 }
 
 #link_til_udstillinger button {
     margin-top: 50px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 /*
@@ -1437,6 +1634,10 @@ input[type=submit] {
         grid-template-columns: repeat(3, 1fr);
         grid-area: liste;
 
+    }
+
+    .billed_ramme {
+        height: 28vw;
     }
 
     .grid_container {
@@ -1461,4 +1662,16 @@ input[type=submit] {
         margin-right: 10px;
     }
 
+}
+
+@media only screen and (min-width: 750px) {
+    h1 {
+        font-size: 2.5rem;
+
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
 }
