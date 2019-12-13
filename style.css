@@ -117,6 +117,7 @@ header {
 
 #menuknap {
     font-size: 2.5rem;
+    font-family: 'avenir';
     position: absolute;
     right: 35px;
     top: 20px;
@@ -124,6 +125,7 @@ header {
     color: #444C59;
     cursor: pointer;
     z-index: 3;
+
 }
 
 
@@ -139,6 +141,25 @@ header {
     z-index: 2;
     font-family: 'avenir';
     color: #444C59;
+}
+
+.menupunkt_valgt {
+    text-decoration: underline solid #E36293;
+}
+
+#menu li:last-child {
+    margin: auto;
+}
+
+.burger_logo {
+    margin: auto;
+}
+
+.burger_logo div {
+    background-image: url(img/logo_signature_blaa.svg);
+    width: 250px;
+    height: 90px;
+    margin: auto;
 }
 
 .forside #menu {
@@ -159,18 +180,34 @@ header li {
 }
 
 header li:first-child {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 header li a {
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.4;
     margin-left: 50px;
     color: #444C59;
     font-style: uppercase;
+}
+
+.dropdown-content {
+    margin-left: 40px;
+}
+
+.dropdown-content a {
+    line-height: 50px;
+}
+
+.dropdown_pil {
+    background-color: #8900ff;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 
@@ -493,7 +530,7 @@ input[type=submit] {
 
 /******   Media   ******/
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1000px) {
     header {
         position: sticky;
 
@@ -515,11 +552,14 @@ input[type=submit] {
         transform: scale(1.2);
     }
 
+<<<<<<< HEAD
     .menupunkt_valgt {
         text-decoration: none;
         border-bottom: solid #E36293;
     }
 
+=======
+>>>>>>> origin/master
 
     header li:first-child {
         margin-top: 40px;
@@ -554,7 +594,58 @@ input[type=submit] {
         text-align: right;
         height: 100px;
         width: 70%;
+        margin-right: 20px;
     }
+
+    .burger_logo {
+        display: none;
+    }
+
+    /**   dropdown menu start  **/
+
+    .dropdown_pil {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.86);
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin: 0 0 0 -10px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        padding: 4px 8px;
+        margin-right: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:first-child {
+        border-bottom: solid 1px grey;
+    }
+
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /**   dropdown menu slut **/
+
+
 
     .insta_billede {
         height: 150px;
