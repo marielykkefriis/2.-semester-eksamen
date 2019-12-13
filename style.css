@@ -316,21 +316,25 @@ header li a {
 
 
 #forside_vaerker {
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    height: 150px;
+    text-align: center;
     background-image: url(img/se_vaerker.jpg);
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
+    height: 150px;
+    margin-top: 0vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+#forside_vaerker img {
+    width: 100%;
 }
 
 .forside_vaerker_container {
-    padding: 15px 32px;
-    margin-top: 30px;
-
+    padding: auto;
+    padding-top: 60px;
+    height: 120px;
 }
 
 
@@ -390,26 +394,32 @@ header li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 30px 0px;
 }
 
 .vaelgkunst_col1 {
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
+    width: 80vw;
+    height: 80vw;
+    background-image: url(img/trash_60x80.jpg);
     margin: 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    background-size: cover;
+    justify-content: center;
 }
 
 .vaelgkunst_col2 {
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
+    width: 80vw;
+    height: 80vw;
+    background-image: url(img/skull_blue.jpg);
     margin: 20px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
 
 }
 
@@ -430,9 +440,13 @@ header li a {
 */
 
 .vaelgkunst_billede {
-    width: 100vw;
-    height: 250px;
-    background-color: aquamarine;
+    background-image: url(img/afsnitsdeling.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+    opacity: 80%;
 }
 
 
@@ -591,6 +605,7 @@ input[type=submit] {
 }
 */
 
+
 #video_om {
     background-color: hotpink;
     width padding: 15px 32px;
@@ -599,6 +614,13 @@ input[type=submit] {
     margin-top: 30px;
 
 }
+
+
+#virksomhedsvideo {
+    opacity: 80%;
+}
+
+
 
 #om_passion {
     padding: 15px 32px;
@@ -706,7 +728,7 @@ input[type=submit] {
     opacity: 80%;
     box-shadow: 0px 7px 8px #888888;
     width: 350px;
-    height: 240px;
+    height: 300px;
     margin: auto;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
@@ -781,16 +803,12 @@ input[type=submit] {
 
 #events_billede {
     background-image: url(img/workshop_1.jpg);
+    width: 100vw;
+    height: 200px;
+    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    opacity: 80%;
     background-size: cover;
     background-position: center;
-    opacity: 80%;
-    width: 100%;
-    height: 120px;
-    /*
-    padding: 15px 32px;
-
-*/
-
 }
 
 #events_workshops {
@@ -823,13 +841,14 @@ input[type=submit] {
 #events_workshops_billede {
     display: flex;
     justify-content: center;
-    background-color: deeppink;
-    padding: 15px 32px;
-    width: 100%;
-    height: 25px;
-    margin-top: 25px;
+    background-image: url(img/workshop_2.jpg);
+    width: 100vw;
+    height: 200px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
 }
 
 
@@ -842,10 +861,14 @@ input[type=submit] {
     padding: 0 1.5rem;
 }
 
+#enkeltside .billede {
+    background-position: cover;
+
+}
+
 #enkeltside img {
-    padding: 0 1.5rem;
-    width: 375px;
-    height: 375px;
+    width: 80%;
+
 }
 
 .specifikationer {
@@ -882,8 +905,9 @@ input[type=submit] {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 25vh;
+    height: 180px;
     margin-bottom: 1rem;
+    opacity: 80%;
 }
 
 
@@ -1041,9 +1065,13 @@ input[type=submit] {
 
 .footer_signatur {
     background-image: url(img/logo_signature_blaa.svg);
-    margin: auto;
+    margin: 20px auto;
     width: 220px;
     height: 70px;
+}
+
+.instagram_wrapper h2 {
+    margin: 30px auto;
 }
 
 .footer {
@@ -1129,7 +1157,6 @@ footer a {
 @media only screen and (min-width: 600px) {
 
 
-
     #forside_nyhed {
         padding: 15px 32px;
         margin: 50px 1px;
@@ -1172,18 +1199,7 @@ footer a {
         margin: 0 50px;
     }
 
-    #forside_vaerker {
-        display: flex;
-        justify-content: center;
-        margin: 50px 1px;
-        width: 100%;
-        height: 180px;
-        background-position: 0 -720px;
-    }
 
-    .forside_vaerker_container {
-        margin: 50px;
-    }
 
     #forside_kiv {
         padding: 15px 32px;
@@ -1371,6 +1387,8 @@ footer a {
 
     #events_billede {
         margin-bottom: 30px;
+        height: 300px;
+        background-position: 0% 220%;
     }
 
     #events_workshops {
@@ -1417,7 +1435,7 @@ footer a {
     }
 
     .kiv_billede_col {
-        width: 400px;
+        width: 500px;
         margin: 0 50px;
 
     }
@@ -1493,7 +1511,6 @@ footer a {
     }
 
 
-
     .catrine_billede {
         flex-basis: 200px;
         flex-grow: 1;
@@ -1531,8 +1548,14 @@ footer a {
 
     }
 
-}
 
+    #events_workshops_billede {
+        height: 300px;
+        margin-top: 20px;
+        background-position: 0% 320%;
+    }
+
+}
 
 /*MEDIA Q PÅ 900PX*/
 
