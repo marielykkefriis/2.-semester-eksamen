@@ -92,13 +92,17 @@ header {
     justify-content: space-between;
     width: 100vw;
     height: 100px;
+}
 
+
+.forside {
+    position: absolute;
+    margin-top: -5px;
 }
 
 .logo {
     background-image: url();
     background-size: cover;
-    background-color: #8a7fe2;
     margin: 10px 10px;
     width: 220px;
     height: 70px;
@@ -140,14 +144,22 @@ header {
     height: 100vh;
     width: 100vw;
     z-index: 2;
+    font-family: 'avenir';
+    font-style: uppercase;
+    color: #444C59;
 }
 
 .forside #menu {
-    background-color: transparent;
+    background-color: white;
+}
+
+.forside #menuknap {
+    color: white;
 }
 
 .forside li a {
-    color: white;
+    color: #444C59;
+    font-style: uppercase;
 }
 
 header li {
@@ -163,14 +175,12 @@ header li a {
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    color: white;
     font-size: 1.5rem;
     line-height: 2.4;
     margin-left: 50px;
     color: #444C59;
+    font-style: uppercase;
 }
-
-
 
 
 
@@ -480,6 +490,18 @@ input[type=submit] {
         margin-right: 20px;
     }
 
+    .forside #menu {
+        background-color: transparent;
+    }
+
+    .forside li a {
+        color: white;
+    }
+
+    .forside a {
+        font-style: uppercase;
+
+    }
 
     #menuknap {
         display: none;
@@ -542,7 +564,8 @@ input[type=submit] {
     color: black;
     /*   overflow: hidden;*/
     overflow: hidden;
-    position: relative;
+    top: 0;
+    left: 0;
     padding: 0;
 
 }
@@ -629,10 +652,10 @@ input[type=submit] {
 #forside_vaerker {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_vaerker.jpg);
     background-size: cover;
     background-position: center;
     height: 150px;
+    background-image: url(img/pink_lady_60x80.jpg);
 
 }
 
@@ -713,7 +736,7 @@ input[type=submit] {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 35vh;
+        height: 25vh;
     }
 
     .forside_vaerker_container {
@@ -749,8 +772,8 @@ input[type=submit] {
     }
 
     #forside_om {
-        background-color: yellow;
         padding: 3rem 2rem;
+        background-position: 0 -250px;
     }
 
     .forside_om_col {
