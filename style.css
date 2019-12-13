@@ -759,10 +759,10 @@ input[type=submit] {
 }
 
 #forside_nyhed {
+    padding: 15px 32px;
+    margin: 0 1px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
 }
 
 .nyhed_billede {
@@ -804,10 +804,11 @@ input[type=submit] {
 
 
 #forside_kiv {
+    padding: 15px 32px;
+    margin: 0 1px;
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem 1rem 0;
-    margin: 0 1rem;
+
 
 }
 
@@ -825,9 +826,10 @@ input[type=submit] {
 
 
 #forside_om {
+    padding: 15px 32px;
+    margin: 0 1px;
     background-image: url(img/om_kort.jpg);
     background-size: cover;
-    padding: 2rem 1rem;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
 }
@@ -856,12 +858,25 @@ input[type=submit] {
 
 
     #forside_nyhed {
-        padding: 3rem 2rem;
+        padding: 15px 32px;
+        margin: 50px 1px;
+    }
+
+    #forside_kiv {
+        padding: 15px 32px;
+        margin: 50px 1px;
+    }
+
+    #forside_om {
+        padding: 15px 32px;
+        margin: 0 1px;
+        margin: 50px 1px;
     }
 
     .forside_nyhed_container {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 50px;
 
     }
 
@@ -875,21 +890,25 @@ input[type=submit] {
     .nyhed_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        margin: 0 50px;
     }
 
     #forside_vaerker {
         display: flex;
         justify-content: center;
+        margin: 50px 1px;
         width: 100%;
-        height: 25vh;
+        height: 180px;
+        background-position: 0 -720px;
     }
 
     .forside_vaerker_container {
-        padding: 80px;
+        margin: 50px;
     }
 
     #forside_kiv {
-        padding: 3rem 2rem;
+        padding: 15px 32px;
+        margin: 0 1px;
     }
 
     .forside_kiv_container {
@@ -914,10 +933,11 @@ input[type=submit] {
     .forside_kiv_billede {
         flex-basis: 200px;
         flex-grow: 1;
+        margin: 0 50px;
     }
 
     #forside_om {
-        padding: 3rem 2rem;
+        padding: 15px 32px;
         background-position: 0 -250px;
     }
 
