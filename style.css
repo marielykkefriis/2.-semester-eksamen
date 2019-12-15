@@ -621,7 +621,6 @@ input[type=submit] {
 
 }
 
-
 /* Add a background color and some padding around the form */
 .formel_container {
     border-radius: 5px;
@@ -981,46 +980,38 @@ input[type=submit] {
 /****** Enkeltside ******/
 .indhold {
     display: grid;
-}
-
-.navn {
-    padding: 0 1.5rem;
+    grid-gap: 15px;
+    padding: 0 20px;
+    margin: auto;
 }
 
 #enkeltside .billede {
-    background-position: cover;
+    margin: auto;
+    overflow: hidden;
+    max-width: 400px;
+    height: 400px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-
 }
 
-#enkeltside img {
-    width: 80%;
-
-}
-
-.specifikationer {
-    padding: 1.5rem;
-}
+#enkeltside img {}
 
 .pris {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1.5rem;
     font-size: 1.3rem;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .udsalgspris {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1.5rem;
     margin-top: 0;
     font-size: 0.7rem;
 }
 
 .enkeltside_kontakt {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .enkeltside_kontakt p {
@@ -1038,9 +1029,6 @@ input[type=submit] {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
-
-
-/***********ISABELLA*************/
 
 /******* vaerker ********/
 
@@ -1438,13 +1426,15 @@ footer a {
 @media only screen and (min-width: 600px) {
 
     .indhold {
+        max-width: 1200px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "venstre op"
             "venstre midt"
             "venstre bund";
-
+        margin-bottom: 100px;
+        margin-top: 30px;
     }
 
     .indhold .navn {
@@ -1454,7 +1444,6 @@ footer a {
 
     .indhold .billede {
         grid-area: venstre;
-        margin-left: 50px;
 
     }
 
@@ -1464,15 +1453,15 @@ footer a {
 
     .indhold .pris_container {
         grid-area: bund;
+        margin-right: 90px;
 
     }
 
-
-    .enkeltside_kontakt {
+    .enkeltside_kontakt_col {
+        flex-basis: 400px;
+        flex-grow: 1;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        max-width: 250px;
+        justify-content: flex-end
     }
 
 }
