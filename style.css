@@ -158,7 +158,7 @@ header {
 }
 
 .menupunkt_valgt {
-    text-decoration: underline solid #E36293;
+    text-decoration: underline wavy #E36293;
 }
 
 #menu li:last-child {
@@ -1619,6 +1619,7 @@ footer a {
     .menupunkt_valgt {
         text-decoration: none;
         border-bottom: solid #E36293;
+        height: 30px;
     }
 
     header li:first-child {
@@ -1635,7 +1636,10 @@ footer a {
 
     .forside li a {
         color: white;
+
     }
+
+
 
     .forside a {
         font-style: uppercase;
@@ -1748,7 +1752,7 @@ footer a {
         background-size: 100%;
         position: absolute;
         z-index: 1;
-        top: 63%;
+        top: 450px;
         left: 48%;
     }
 
