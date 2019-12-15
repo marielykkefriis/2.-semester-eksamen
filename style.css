@@ -913,8 +913,8 @@ input[type=submit] {
 
 /******   Events   ******/
 #events_udstillinger {
-    padding: 15px 32px;
-
+    margin: auto;
+    text-align: center;
 }
 
 #events_billede {
@@ -928,27 +928,37 @@ input[type=submit] {
 }
 
 #events_workshops {
-    padding: 15px 32px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.events_workshops_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 0;
+}
 
+.events_workshops_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
 }
 
 .workshops_knap {
-    margin-bottom: 25px;
+    margin: 30px 0;
 }
 
 .workshops_billede {
-    display: flex;
-    align-items: center;
     background-image: url(img/daase.jpg);
     background-size: cover;
     background-position: center;
     opacity: 80%;
-    width: 300px;
-    height: 40px;
-    background-repeat: no-repeat;
-    min-height: 400px;
+    max-width: 400px;
+    height: 400px;
     margin: auto;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
@@ -1509,61 +1519,22 @@ footer a {
 
 /* MEDIA PÅ MIN 750PX */
 
-@media only screen and (min-width: 750px) {
-
-    #events_udstillinger {
-        margin: 50px 130px;
-        padding: 3px 2px;
-
-    }
-
-    #events_billede {
-        margin-bottom: 30px;
-        height: 300px;
-        background-position: 0% 220%;
-    }
-
-    #events_workshops {
-        margin: 50px 80px;
-        padding: 3px 2px;
-    }
-
-    .events_workshops_container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .events_workshops_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .workshops_knap {
-        margin-top: 115px;
-    }
-
-    .workshops_billede {
-        background-position: center;
-        margin-top: 20px;
-        flex-basis: 200px;
-        flex-grow: 1;
-        height: 400px;
-        min-height: 400px;
-
-    }
-
-}
-
 
 @media only screen and (min-width: 750px) {
+
+    h1 {
+        font-size: 2.5rem;
+
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
     #kiv_kiv {
         flex-direction: row-reverse;
     }
-
-
-
 
     #kiv_styrkbrand {
         max-width: 1100px;
@@ -1586,23 +1557,6 @@ footer a {
         max-width: 400px;
         height: 400px;
     }
-}
-
-
-@media only screen and (min-width: 750px) {
-    h1 {
-        font-size: 2.5rem;
-
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.5;
-    }
-}
-
-
-@media only screen and (min-width: 750px) {
 
 
     .om_catrine_container {
@@ -1627,6 +1581,13 @@ footer a {
         margin-top: 20px;
         background-position: 0% 320%;
     }
+
+    #events_billede {
+        margin-bottom: 30px;
+        height: 300px;
+        background-position: 0% 220%;
+    }
+
 
 }
 
