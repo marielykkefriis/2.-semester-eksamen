@@ -555,6 +555,7 @@ header li a {
 
 .kontakt_col {
     margin: auto;
+    padding: 20px;
 }
 
 .kontakt_billede {
@@ -618,7 +619,6 @@ input[type=submit] {
 /* Add a background color and some padding around the form */
 .formel_container {
     border-radius: 5px;
-    padding: 20px;
 }
 
 #kontakt_nyhedsbrev {
@@ -757,7 +757,7 @@ input[type=submit] {
 }
 
 .passion_billede2 {
-    background-image: url(img/vaersted_3.JPG);
+    background-image: url(img/vaerksted_3.JPG);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -772,7 +772,7 @@ input[type=submit] {
 }
 
 .passion_billede3 {
-    background-image: url(img/IMG_2539.JPG);
+    background-image: url(img/daase.jpg);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -1386,6 +1386,8 @@ footer a {
     .kontakt_billede {
         flex-basis: 500px;
         flex-grow: 1;
+        width: 400px;
+        height: 400px;
     }
 
 
@@ -1647,7 +1649,7 @@ footer a {
     }
 
     .passion_billede1 {
-        width: 500px;
+        width: 530px;
         height: 300px;
 
     }
@@ -1672,7 +1674,7 @@ footer a {
 
 @media only screen and (min-width: 900px) {
     .kontakt_billede {
-        margin-top: 22vh;
+        margin-top: 130px;
     }
 
     .splash_container {
