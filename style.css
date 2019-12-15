@@ -12,42 +12,7 @@
 
 /****** Generelle regler ******/
 
-
-/*******pil ned på siderne*******/
-
-#splash_arrow {
-    background-image: url(img/pink_pil.svg);
-    width: 40px;
-    height: 23px;
-    background-size: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 65%;
-    left: 48%;
-}
-
-
-
-
-.pulse {
-    animation-name: pulse_kf;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse;
-}
-
-
-
-/******knap tilbage til toppen******/
-
-
-
-
-
-
-/***** Breadcrumbs *****/
+/***** Breadcrumbs - *****/
 
 #breadcrumbs {
     padding: 1rem 0;
@@ -355,38 +320,6 @@ header li a {
     font-size: 1rem;
 }
 
-/* pile start
-
-
-.splash_arrow {
-    background-image: url();
-    background-color: #1dff00;
-    width: 100px;
-    height: 60px;
-    background-size: 100%;
-    margin-bottom: 20px;
-}
-
-.pulse {
-    animation-name: pulse_kf;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes pulse_kf {
-    0% {
-        transform: scale(1);
-
-    }
-
-    100% {
-        transform: scale(1.1);
-    }
-}
-  pile slut  */
 
 
 /*
@@ -590,7 +523,8 @@ header li a {
 
 .kontakt_col {
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+
 }
 
 .kontakt_billede {
@@ -598,8 +532,8 @@ header li a {
     background-size: cover;
     background-position: right;
     opacity: 80%;
-    width: 300px;
-    height: 300px;
+    max-width: 400px;
+    height: 400px;
     margin: auto;
 
 }
@@ -657,12 +591,15 @@ input[type=submit] {
 }
 
 #kontakt_nyhedsbrev {
-    padding: 10px;
+    padding: 20px;
+    margin-top: 20px;
+
 }
 
 .nyhedsbrev_container {
-    padding: 20px;
-
+    padding: 10px;
+    max-width: 600px;
+    margin: auto
 }
 
 
@@ -674,7 +611,7 @@ input[type=submit] {
     border: none;
     margin: 0;
     border-radius: 0;
-    width: 50%;
+    width: 80%;
     /* Full width */
     padding: 12px;
     /* Some padding */
@@ -690,7 +627,7 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     border-radius: 0;
-    width: 50%;
+    width: 80%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
@@ -792,7 +729,7 @@ input[type=submit] {
 }
 
 .passion_billede2 {
-    background-image: url(img/vaerksted_3.JPG);
+    background-image: url(img/vaersted_3.JPG);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -807,7 +744,7 @@ input[type=submit] {
 }
 
 .passion_billede3 {
-    background-image: url(img/daase.jpg);
+    background-image: url(img/IMG_2539.JPG);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -845,24 +782,30 @@ input[type=submit] {
 /******   Kunst i virksomheden   ******/
 
 #kiv_kiv {
-    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 1px;
+    margin: 0 10px;
+}
+
+.kiv_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 10px;
 }
 
 .kiv_tekst_col {
-    margin-bottom: 30px;
+    max-width: 400px;
+    margin: auto;
 }
 
-.kiv_billede_col {
+.kiv_billede {
     background-image: url(img/virksomhed_1-web-ready.JPG);
     background-size: cover;
     background-position: center;
     opacity: 80%;
     box-shadow: 0px 7px 8px #888888;
-    width: 350px;
-    height: 300px;
+    max-width: 400px;
+    height: 400px;
     margin: auto;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
@@ -884,30 +827,35 @@ input[type=submit] {
 
 }
 
-.kiv_vaerker_container {
-    margin-top: 22px;
-    padding: 15px 32px;
+#kiv_styrkbrand {
+    max-width: 1100px;
+    margin: auto;
 }
 
-#kiv_styrkbrand {
-    padding: 15px 32px;
+.kiv_vaerker_container {
+    display: flex;
     flex-wrap: wrap;
-    margin: 0 1px;
+    margin: auto;
+}
+
+.kiv_styrkbrand_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: auto;
+
 }
 
 .styrkbrand_billede {
     background-image: url(img/bluewawes%20med%20baggrund.jpg);
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
+    max-width: 400px;
+    height: 400px;
+    margin: auto;
 }
 
 .styrkbrand_knap {
-    margin-bottom: 30px;
-    opacity: 80%;
-
+    margin: 30px;
 }
 
 #kiv_udstillinger {
@@ -1416,20 +1364,21 @@ footer a {
         flex-wrap: wrap;
         max-width: 1100px;
         margin: auto;
+        padding: 0 20px;
     }
 
     .kontakt_billede {
-        flex-basis: 500px;
+        flex-basis: 400px;
         flex-grow: 1;
-        width: 400px;
-        height: 400px;
+        margin-top: 75px;
     }
 
 
     .kontakt_col {
         flex-basis: 250px;
         flex-grow: 1;
-        margin: 50px;
+        margin: auto;
+        max-width: 400px;
     }
 
     .formel_container {
@@ -1575,49 +1524,41 @@ footer a {
 
 @media only screen and (min-width: 750px) {
     #kiv_kiv {
-        padding: 15px 32px;
         display: flex;
         flex-direction: row-reverse;
-        padding: 80px;
+        max-width: 1100px;
+        margin: auto;
+        margin-bottom: 60px;
 
     }
 
     .kiv_billede_col {
         width: 500px;
-        margin: 0 50px;
 
-    }
-
-    .kiv_tekst_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
     }
 
 
     #kiv_styrkbrand {
-        padding: 15px 32px;
-        padding: 80px;
+        max-width: 1100px;
+        margin: auto;
     }
 
     .kiv_styrkbrand_container {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
     }
 
     .kiv_styrkbrand_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
+        flex-basis: 400px;
         flex-grow: 1;
-        margin: 0 50px;
+        max-width: 400px;
 
     }
 
     .styrkbrand_billede {
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
+        max-width: 400px;
+        height: 400px;
     }
 }
 
@@ -1684,7 +1625,7 @@ footer a {
     }
 
     .passion_billede1 {
-        width: 530px;
+        width: 500px;
         height: 300px;
 
     }
@@ -1708,9 +1649,6 @@ footer a {
 /*MEDIA Q PÅ 900PX*/
 
 @media only screen and (min-width: 900px) {
-    .kontakt_billede {
-        margin-top: 130px;
-    }
 
     .splash_container {
         padding: 2rem 1rem 0;
@@ -1908,8 +1846,53 @@ footer a {
         max-width: 400px;
     }
 
+    .vaelgkunst_container {
+        margin-bottom: 50px;
+    }
+
+    /** pile vis mere starter**/
+    .arrow_more_kontakt {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 580px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    .arrow_more_kiv {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 420px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+
+    .pulse {
+        animation-name: pulse_kf;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes pulse_kf {
+        0% {
+            transform: scale(1);
+
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
 }
 
+/** pile vis mere slutter**/
 
 
 /*MEDIA Q PÅ MIN 1200PX*/
