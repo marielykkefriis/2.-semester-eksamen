@@ -12,7 +12,42 @@
 
 /****** Generelle regler ******/
 
-/***** Breadcrumbs - *****/
+
+/*******pil ned på siderne*******/
+
+#splash_arrow {
+    background-image: url(img/pink_pil.svg);
+    width: 40px;
+    height: 23px;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 48%;
+}
+
+
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+
+
+/******knap tilbage til toppen******/
+
+
+
+
+
+
+/***** Breadcrumbs *****/
 
 #breadcrumbs {
     padding: 1rem 0;
@@ -524,7 +559,6 @@ header li a {
 .kontakt_col {
     margin: auto;
     padding: 10px;
-
 }
 
 .kontakt_billede {
@@ -729,7 +763,7 @@ input[type=submit] {
 }
 
 .passion_billede2 {
-    background-image: url(img/vaersted_3.JPG);
+    background-image: url(img/vaerksted_3.JPG);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -744,7 +778,7 @@ input[type=submit] {
 }
 
 .passion_billede3 {
-    background-image: url(img/IMG_2539.JPG);
+    background-image: url(img/daase.jpg);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     width: 170px;
@@ -1625,7 +1659,7 @@ footer a {
     }
 
     .passion_billede1 {
-        width: 500px;
+        width: 530px;
         height: 300px;
 
     }
@@ -1649,6 +1683,7 @@ footer a {
 /*MEDIA Q PÅ 900PX*/
 
 @media only screen and (min-width: 900px) {
+
 
     .splash_container {
         padding: 2rem 1rem 0;
