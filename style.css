@@ -816,7 +816,7 @@ input[type=submit] {
     margin: auto;
     margin-bottom: 40px;
     padding: 10px;
-    max-width: 1100px;
+    max-width: 1200px;
 }
 
 .kiv_col {
@@ -861,7 +861,7 @@ input[type=submit] {
 }
 
 #kiv_styrkbrand {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     margin-bottom: 40px;
     padding: 10px;
@@ -1348,7 +1348,7 @@ footer a {
     #kontakt {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
         padding: 0 20px;
     }
@@ -1479,7 +1479,6 @@ footer a {
     }
 
     #kiv_styrkbrand {
-        max-width: 1100px;
         margin: auto;
     }
 
