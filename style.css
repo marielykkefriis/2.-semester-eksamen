@@ -337,37 +337,6 @@ header li a {
     font-size: 1rem;
 }
 
-
-
-/*
-#parallaxfill {
-    height: 60vh;
-    z-index: -1;
-}
-.parallax-wrapper {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.parallax-wrapper::before {
-    content: "";
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(img/IMG_1078.jpg);
-    background-size: cover;
-    background-position: 30%;
-    z-index: -1;
-    transform: translateZ(-1px) scale(2);
-}
-*/
-
 .logo {
     background-image: url(img/logo_white.svg);
 }
@@ -1558,7 +1527,8 @@ footer a {
 
     #splash {
         height: 500px;
-        background-image: url(img/forside_video.png)
+        background-image: url(img/forside_video.png);
+        background-attachment: fixed;
     }
 }
 
