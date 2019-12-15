@@ -12,7 +12,42 @@
 
 /****** Generelle regler ******/
 
-/***** Breadcrumbs - *****/
+
+/*******pil ned på siderne*******/
+
+#splash_arrow {
+    background-image: url(img/pink_pil.svg);
+    width: 40px;
+    height: 23px;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 48%;
+}
+
+
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+
+
+/******knap tilbage til toppen******/
+
+
+
+
+
+
+/***** Breadcrumbs *****/
 
 #breadcrumbs {
     padding: 1rem 0;
