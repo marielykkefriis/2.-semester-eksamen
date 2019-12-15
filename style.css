@@ -2,7 +2,8 @@
 
 /******  Generelle regler *******/
 /******  Header           *******/
-/******  Navn             *******/
+/******  Nav             *******/
+/******  Breadcrumbs      *******/
 /******  Forside          *******/
 /******  Om                 *******/
 /******  Kunst i virksomheden   *******/
@@ -13,31 +14,6 @@
 /****** Generelle regler ******/
 
 
-/*******pil ned på siderne*******/
-
-#splash_arrow {
-    background-image: url(img/pink_pil.svg);
-    width: 40px;
-    height: 23px;
-    background-size: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 65%;
-    left: 48%;
-}
-
-
-
-
-.pulse {
-    animation-name: pulse_kf;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse;
-}
-
 
 
 /******knap tilbage til toppen******/
@@ -46,63 +22,6 @@
 
 
 
-
-/***** Breadcrumbs *****/
-
-#breadcrumbs {
-    padding: 1rem 0;
-    display: block;
-}
-
-
-#breadcrumbs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0rem 2rem;
-}
-
-#breadcrumbs li {
-    display: inline;
-    color: #444B5B;
-    /*    color: var(--twelve-color);*/
-    font-size: 1rem;
-}
-
-#breadcrumbs ul li + li:before {
-    padding: 8px;
-    color: inherit;
-    content: "/\00a0";
-}
-
-/*
-#breadcrumb li:before {
-    content: " / "
-}*/
-
-#breadcrumbs li:first-child:before {
-    content: normal;
-}
-
-#breadcrumbs li a {
-    color: #444B5B;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'avenir';
-    font-weight: 400;
-}
-
-#breadcrumbs li:last-child a {
-    color: #E36293;
-}
-
-#breadcrumbs li:hover a,
-#breadcrumbs li:hover {
-    color: #838383;
-}
-
-
-
-/***** Breadcrumbs - Slut *****/
 
 h1 {
     font-family: 'avenir';
@@ -153,6 +72,7 @@ html * {
 body {
     padding: 0;
     margin: 0;
+
 }
 
 img {
@@ -305,6 +225,65 @@ header li a {
 }
 
 
+
+/***** Breadcrumbs *****/
+
+#breadcrumbs {
+    padding: 1rem 0;
+    display: block;
+}
+
+
+#breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0rem 2rem;
+}
+
+#breadcrumbs li {
+    display: inline;
+    color: #444B5B;
+    /*    color: var(--twelve-color);*/
+    font-size: 1rem;
+}
+
+#breadcrumbs ul li + li:before {
+    padding: 8px;
+    color: inherit;
+    content: "/\00a0";
+}
+
+/*
+#breadcrumb li:before {
+    content: " / "
+}*/
+
+#breadcrumbs li:first-child:before {
+    content: normal;
+}
+
+#breadcrumbs li a {
+    color: #444B5B;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+#breadcrumbs li:last-child a {
+    color: #E36293;
+}
+
+#breadcrumbs li:hover a,
+#breadcrumbs li:hover {
+    color: #838383;
+}
+
+
+
+/***** Breadcrumbs - Slut *****/
+
+
 /******   Forside   ******/
 
 #video {
@@ -394,20 +373,39 @@ header li a {
 }
 
 #forside_nyhed {
-    padding: 15px 32px;
-    margin: 0 1px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.forside_nyhed_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
 }
+
+.forside_nyhed_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+}
+
+#forside_nyhed button {
+    margin: 30px 0;
+}
+
 
 .nyhed_billede {
     background-image: url(img/nyhed.JPG);
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     opacity: 80%;
-    height: 50vh;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
 
 }
 
@@ -436,21 +434,37 @@ header li a {
 
 
 #forside_kiv {
-    padding: 15px 32px;
-    margin: 0 1px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.forside_kiv_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+.forside_kiv_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 10px;
 }
 
 .forside_kiv_billede {
     background-image: url(img/virksomhed_1.jpg);
     background-size: cover;
+    margin: auto;
     opacity: 80%;
-    width: 300px;
-    height: 50vh;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    max-width: 400px;
+    height: 400px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+}
+
+.forside_kiv_container button {
+    margin: 30px 0;
 }
 
 
@@ -1272,15 +1286,11 @@ footer a {
         padding: 70px;
     }
 
-    #forside_nyhed {
-        padding: 15px 32px;
-        margin: 50px 1px;
+    .forside_nyhed_container {
+        padding: 50px 10px;
     }
 
-    #forside_kiv {
-        padding: 15px 32px;
-        margin: 50px 1px;
-    }
+
 
     #forside_om {
         padding: 15px 32px;
@@ -1292,59 +1302,13 @@ footer a {
         padding: 0 50px;
     }
 
-    .forside_nyhed_container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 50px;
 
-    }
-
-    .forside_nyhed_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .nyhed_billede {
-        width: 450px;
-        height: 300px;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-
-
-    #forside_kiv {
-        padding: 15px 32px;
-        margin: 0 1px;
-    }
 
     .forside_kiv_container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
+        padding: 50px 10px;
 
     }
 
-    .forside_kiv_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .forside_kiv_col,
-    .knap {
-        align-items:
-    }
-
-    .forside_kiv_billede {
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
 
     #forside_om {
         padding: 15px 32px;
@@ -1775,6 +1739,19 @@ footer a {
     }
 
     /** pile vis mere starter**/
+
+
+    #splash_arrow {
+        background-image: url(img/pink_pil.svg);
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 63%;
+        left: 48%;
+    }
+
     .arrow_more_kontakt {
         background-image: url(img/pink_pil.svg);
         position: relative;
