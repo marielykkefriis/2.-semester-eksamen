@@ -18,11 +18,11 @@ function toggleMenu() {
 
     if (erSkjult == true) {
         document.querySelector("#menuknap").textContent = "☰";
-        document.querySelector("section").classList = "";
+        document.querySelector("main").classList = "";
         document.querySelector("footer").classList = "";
     } else {
         document.querySelector("#menuknap").textContent = "X";
-        document.querySelector("section").classList = "hidden";
+        document.querySelector("main").classList = "hidden";
         document.querySelector("footer").classList = "hidden";
     }
 }
