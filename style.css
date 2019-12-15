@@ -487,6 +487,11 @@ header li a {
 
 /******   vaelgkunst  ******/
 
+#vaelgkunst {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .vaelgkunst_container {
     display: flex;
     flex-wrap: wrap;
@@ -521,24 +526,8 @@ header li a {
     justify-content: center;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
-
 }
 
-/*
-.vaelgkunst_knap {
-
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-
-
-
-}
-*/
 
 .vaelgkunst_billede {
     background-image: url(img/afsnitsfoto.png);
@@ -1434,7 +1423,7 @@ footer a {
             "venstre midt"
             "venstre bund";
         margin-bottom: 100px;
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     .indhold .navn {
@@ -1483,7 +1472,7 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 0.5rem;
-        grid-template-areas: "sidebar liste liste liste"
+        grid-template-areas: "sidebar liste liste liste";
     }
 
     .sidebar {
