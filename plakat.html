@@ -24,7 +24,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-<title>Plakat</title>
+    <title>Plakat</title>
 </head>
 
 
@@ -219,29 +219,33 @@
             //
             // });
 
-        }
-
-        //       Skift fotografi fra A til B
 
 
-        document.querySelector(".knap_2").addEventListener("click", visVaerk2);
+            //       Skift fotografi fra A til B
 
-        function visVaerk2() {
 
-            const liste = document.querySelector(".indhold");
-            liste.querySelector("img").src = vaerk.billede2.guid;
-            liste.querySelector("img").alt = "billede af" + vaerk.billede2.guid;
-        }
+            document.querySelector(".knap_2").addEventListener("click", visVaerk2);
 
-        //       Skift fotografi fra B til A
+            function visVaerk2() {
 
-        document.querySelector(".knap_1").addEventListener("click", visVaerk);
 
-        function visVaerk() {
+                const liste = document.querySelector(".indhold");
+                liste.querySelector("img").src = vaerk.billede2.guid;
+                liste.querySelector("img").alt = "billede af" + vaerk.billede2.guid;
+            }
 
-            const liste = document.querySelector(".indhold");
-            liste.querySelector("img").src = vaerk.billede_front.guid;
-            liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+            //       Skift fotografi fra B til A
+
+            document.querySelector(".knap_1").addEventListener("click", visVaerk);
+
+            function visVaerk() {
+
+                const liste = document.querySelector(".indhold");
+                liste.querySelector("img").src = vaerk.billede_front.guid;
+                liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+            }
+
+
         }
 
     </script>
