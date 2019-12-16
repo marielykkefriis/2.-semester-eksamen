@@ -57,7 +57,6 @@ button:hover {
 }
 
 
-
 *,
 html * {
     box-sizing: border-box;
@@ -1009,33 +1008,42 @@ input[type=submit] {
 
 /******* vaerker ********/
 
+.grid_container {
+    max-width: 1400px;
+    margin: auto;
+}
+
 .filterTekst {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .data_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
 }
+
+.filter_knapper {}
 
 .filter_knapper button {
     padding: 15px;
-    width: 100vw;
+    width: 30vw;
     background-color: #E1E9F3;
     border: none;
-    margin: 4px;
+    margin: 5px;
     color: #444B5B;
 }
 
-.filer.valgt {
-    background-color: red;
+.valgt {
+    text-decoration: underline #E36293;
 }
 
 
 .billed_ramme {
     overflow: hidden;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    height: 55vw;
+    height: 50vw;
 }
 
 .billed_ramme img {
@@ -1049,6 +1057,7 @@ input[type=submit] {
 
 #vaerker article {
     padding: 10px;
+    margin: 10px;
 }
 
 
@@ -1402,11 +1411,11 @@ footer a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-area: liste;
-
     }
 
     .billed_ramme {
-        height: 28vw;
+
+        max-height: 160px;
     }
 
     .grid_container {
@@ -1418,10 +1427,10 @@ footer a {
 
     .sidebar {
         position: fixed;
-        top: 250px;
+        top: 317px;
         left: 0;
         grid-area: sidebar;
-        width: 22vw;
+        width: 24vw;
     }
 
     .sidebar button {
