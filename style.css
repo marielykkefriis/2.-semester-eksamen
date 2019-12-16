@@ -2,7 +2,8 @@
 
 /******  Generelle regler *******/
 /******  Header           *******/
-/******  Navn             *******/
+/******  Nav             *******/
+/******  Breadcrumbs      *******/
 /******  Forside          *******/
 /******  Om                 *******/
 /******  Kunst i virksomheden   *******/
@@ -12,62 +13,15 @@
 
 /****** Generelle regler ******/
 
-/***** Breadcrumbs - *****/
-
-#breadcrumbs {
-    padding: 1rem 0;
-    display: block;
-}
-
-
-#breadcrumbs ul {
-    list-style: none;
-    padding: 0;
-    margin: 0rem 2rem;
-}
-
-#breadcrumbs li {
-    display: inline;
-    color: #444B5B;
-    /*    color: var(--twelve-color);*/
-    font-size: 1rem;
-}
-
-#breadcrumbs ul li + li:before {
-    padding: 8px;
-    color: inherit;
-    content: "/\00a0";
-}
-
-/*
-#breadcrumb li:before {
-    content: " / "
-}*/
-
-#breadcrumbs li:first-child:before {
-    content: normal;
-}
-
-#breadcrumbs li a {
-    color: #444B5B;
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'avenir';
-    font-weight: 400;
-}
-
-#breadcrumbs li:last-child a {
-    color: #E36293;
-}
-
-#breadcrumbs li:hover a,
-#breadcrumbs li:hover {
-    color: #838383;
-}
 
 
 
-/***** Breadcrumbs - Slut *****/
+/******knap tilbage til toppen******/
+
+
+
+
+
 
 h1 {
     font-family: 'avenir';
@@ -100,7 +54,6 @@ button {
     font-weight: 200;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     cursor: pointer;
-
 }
 
 button:hover {
@@ -119,10 +72,15 @@ html * {
 body {
     padding: 0;
     margin: 0;
+
 }
 
 img {
     width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header_billede {
@@ -200,7 +158,7 @@ header {
 }
 
 .menupunkt_valgt {
-    text-decoration: underline solid #E36293;
+    text-decoration: underline wavy #E36293;
 }
 
 #menu li:last-child {
@@ -267,6 +225,65 @@ header li a {
 }
 
 
+
+/***** Breadcrumbs *****/
+
+#breadcrumbs {
+    padding: 1rem 0;
+    display: block;
+}
+
+
+#breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0rem 2rem;
+}
+
+#breadcrumbs li {
+    display: inline;
+    color: #444B5B;
+    /*    color: var(--twelve-color);*/
+    font-size: 1rem;
+}
+
+#breadcrumbs ul li + li:before {
+    padding: 8px;
+    color: inherit;
+    content: "/\00a0";
+}
+
+/*
+#breadcrumb li:before {
+    content: " / "
+}*/
+
+#breadcrumbs li:first-child:before {
+    content: normal;
+}
+
+#breadcrumbs li a {
+    color: #444B5B;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+#breadcrumbs li:last-child a {
+    color: #E36293;
+}
+
+#breadcrumbs li:hover a,
+#breadcrumbs li:hover {
+    color: #838383;
+}
+
+
+
+/***** Breadcrumbs - Slut *****/
+
+
 /******   Forside   ******/
 
 #video {
@@ -320,56 +337,44 @@ header li a {
     font-size: 1rem;
 }
 
-
-
-/*
-#parallaxfill {
-    height: 60vh;
-    z-index: -1;
-}
-.parallax-wrapper {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20vh;
-    box-sizing: border-box;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.parallax-wrapper::before {
-    content: "";
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(img/IMG_1078.jpg);
-    background-size: cover;
-    background-position: 30%;
-    z-index: -1;
-    transform: translateZ(-1px) scale(2);
-}
-*/
-
 .logo {
     background-image: url(img/logo_white.svg);
 }
 
 #forside_nyhed {
-    padding: 15px 32px;
-    margin: 0 1px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.forside_nyhed_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
 }
+
+.forside_nyhed_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+    padding: 10px;
+    margin: auto;
+}
+
+#forside_nyhed button {
+    margin: 30px 0;
+}
+
 
 .nyhed_billede {
     background-image: url(img/nyhed.JPG);
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     background-size: cover;
     opacity: 80%;
-    height: 50vh;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
 
 }
 
@@ -398,21 +403,37 @@ header li a {
 
 
 #forside_kiv {
-    padding: 15px 32px;
-    margin: 0 1px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.forside_kiv_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
+}
+
+.forside_kiv_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 10px;
 }
 
 .forside_kiv_billede {
     background-image: url(img/virksomhed_1.jpg);
     background-size: cover;
+    margin: auto;
     opacity: 80%;
-    width: 300px;
-    height: 50vh;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    max-width: 400px;
+    height: 400px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+}
+
+.forside_kiv_container button {
+    margin: 30px 0;
 }
 
 
@@ -450,6 +471,11 @@ header li a {
 
 /******   vaelgkunst  ******/
 
+#vaelgkunst {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .vaelgkunst_container {
     display: flex;
     flex-wrap: wrap;
@@ -484,24 +510,8 @@ header li a {
     justify-content: center;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     opacity: 80%;
-
 }
 
-/*
-.vaelgkunst_knap {
-
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-
-
-
-}
-*/
 
 .vaelgkunst_billede {
     background-image: url(img/afsnitsfoto.png);
@@ -525,7 +535,6 @@ header li a {
 .kontakt_col {
     margin: auto;
     padding: 10px;
-
 }
 
 .kontakt_billede {
@@ -585,7 +594,6 @@ input[type=submit] {
 
 }
 
-
 /* Add a background color and some padding around the form */
 .formel_container {
     border-radius: 5px;
@@ -642,39 +650,44 @@ input[type=submit] {
 /******   Om   ******/
 
 #om_catrine {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px 32px;
-    margin: 0 1px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
 }
 
+<<<<<<< HEAD
 .catrine_billede {
     background-image: url(img/om_lang.jpg);
     background-size: cover;
     opacity: 80%;
     width: 300px;
     height: 300px;
+=======
+.om_catrine_container {
+    display: flex;
+    flex-wrap: wrap;
+>>>>>>> origin/master
+    margin: auto;
+}
+
+.om_catrine_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 550px;
+    padding: 10px;
     margin: auto;
 
 }
 
-.om_catrine_col {
-    margin-bottom: 30px;
+.catrine_billede {
+    background-image: url(img/om_kort.jpg);
+    background-size: cover;
+    max-width: 500px;
+    height: 400px;
+    margin: auto;
 
-    /*
-    margin: 25px 15px;
-    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-*/
 }
-
-/*
-.knap {
-    text-transform: uppercase;
-    padding: 15px 32px;
-    margin: 1rem 0;
-}
-*/
-
 
 #video_om {
     background-color: hotpink;
@@ -693,68 +706,62 @@ input[type=submit] {
 
 
 #om_passion {
-    padding: 15px 32px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 1px;
-
-
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 10px;
+    margin-bottom: 50px;
 }
 
-.passion_tekst_col {
-    margin-bottom: 30px;
-}
-
-.passion_billede_col {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.passion_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
 }
 
 .passion_billede1 {
     background-image: url(img/nyhed.JPG);
     background-size: cover;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    width: 300px;
-    height: 300px;
-    /*    margin-bottom: 5rem;*/
+    max-width: 100%;
+    height: 250px;
     opacity: 80%;
 }
 
 .passion_billede2og3_col {
     display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+
 
 }
 
 .passion_billede2 {
-    background-image: url(img/vaersted_3.JPG);
+    background-image: url(img/vaerksted_3.JPG);
     background-size: cover;
+    background-position: center;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    width: 170px;
-    height: 170px;
-    margin-bottom: 1rem;
-    opacity: 80%;
+    flex-basis: 150px;
     flex-grow: 1;
-    flex-basis: 300px;
-    margin: 20px 10px 10px 0px;
-
-
+    max-width: 50%;
+    height: 170px;
+    opacity: 80%;
+    margin: 14px 7px 0 0;
 }
 
 .passion_billede3 {
-    background-image: url(img/IMG_2539.JPG);
+    background-image: url(img/daase.jpg);
     background-size: cover;
+    background-position: 50% 20%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    width: 170px;
+    max-width: 50%;
     height: 170px;
-    margin-bottom: 1rem;
     opacity: 80%;
     flex-grow: 1;
-    flex-basis: 300px;
-    margin: 20px 0px 10px 10px;
+    flex-basis: 150px;
+    margin: 14px 0px 0 7px;
 
 
 }
@@ -785,17 +792,21 @@ input[type=submit] {
 #kiv_kiv {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    max-width: 1200px;
 }
 
 .kiv_col {
     flex-basis: 400px;
     flex-grow: 1;
-    margin: 10px;
+    padding: 10px;
+    margin: auto;
 }
 
 .kiv_tekst_col {
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -829,8 +840,10 @@ input[type=submit] {
 }
 
 #kiv_styrkbrand {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
 }
 
 .kiv_vaerker_container {
@@ -842,6 +855,8 @@ input[type=submit] {
 .kiv_styrkbrand_col {
     flex-basis: 400px;
     flex-grow: 1;
+    max-width: 500px;
+    padding: 10px;
     margin: auto;
 
 }
@@ -856,7 +871,7 @@ input[type=submit] {
 }
 
 .styrkbrand_knap {
-    margin: 30px;
+    margin: 30px 0;
 }
 
 #kiv_udstillinger {
@@ -879,8 +894,8 @@ input[type=submit] {
 
 /******   Events   ******/
 #events_udstillinger {
-    padding: 15px 32px;
-
+    margin: auto;
+    text-align: center;
 }
 
 #events_billede {
@@ -894,27 +909,37 @@ input[type=submit] {
 }
 
 #events_workshops {
-    padding: 15px 32px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.events_workshops_container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 0;
+}
 
+.events_workshops_col {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 500px;
+    padding: 10px;
 }
 
 .workshops_knap {
-    margin-bottom: 25px;
+    margin: 30px 0;
 }
 
 .workshops_billede {
-    display: flex;
-    align-items: center;
     background-image: url(img/daase.jpg);
     background-size: cover;
     background-position: center;
     opacity: 80%;
-    width: 300px;
-    height: 40px;
-    background-repeat: no-repeat;
-    min-height: 400px;
+    max-width: 400px;
+    height: 400px;
     margin: auto;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
@@ -937,46 +962,38 @@ input[type=submit] {
 /****** Enkeltside ******/
 .indhold {
     display: grid;
-}
-
-.navn {
-    padding: 0 1.5rem;
+    grid-gap: 15px;
+    padding: 0 20px;
+    margin: auto;
 }
 
 #enkeltside .billede {
-    background-position: cover;
+    margin: auto;
+    overflow: hidden;
+    max-width: 400px;
+    height: 400px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-
 }
 
-#enkeltside img {
-    width: 80%;
-
-}
-
-.specifikationer {
-    padding: 1.5rem;
-}
+#enkeltside img {}
 
 .pris {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1.5rem;
     font-size: 1.3rem;
     padding-bottom: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .udsalgspris {
     display: flex;
     justify-content: flex-end;
-    padding: 0 1.5rem;
     margin-top: 0;
     font-size: 0.7rem;
 }
 
 .enkeltside_kontakt {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .enkeltside_kontakt p {
@@ -994,9 +1011,6 @@ input[type=submit] {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
-
-
-/***********ISABELLA*************/
 
 /******* vaerker ********/
 
@@ -1251,15 +1265,11 @@ footer a {
         padding: 70px;
     }
 
-    #forside_nyhed {
-        padding: 15px 32px;
-        margin: 50px 1px;
+    .forside_nyhed_container {
+        padding: 50px 10px;
     }
 
-    #forside_kiv {
-        padding: 15px 32px;
-        margin: 50px 1px;
-    }
+
 
     #forside_om {
         padding: 15px 32px;
@@ -1271,59 +1281,13 @@ footer a {
         padding: 0 50px;
     }
 
-    .forside_nyhed_container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 50px;
 
-    }
-
-    .forside_nyhed_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .nyhed_billede {
-        width: 450px;
-        height: 300px;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-
-
-    #forside_kiv {
-        padding: 15px 32px;
-        margin: 0 1px;
-    }
 
     .forside_kiv_container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
+        padding: 50px 10px;
 
     }
 
-    .forside_kiv_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .forside_kiv_col,
-    .knap {
-        align-items:
-    }
-
-    .forside_kiv_billede {
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
 
     #forside_om {
         padding: 15px 32px;
@@ -1362,7 +1326,7 @@ footer a {
     #kontakt {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
         padding: 0 20px;
     }
@@ -1393,13 +1357,15 @@ footer a {
 @media only screen and (min-width: 600px) {
 
     .indhold {
+        max-width: 1200px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "venstre op"
             "venstre midt"
             "venstre bund";
-
+        margin-bottom: 100px;
+        margin-top: 30px
     }
 
     .indhold .navn {
@@ -1409,7 +1375,6 @@ footer a {
 
     .indhold .billede {
         grid-area: venstre;
-        margin-left: 50px;
 
     }
 
@@ -1419,15 +1384,15 @@ footer a {
 
     .indhold .pris_container {
         grid-area: bund;
+        margin-right: 90px;
 
     }
 
-
-    .enkeltside_kontakt {
+    .enkeltside_kontakt_col {
+        flex-basis: 400px;
+        flex-grow: 1;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        max-width: 250px;
+        justify-content: flex-end
     }
 
 }
@@ -1449,7 +1414,7 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 0.5rem;
-        grid-template-areas: "sidebar liste liste liste"
+        grid-template-areas: "sidebar liste liste liste";
     }
 
     .sidebar {
@@ -1474,6 +1439,7 @@ footer a {
 
 /* MEDIA PÅ MIN 750PX */
 
+<<<<<<< HEAD
 @media only screen and (min-width: 750px) {
 
     #events_udstillinger {
@@ -1491,78 +1457,11 @@ footer a {
         margin: 50px 80px;
         padding: 3px 2px;
     }
-
-    .events_workshops_container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .events_workshops_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-    .workshops_knap {
-        margin-top: 115px;
-    }
-
-    .workshops_billede {
-        background-position: center;
-        margin-top: 20px;
-        flex-basis: 200px;
-        flex-grow: 1;
-        height: 400px;
-        min-height: 400px;
-
-    }
-
-}
-
+=======
+>>>>>>> origin/master
 
 @media only screen and (min-width: 750px) {
-    #kiv_kiv {
-        display: flex;
-        flex-direction: row-reverse;
-        max-width: 1100px;
-        margin: auto;
-        margin-bottom: 60px;
 
-    }
-
-    .kiv_billede_col {
-        width: 500px;
-
-    }
-
-
-    #kiv_styrkbrand {
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    .kiv_styrkbrand_container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-
-    .kiv_styrkbrand_col {
-        flex-basis: 400px;
-        flex-grow: 1;
-        max-width: 400px;
-
-    }
-
-    .styrkbrand_billede {
-        max-width: 400px;
-        height: 400px;
-    }
-}
-
-
-@media only screen and (min-width: 750px) {
     h1 {
         font-size: 2.5rem;
 
@@ -1572,61 +1471,40 @@ footer a {
         font-size: 0.8rem;
         line-height: 1.5;
     }
-}
 
-
-@media only screen and (min-width: 750px) {
-
-    #om_catrine {
-        margin: 50px 130px;
-        padding: 3px 2px;
+    #kiv_kiv {
+        flex-direction: row-reverse;
     }
 
-    .om_catrine_container {
+    #kiv_styrkbrand {
+        margin: auto;
+    }
+
+    .kiv_styrkbrand_container {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    .kiv_styrkbrand_col {
+        max-width: 500px;
+
+    }
+
+    .styrkbrand_billede {
+        max-width: 400px;
+        height: 400px;
+    }
+
+
+    .om_catrine_container {
         flex-direction: row-reverse;
-        padding: 3px 2px;
-        margin: 0 20px;
-
     }
 
-    .om_catrine_col {
-        flex-wrap: nowrap;
-        flex-basis: 200px;
-        flex-grow: 1;
-        margin: 0 50px;
-    }
-
-
-    .catrine_billede {
-        flex-basis: 200px;
-        flex-grow: 1;
-        width: 300px;
-        height: 460px;
-        margin: 0 50px 0 0;
-    }
-
-
-    #om_passion {
-        margin: 50px 130px;
-        padding: 3px 2px;
+    .om_catrine_col a {
         display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .passion_tekst_col {
-        margin: 0 20px;
-    }
-
-    .passion_billede_col {
-        margin-left: 80px;
-    }
-
-    .passion_billede1 {
-        width: 500px;
-        height: 300px;
-
+        justify-content: flex-end;
     }
 
 
@@ -1642,11 +1520,19 @@ footer a {
         margin-top: 20px;
     }
 
+    #events_billede {
+        margin-bottom: 30px;
+        height: 300px;
+        background-position: 0% 220%;
+    }
+
+
 }
 
 /*MEDIA Q PÅ 900PX*/
 
 @media only screen and (min-width: 900px) {
+
 
     .splash_container {
         padding: 2rem 1rem 0;
@@ -1669,7 +1555,8 @@ footer a {
 
     #splash {
         height: 500px;
-        background-image: url(img/forside_video.png)
+        background-image: url(img/forside_video.png);
+        background-attachment: fixed;
     }
 }
 
@@ -1729,6 +1616,7 @@ footer a {
     .menupunkt_valgt {
         text-decoration: none;
         border-bottom: solid #E36293;
+        height: 30px;
     }
 
     header li:first-child {
@@ -1745,7 +1633,10 @@ footer a {
 
     .forside li a {
         color: white;
+
     }
+
+
 
     .forside a {
         font-style: uppercase;
@@ -1849,6 +1740,19 @@ footer a {
     }
 
     /** pile vis mere starter**/
+
+
+    #splash_arrow {
+        background-image: url(img/pink_pil.svg);
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 450px;
+        left: 48%;
+    }
+
     .arrow_more_kontakt {
         background-image: url(img/pink_pil.svg);
         position: relative;
@@ -1862,6 +1766,15 @@ footer a {
         background-image: url(img/pink_pil.svg);
         position: relative;
         top: 420px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    .arrow_more_om {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 440px;
         width: 45px;
         height: 25px;
         background-size: 100%;
