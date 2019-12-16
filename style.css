@@ -1027,6 +1027,10 @@ input[type=submit] {
     color: #444B5B;
 }
 
+.filer.valgt {
+    background-color: red;
+}
+
 
 .billed_ramme {
     overflow: hidden;
