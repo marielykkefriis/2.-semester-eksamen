@@ -34,6 +34,13 @@ h2 {
     margin: 10px 0px;
 }
 
+h3 {
+    font-family: 'avenir';
+    font-weight: 100;
+    color: #444B5B;
+    margin: 0px 0px;
+}
+
 p {
     font-family: 'avenir';
     color: #444B5B;
@@ -894,6 +901,10 @@ input[type=submit] {
     text-align: center;
 }
 
+#events_udstillinger h1 {
+    margin-bottom: 30px;
+}
+
 #events_billede {
     background-image: url(img/workshop_1.jpg);
     width: 100vw;
@@ -902,6 +913,7 @@ input[type=submit] {
     opacity: 80%;
     background-size: cover;
     background-position: center;
+    margin-top: 30px;
 }
 
 #events_workshops {
@@ -1090,6 +1102,131 @@ input[type=submit] {
 #link_til_udstillinger button {
     margin-top: 50px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+}
+
+
+
+/********** Udstillinger ******/
+
+
+.udstilling_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+
+.udstilling_container button {
+    margin: auto;
+    margin-top: 20vw;
+
+}
+
+.udstilling_container .billed_ramme {
+    max-height: 300px;
+    max-width: 50vw;
+
+
+}
+
+.udstilling_billede_1,
+.udstilling_billede_2,
+.udstilling_billede_3,
+.udstilling_billede_4,
+.udstilling_billede_5,
+.udstilling_billede_6 {
+    padding: 10px;
+
+}
+
+.udstilling_billede_1 h2,
+.udstilling_billede_2 h2,
+.udstilling_billede_3 h2,
+.udstilling_billede_4 h2,
+.udstilling_billede_5 h2,
+.udstilling_billede_6 h2 {
+    font-size: 1.2rem;
+}
+
+.udstilling_billede_1 h3,
+.udstilling_billede_2 h3,
+.udstilling_billede_3 h3,
+.udstilling_billede_4 h3,
+.udstilling_billede_5 h3,
+.udstilling_billede_6 h3 {
+    font-size: 0.8rem;
+}
+
+.udstilling_billede_3 p,
+.udstilling_billede_4 p,
+.udstilling_billede_5 p,
+.udstilling_billede_6 p {
+    color: lightgray;
+}
+
+.udstilling_billede_3 h2,
+.udstilling_billede_4 h2,
+.udstilling_billede_5 h2,
+.udstilling_billede_6 h2 {
+    color: lightgray;
+}
+
+.udstilling_billede_3 h3,
+.udstilling_billede_4 h3,
+.udstilling_billede_5 h3,
+.udstilling_billede_6 h3 {
+    color: lightgray;
+}
+
+.udstilling_billede_3 p,
+.udstilling_billede_4 p,
+.udstilling_billede_5 p,
+.udstilling_billede_6 p {
+    color: lightgray;
+}
+
+.udstilling_1 {
+    background-image: url(img/regus_1.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.udstilling_2 {
+    background-image: url(img/ase.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.udstilling_3 {
+    background-image: url(img/to_indtryk_i_udtryk.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.udstilling_4 {
+    background-image: url(img/regus_2.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.udstilling_5 {
+    background-image: url(img/kunstskole.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.udstilling_6 {
+    background-image: url(img/hotel_stay.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -1360,6 +1497,12 @@ footer a {
         max-width: 400px;
     }
 
+    .udstilling_container button {
+        margin: auto;
+        margin-top: 15vw;
+
+    }
+
 }
 
 
@@ -1417,7 +1560,6 @@ footer a {
     }
 
     .billed_ramme {
-
         max-height: 25vw;
     }
 
@@ -1450,10 +1592,11 @@ footer a {
 
 @media only screen and (min-width: 750px) {
 
-    #events_udstillinger {
-        margin: 50px 130px;
-        padding: 3px 2px;
-
+    .udstilling_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: liste;
+        max-width: 1000px;
     }
 
     #events_billede {
@@ -1466,375 +1609,407 @@ footer a {
         padding: 3px 2px;
     }
 
+}
 
-    @media only screen and (min-width: 750px) {
+@media only screen and (min-width: 750px) {
 
-        h1 {
-            font-size: 2.5rem;
-
-        }
-
-        p {
-            font-size: 0.8rem;
-            line-height: 1.5;
-        }
-
-        #kiv_kiv {
-            flex-direction: row-reverse;
-        }
-
-        #kiv_styrkbrand {
-            margin: auto;
-        }
-
-        .kiv_styrkbrand_container {
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
-            padding: 50px 0;
-        }
-
-        .kiv_styrkbrand_col {
-            max-width: 500px;
-
-        }
-
-        .styrkbrand_billede {
-            max-width: 400px;
-            height: 400px;
-        }
-
-
-        .om_catrine_container {
-            flex-direction: row-reverse;
-        }
-
-        .om_catrine_col a {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-
-        #om_udstillinger {
-            display: flex;
-            justify-content: center;
-
-        }
-
-
-        #events_workshops_billede {
-            height: 300px;
-            margin-top: 20px;
-        }
-
-        #events_billede {
-            margin-bottom: 30px;
-            height: 300px;
-            background-position: 0% 220%;
-        }
-
+    h1 {
+        font-size: 2.5rem;
 
     }
 
-    /*MEDIA Q PÅ 900PX*/
-
-    @media only screen and (min-width: 900px) {
-
-
-        .splash_container {
-            padding: 2rem 1rem 0;
-            max-width: 800px;
-            top: 60px;
-            left: 65px;
-        }
-
-        #splash h1 {
-            font-size: 7rem;
-            line-height: 6rem;
-            letter-spacing: 1rem;
-
-        }
-
-        #splash p {
-            font-size: 1.5rem;
-        }
-
-        #splash {
-            height: 500px;
-            background-image: url(img/forside_video.png);
-            background-attachment: fixed;
-        }
+    p {
+        font-size: 0.8rem;
+        line-height: 1.5;
     }
 
-    /*instagram desktop media*/
+    #kiv_kiv {
+        flex-direction: row-reverse;
+    }
 
-    @media only screen and (min-width: 900px) {
+    #kiv_styrkbrand {
+        margin: auto;
+    }
 
-        .insta_billede_1,
-        .insta_billede_2,
-        .insta_billede_3,
-        .insta_billede_4,
-        .insta_billede_5,
-        .insta_billede_6 {
-            height: 120px;
-            width: 120px;
+    .kiv_styrkbrand_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 50px 0;
+    }
 
-        }
+    .kiv_styrkbrand_col {
+        max-width: 500px;
 
-        .insta_1,
-        .insta_2,
-        .insta_3,
-        .insta_4,
-        .insta_5,
-        .insta_6 {
-            width: 120px;
-            height: 120px;
-        }
+    }
+
+    .styrkbrand_billede {
+        max-width: 400px;
+        height: 400px;
+    }
+
+
+    .om_catrine_container {
+        flex-direction: row-reverse;
+    }
+
+    .om_catrine_col a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    #om_udstillinger {
+        display: flex;
+        justify-content: center;
 
     }
 
 
-    /*MEDIA Q PÅ MIN 1000PX*/
+    #events_workshops_billede {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    #events_billede {
+        margin-bottom: 30px;
+        height: 300px;
+    }
 
 
-    @media only screen and (min-width: 1000px) {
-        header {
-            position: sticky;
+}
 
-        }
+/*MEDIA Q PÅ 900PX*/
 
-        header li a {
-            font-size: 0.9rem;
-            margin-left: 35px;
-        }
+@media only screen and (min-width: 900px) {
 
 
-        header li {
-            display: inline-block;
-            width: auto;
-            margin: 0;
-        }
+    .splash_container {
+        padding: 2rem 1rem 0;
+        max-width: 800px;
+        top: 60px;
+        left: 65px;
+    }
 
-        header li a:hover {
-            transform: scale(1.2);
-        }
-
-        .menupunkt_valgt {
-            text-decoration: none;
-            border-bottom: solid #E36293;
-            height: 30px;
-        }
-
-        header li:first-child {
-            margin-top: 40px;
-        }
-
-        header ul li:last-child {
-            margin-right: 20px;
-        }
-
-        .forside #menu {
-            background-color: transparent;
-        }
-
-        .forside li a {
-            color: white;
-
-        }
-
-
-
-        .forside a {
-            font-style: uppercase;
-
-        }
-
-        #menuknap {
-            display: none;
-        }
-
-        #menu.hidden {
-            display: inherit;
-        }
-
-        #menu {
-            text-align: right;
-            height: 100px;
-            width: 70%;
-            margin-right: 20px;
-
-        }
-
-        .burger_logo {
-            display: none;
-        }
-
-        /**   dropdown menu start  **/
-
-        .dropdown_pil {
-            margin: 10px 10px;
-        }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.87);
-            min-width: 50px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 100;
-            margin: 0 0 0 -10px;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            padding: 4px 8px;
-            margin-right: 5px;
-            text-decoration: none;
-            display: block;
-        }
-
-
-
-        .dropdown-content a:first-child {
-            border-bottom: solid 1px grey;
-        }
-
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .forside .dropdown-content a {
-            color: #444B5B;
-        }
-
-        /**   dropdown menu slut **/
-
-
-        .footer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .footer_col {
-            flex-basis: 150px;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .vaelgkunst_col1 {
-            max-height: 400px;
-            max-width: 400px;
-        }
-
-        .vaelgkunst_col2 {
-            max-height: 400px;
-            max-width: 400px;
-        }
-
-        .vaelgkunst_container {
-            margin-bottom: 50px;
-        }
-
-        /** pile vis mere starter**/
-
-
-        #splash_arrow {
-            background-image: url(img/pink_pil.svg);
-            width: 45px;
-            height: 25px;
-            background-size: 100%;
-            position: absolute;
-            z-index: 1;
-            top: 450px;
-            left: 48%;
-        }
-
-        .arrow_more_kontakt {
-            background-image: url(img/pink_pil.svg);
-            position: relative;
-            top: 580px;
-            width: 45px;
-            height: 25px;
-            background-size: 100%;
-        }
-
-        .arrow_more_kiv {
-            background-image: url(img/pink_pil.svg);
-            position: relative;
-            top: 420px;
-            width: 45px;
-            height: 25px;
-            background-size: 100%;
-        }
-
-        .arrow_more_om {
-            background-image: url(img/pink_pil.svg);
-            position: relative;
-            top: 440px;
-            width: 45px;
-            height: 25px;
-            background-size: 100%;
-        }
-
-
-        .pulse {
-            animation-name: pulse_kf;
-            animation-duration: 1s;
-            animation-fill-mode: both;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-direction: alternate-reverse;
-        }
-
-        @keyframes pulse_kf {
-            0% {
-                transform: scale(1);
-
-            }
-
-            100% {
-                transform: scale(1.1);
-            }
-        }
+    #splash h1 {
+        font-size: 7rem;
+        line-height: 6rem;
+        letter-spacing: 1rem;
 
     }
 
-    /** pile vis mere slutter**/
+    #splash p {
+        font-size: 1.5rem;
+    }
 
+    #splash {
+        height: 500px;
+        background-image: url(img/forside_video.png);
+        background-attachment: fixed;
+    }
+}
 
-    /*MEDIA Q PÅ MIN 1200PX*/
+/*instagram desktop media*/
 
-    @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 900px) {
 
-        .insta_billede_1,
-        .insta_billede_2,
-        .insta_billede_3,
-        .insta_billede_4,
-        .insta_billede_5,
-        .insta_billede_6 {
-            height: 180px;
-            width: 180px;
-
-        }
-
-        .insta_1,
-        .insta_2,
-        .insta_3,
-        .insta_4,
-        .insta_5,
-        .insta_6 {
-            width: 180px;
-            height: 180px;
-        }
+    .insta_billede_1,
+    .insta_billede_2,
+    .insta_billede_3,
+    .insta_billede_4,
+    .insta_billede_5,
+    .insta_billede_6 {
+        height: 120px;
+        width: 120px;
 
     }
+
+    .insta_1,
+    .insta_2,
+    .insta_3,
+    .insta_4,
+    .insta_5,
+    .insta_6 {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+
+/*udstilling desktop media*/
+
+@media only screen and (min-width: 900px) {
+
+    .udstilling_container button {
+        margin: auto;
+        margin-top: 12vw;
+
+    }
+}
+
+
+/*MEDIA Q PÅ MIN 1000PX*/
+
+
+@media only screen and (min-width: 1000px) {
+    header {
+        position: sticky;
+
+    }
+
+    header li a {
+        font-size: 0.9rem;
+        margin-left: 35px;
+    }
+
+
+    header li {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+    }
+
+    header li a:hover {
+        transform: scale(1.2);
+    }
+
+    .menupunkt_valgt {
+        text-decoration: none;
+        border-bottom: solid #E36293;
+        height: 30px;
+    }
+
+    header li:first-child {
+        margin-top: 40px;
+    }
+
+    header ul li:last-child {
+        margin-right: 20px;
+    }
+
+    .forside #menu {
+        background-color: transparent;
+    }
+
+    .forside li a {
+        color: white;
+
+    }
+
+
+
+    .forside a {
+        font-style: uppercase;
+
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: inherit;
+    }
+
+    #menu {
+        text-align: right;
+        height: 100px;
+        width: 70%;
+        margin-right: 20px;
+
+    }
+
+    .burger_logo {
+        display: none;
+    }
+
+    /**   dropdown menu start  **/
+
+    .dropdown_pil {
+        margin: 10px 10px;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.87);
+        min-width: 50px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        margin: 0 0 0 -10px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        padding: 4px 8px;
+        margin-right: 5px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+
+    .dropdown-content a:first-child {
+        border-bottom: solid 1px grey;
+    }
+
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .forside .dropdown-content a {
+        color: #444B5B;
+    }
+
+    /**   dropdown menu slut **/
+
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer_col {
+        flex-basis: 150px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .vaelgkunst_col1 {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .vaelgkunst_col2 {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .vaelgkunst_container {
+        margin-bottom: 50px;
+    }
+
+    /** pile vis mere starter**/
+
+
+    #splash_arrow {
+        background-image: url(img/pink_pil.svg);
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 450px;
+        left: 48%;
+    }
+
+    .arrow_more_kontakt {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 580px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    .arrow_more_kiv {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 420px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+    .arrow_more_om {
+        background-image: url(img/pink_pil.svg);
+        position: relative;
+        top: 440px;
+        width: 45px;
+        height: 25px;
+        background-size: 100%;
+    }
+
+
+    .pulse {
+        animation-name: pulse_kf;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse;
+    }
+
+    @keyframes pulse_kf {
+        0% {
+            transform: scale(1);
+
+        }
+
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+/** pile vis mere slutter**/
+
+
+
+@media only screen and (min-width: 900px) {
+
+    .udstilling_container button {
+        margin: auto;
+        margin-top: 12vw;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .udstilling_container button {
+        margin: auto;
+        margin-top: 130px;
+
+    }
+}
+
+
+/*MEDIA Q PÅ MIN 1200PX*/
+
+@media only screen and (min-width: 1200px) {
+
+    .insta_billede_1,
+    .insta_billede_2,
+    .insta_billede_3,
+    .insta_billede_4,
+    .insta_billede_5,
+    .insta_billede_6 {
+        height: 180px;
+        width: 180px;
+
+    }
+
+    .insta_1,
+    .insta_2,
+    .insta_3,
+    .insta_4,
+    .insta_5,
+    .insta_6 {
+        width: 180px;
+        height: 180px;
+    }
+
+}

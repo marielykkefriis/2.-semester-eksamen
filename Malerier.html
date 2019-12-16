@@ -64,7 +64,7 @@
 
 
 
-        <h2 id="overskrift" class="filterTekst">MALERIER</h2>
+        <h1 id="overskrift" class="filterTekst">MALERIER</h1>
 
         <div class="grid_container">
             <div class="sidebar">
@@ -78,17 +78,26 @@
                             <button class="filter">PLAKATER</button>
                         </a>
                     </div>
-                    <div class="størrelse">
-                        <p class="filter_navn">Størrelse</p>
-                        <a href="">
-                            <button class="filter valgt">Alle størrelser</button>
-                        </a>
-                        <button class="filter">50 x 70 cm</button>
-                        <button class="filter">60 x 80 cm</button>
-                        <button class="filter">80 x 80 cm</button>
-                        <button class="filter">80 x 120 cm</button>
-                        <button class="filter">90 x 120 cm</button>
-                        <button class="filter">100 x 150 cm</button>
+                    <div class="størrelse dropdown">
+                        <p class="filter_navn dropbtn">Størrelse</p>
+                        <div class="dropdown-content">
+                            <button class="filter valgt" data-kategori="">Alle størrelser</button>
+                            <button class="filter" data-kategori="">50 x 70 cm</button>
+                            <button class="filter" data-kategori="">60 x 80 cm</button>
+                            <button class="filter" data-kategori="">80 x 80 cm</button>
+                            <button class="filter" data-kategori="">80 x 120 cm</button>
+                            <button class="filter " data-kategori="">90 x 120 cm</button>
+                            <button class="filter" data-kategori="">100 x 150 cm</button>
+                        </div>
+                    </div>
+                    <div class="størrelse dropdown">
+                        <p class="filter_navn">Materiale</p>
+                        <div class="dropdown-content">
+                            <button class="filter valgt" data-kategori="">Alle marterialer</button>
+                            <button class="filter" data-kategori="">Akryl på lærred</button>
+                            <button class="filter" data-kategori="">240g silk</button>
+                            <button class="filter" data-kategori="">265g silk</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -285,6 +294,4 @@
 
         }*/
     </script>
-</body>
-
-</html>
+</body></html>
