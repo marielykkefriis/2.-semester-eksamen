@@ -1040,11 +1040,9 @@ input[type=submit] {
     margin: 10px;
 }
 
-.filter_knapper {}
-
 .filter_knapper button {
     padding: 15px;
-    width: 30vw;
+    width: 100vw;
     background-color: #E1E9F3;
     border: none;
     margin: 5px;
@@ -1554,7 +1552,7 @@ footer a {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
     .data_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1574,7 +1572,7 @@ footer a {
 
     .sidebar {
         position: fixed;
-        top: 317px;
+        top: 343px;
         left: 0;
         grid-area: sidebar;
         width: 24vw;
