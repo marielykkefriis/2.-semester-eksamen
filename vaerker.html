@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Værker</title>
+    <meta name="description" content="Vælg imellem Catrine Brinks værker. Her kan du både se abstrakte malerier samt farverige og energiske plakater. ">
+    <title>Vælg værker</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favikon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favikon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favikon/apple-icon-72x72.png">
@@ -33,7 +34,7 @@
         <nav>
             <ul id="menu" class="hidden">
                 <li class="dropdown">
-                    <a class="dropbtn  menupunkt_valgt" href="vaelgvaerker.html">VÆRKER
+                    <a class="dropbtn menupunkt_valgt" href="vaerker.html">VÆRKER
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
@@ -69,52 +70,29 @@
         </nav>
     </header>
 
-    <main id="vaerker">
+    <main>
         <div class="header_billede"></div>
         <section id="breadcrumbs">
             <ul class="">
-                <li><a href="index.html">STARTSIDE</a></li>
+                <li><a href="catrinebrink.html">STARTSIDE</a></li>
                 <li><a href="vaerker.html">VÆRKER</a></li>
             </ul>
         </section>
-
-
-
-        <h2 id="overskrift" class="filterTekst">MALERIER</h2>
-
-        <div class="grid_container">
-            <div class="sidebar">
-                <nav class="filter_knapper">
-                    <button class="filter" data-kategori="Malerier">MALERIER</button>
-
-                    <button class="filter" data-kategori="Plakater">PLAKATER</button>
-                </nav>
+        <section id="vaelgkunst">
+            <div class="vaelgkunst_container">
+                <a href="malerier.html">
+                    <div class="vaelgkunst_col1">
+                        <button>SE MALERIER</button>
+                    </div>
+                </a>
+                <a href="plaketer.html">
+                    <div class="vaelgkunst_col2">
+                        <button>SE PLAKATER</button>
+                    </div>
+                </a>
             </div>
-
-            <!--    tom section til grid visning af indhold-->
-            <section class="data_container"></section>
-
-        </div>
-
-
-
-        <!--   template indeholder hvordan data skal placeres iforhold til hinanden-->
-        <template>
-            <article class="produkt_article">
-                <div class="billed_ramme">
-                    <img src="" alt="img">
-                </div>
-                <h2></h2>
-                <p></p>
-            </article>
-        </template>
-
-        <section id="om_udstillinger">
-            <a href="events.html">
-                <div class="om_udstillinger_container">
-                    <button>SE UDSTILLINGER</button>
-                </div>
-            </a>
+            <div class="vaelgkunst_billede">
+            </div>
         </section>
 
     </main>
@@ -185,101 +163,7 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
+</body>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", hentjson);
-
-        let vaerker;
-        let filter = "";
-
-        const listevisning = document.querySelector(".data_container");
-        const template = document.querySelector("template");
-
-        //      i funktion læses jsonfilen og dataindholdet bliver sat = variablen planter
-        async function hentjson() {
-            console.log("hentjson");
-
-            let myRawjson = await fetch("http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/vaerker?per_page=100");
-
-            vaerker = await myRawjson.json();
-
-            //            kalder funktionerne
-            informationer();
-            addEventlistenerToButton();
-
-        }
-
-        function informationer() {
-            console.log("virker");
-
-
-            //  indholdet for constanten listevisning nulstillet
-            listevisning.textContent = "";
-
-            // plante-array gennemgåes plante for plante og listevisningen bliver udfyldt
-            vaerker.forEach((vaerk) => {
-
-                if (filter == "" || filter == vaerk.kategori) {
-
-
-                    const klon = template.cloneNode(true).content;
-
-                    //placering for data fra json vælges
-                    klon.querySelector("img").src = vaerk.billede_front.guid;
-
-                    klon.querySelector("article h2").textContent = vaerk.navn;
-
-                    klon.querySelector("article p").textContent = vaerk.maal;
-
-
-                    listevisning.appendChild(klon);
-                    listevisning.lastElementChild.addEventListener("click", () => {
-                        location.href = `enkeltside.html?id=${vaerk.id}`;
-                    });
-
-                }
-
-            });
-        }
-
-        //funktionen lytter efter om der bliver klikket på filterknapperne
-        function addEventlistenerToButton() {
-            document.querySelectorAll(".filter").forEach(elm => {
-                elm.addEventListener("click", filtrering);
-            });
-        }
-
-        //funktionen fortælle hvilke data der skal vises alt efter hvilken filterknap der klikkes på
-        function filtrering() {
-            if (this.dataset.kategori) {
-                filter = this.dataset.kategori;
-                document.querySelector("h2").textContent = this.textContent;
-                if (document.querySelector(".valgt")) {
-                    document.querySelector(".valgt").classList.remove("valgt");
-                }
-                console.log("filter");
-            }
-
-            this.classList.add("valgt");
-            location.href = "#overskrift";
-
-            informationer();
-        }
-        /*else if (this.dataset.kategori) {
-                       filter = this.dataset.kategori;
-
-                       document.querySelector("h2").textContent = this.textContent;
-                       document.querySelectorAll(".filter").forEach(elm => {
-                           elm.classList.remove("valgt");
-                           console.log(`${filter}`);
-                       });
-
-                       this.classList.add("valgt");
-
-                       informationer();
-        }
-        }*/
-    </script>
-</body></html>
+</html>
