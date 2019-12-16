@@ -37,8 +37,8 @@
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
-                        <a href="vaerker.html?filter=Malerier">MALERIER</a>
-                        <a href="vaerker.html?filter=Plakater">PLAKATER</a>
+                        <a href="malerier.html">MALERIER</a>
+                        <a href="plaketer.html">PLAKATER</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -80,12 +80,11 @@
 
 
 
-        <h2 class="filterTekst">MALERIER</h2>
+        <h2 id="overskrift" class="filterTekst">MALERIER</h2>
 
         <div class="grid_container">
             <div class="sidebar">
                 <nav class="filter_knapper">
-                    <button class="filter valgt" data-kategori="alle">ALLE</button>
                     <button class="filter" data-kategori="Malerier">MALERIER</button>
 
                     <button class="filter" data-kategori="Plakater">PLAKATER</button>
@@ -193,7 +192,7 @@
         document.addEventListener("DOMContentLoaded", hentjson);
 
         let vaerker;
-        let filter = "alle";
+        let filter = "";
 
         const listevisning = document.querySelector(".data_container");
         const template = document.querySelector("template");
@@ -217,12 +216,12 @@
 
 
             //  indholdet for constanten listevisning nulstillet
-            listevisning.innerHTML = "";
+            listevisning.textContent = "";
 
             // plante-array gennemgåes plante for plante og listevisningen bliver udfyldt
             vaerker.forEach((vaerk) => {
 
-                if (filter == "alle" || filter == vaerk.kategori) {
+                if (filter == "" || filter == vaerk.kategori) {
 
 
                     const klon = template.cloneNode(true).content;
@@ -254,36 +253,33 @@
 
         //funktionen fortælle hvilke data der skal vises alt efter hvilken filterknap der klikkes på
         function filtrering() {
-
             if (this.dataset.kategori) {
                 filter = this.dataset.kategori;
-
                 document.querySelector("h2").textContent = this.textContent;
-                document.querySelectorAll(".filter").forEach(elm => {
-                    elm.classList.remove("valgt");
-                    console.log("filter");
-                });
-
-                this.classList.add("valgt");
-
-                informationer();
-            } else if (this.dataset.kategori) {
-                filter = this.dataset.kategori;
-
-                document.querySelector("h2").textContent = this.textContent;
-                document.querySelectorAll(".filter").forEach(elm => {
-                    elm.classList.remove("valgt");
-                    console.log(`${filter}`);
-                });
-
-                this.classList.add("valgt");
-
-                informationer();
+                if (document.querySelector(".valgt")) {
+                    document.querySelector(".valgt").classList.remove("valgt");
+                }
+                console.log("filter");
             }
 
+            this.classList.add("valgt");
+            location.href = "#overskrift";
+
+            informationer();
         }
+        /*else if (this.dataset.kategori) {
+                       filter = this.dataset.kategori;
 
+                       document.querySelector("h2").textContent = this.textContent;
+                       document.querySelectorAll(".filter").forEach(elm => {
+                           elm.classList.remove("valgt");
+                           console.log(`${filter}`);
+                       });
+
+                       this.classList.add("valgt");
+
+                       informationer();
+        }
+        }*/
     </script>
-</body>
-
-</html>
+</body></html>

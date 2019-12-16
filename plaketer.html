@@ -4,24 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kunst i virksomheden</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="favikon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favikon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favikon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favikon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favikon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favikon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favikon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favikon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favikon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favikon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favikon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favikon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favikon/favicon-16x16.png">
-    <link rel="manifest" href="favikon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,11 +16,11 @@
         <nav>
             <ul id="menu" class="hidden">
                 <li class="dropdown">
-                    <a class="dropbtn" href="Vaelgkunst.html">VÆRKER
+                    <a class="dropbtn  menupunkt_valgt" href="Vaelgkunst.html">VÆRKER
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
-                        <a href="malerier.html">MALERIER</a>
+                        <a href=malerier.html>MALERIER</a>
                         <a href="plaketer.html">PLAKATER</a>
                     </div>
                 </li>
@@ -51,7 +34,7 @@
                     </div>
                 </li>
                 <li>
-                    <a class="menupunkt_valgt" href="kunst_i_virksomheden.html">KUNST I VIRKSOMHEDEN</a>
+                    <a href="kunst_i_virksomheden.html">KUNST I VIRKSOMHEDEN</a>
                 </li>
                 <li>
                     <a href="om.html">OM</a>
@@ -69,60 +52,49 @@
         </nav>
     </header>
 
-    <main>
+    <main id="vaerker">
         <div class="header_billede"></div>
         <section id="breadcrumbs">
             <ul class="">
                 <li><a href="index.html">STARTSIDE</a></li>
-                <li><a href="kunst_i_virksomheden.html">KUNST I VIRKSOMHEDEN</a></li>
+                <li><a href="vaerker.html">VÆRKER</a></li>
             </ul>
         </section>
-        <section id="kiv_kiv">
-            <div class="kiv_col">
-                <div class="kiv_tekst_col">
-                    <h1>KUNST I VIRKSOMHEDEN</h1>
-                    <p>Ønsker I at udsmykke virksomhedens lokaler og bygninger med kvalitetskunst?<p>Det abstrakte maleri giver et liv og leger med fantasien på en unik måde, der spreder energi og glæde i virksomheden.</p>
-                        <p>Så læs om mulighederne for at købe eller leje mine farverige og energiske kunstværker som udsmykning i jeres virksomhed nedenunder.</p>
-                </div>
-            </div>
-            <a href="kunst_i_virksomheden.html#kiv_styrkbrand">
-                <div class="pulse arrow_more_kiv"></div>
-            </a>
-            <div class="kiv_col">
-                <div class="kiv_billede"></div>
-            </div>
-        </section>
-        <section id="forside_vaerker">
-            <a href="vaelgkunst.html">
-                <div class="forside_vaerker_container">
-                    <button>SE VÆRKER</button>
-                </div>
-            </a>
-        </section>
-        <section id="kiv_styrkbrand">
-            <div class="kiv_styrkbrand_container">
-                <div class="kiv_styrkbrand_col">
-                    <div class="styrkbrand_tekst">
-                        <h1>STYRK JERES BRAND MED MODERNE KUNST</h1>
-                        <p>Ønsker I at udsmykke virksomhedens lokaler og bygninger med kvalitetskunst?<p>Ønsker I at forbedre arbejdsmiljøet i virksomheden.</p>
-                            <p>Ønsker I at have noget smukt og inspirerende at kigge på?</p>
-                            <p>Trænger I til et moderne tvist som kan tiltrække spændende medarbejdere
-                                til virksomheden?</p>
-                            <p>Ønsker I at styrke Jeres branding overfor nye potentielle kunder?</p>
-                    </div>
-                    <a href="kontakt.html">
-                        <div class="styrkbrand_knap">
-                            <button>KONTAKT MIG</button>
-                        </div>
-                    </a>
-                </div>
 
-                <div class="kiv_styrkbrand_col">
-                    <div class="styrkbrand_billede">
-                    </div>
-                </div>
+
+
+        <h2 id="overskrift" class="filterTekst">PLAKATER</h2>
+
+        <div class="grid_container">
+            <div class="sidebar">
+                <nav class="filter_knapper">
+                    <a href="malerier.html">
+                        <button class="filter">MALERIER</button>
+                    </a>
+                    <a href="plaketer.html">
+                        <button class="filter valgt">PLAKATER</button>
+                    </a>
+                </nav>
             </div>
-        </section>
+
+            <!--    tom section til grid visning af indhold-->
+            <section class="data_container"></section>
+
+        </div>
+
+
+
+        <!--   template indeholder hvordan data skal placeres iforhold til hinanden-->
+        <template>
+            <article class="produkt_article">
+                <div class="billed_ramme">
+                    <img src="" alt="img">
+                </div>
+                <h2></h2>
+                <p></p>
+            </article>
+        </template>
+
         <section id="om_udstillinger">
             <a href="events.html">
                 <div class="om_udstillinger_container">
@@ -130,7 +102,6 @@
                 </div>
             </a>
         </section>
-
 
     </main>
 
@@ -200,5 +171,102 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentjson);
+
+        let vaerker;
+        //        let filter = "";
+
+        const listevisning = document.querySelector(".data_container");
+        const template = document.querySelector("template");
+
+        //      i funktion læses jsonfilen og dataindholdet bliver sat = variablen planter
+        async function hentjson() {
+            console.log("hentjson");
+
+            let myRawjson = await fetch("http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/plakater?per_page=100");
+
+            vaerker = await myRawjson.json();
+
+            //            kalder funktionerne
+            informationer();
+            addEventlistenerToButton();
+
+        }
+
+        function informationer() {
+            console.log("virker");
+
+
+            //  indholdet for constanten listevisning nulstillet
+            listevisning.textContent = "";
+
+            // plante-array gennemgåes plante for plante og listevisningen bliver udfyldt
+            vaerker.forEach((vaerk) => {
+
+                /* if (filter == "" || filter == vaerk.kategori) {*/
+
+
+                const klon = template.cloneNode(true).content;
+
+                //placering for data fra json vælges
+                klon.querySelector("img").src = vaerk.billede_front.guid;
+
+                klon.querySelector("article h2").textContent = vaerk.navn;
+
+                klon.querySelector("article p").textContent = vaerk.maal;
+
+
+                listevisning.appendChild(klon);
+                listevisning.lastElementChild.addEventListener("click", () => {
+                    location.href = `plakat.html?id=${vaerk.id}`;
+                });
+
+                /* }*/
+
+            });
+        }
+
+        //funktionen lytter efter om der bliver klikket på filterknapperne
+        //        function addEventlistenerToButton() {
+        //            document.querySelectorAll(".filter").forEach(elm => {
+        //                elm.addEventListener("click", filtrering);
+        //            });
+        //        }
+
+        //funktionen fortælle hvilke data der skal vises alt efter hvilken filterknap der klikkes på
+        //        function filtrering() {
+        //            if (this.dataset.kategori) {
+        //                filter = this.dataset.kategori;
+        //                document.querySelector("h2").textContent = this.textContent;
+        //                if (document.querySelector(".valgt")) {
+        //                    document.querySelector(".valgt").classList.remove("valgt");
+        //                }
+        //                console.log("filter");
+        //            }
+        //
+        //            this.classList.add("valgt");
+        //            location.href = "#overskrift";
+        //
+        //            informationer();
+        //        }
+        /*else if (this.dataset.kategori) {
+                       filter = this.dataset.kategori;
+
+                       document.querySelector("h2").textContent = this.textContent;
+                       document.querySelectorAll(".filter").forEach(elm => {
+                           elm.classList.remove("valgt");
+                           console.log(`${filter}`);
+                       });
+
+                       this.classList.add("valgt");
+
+                       informationer();
+        }
+
+        }*/
+    </script>
 </body></html>
