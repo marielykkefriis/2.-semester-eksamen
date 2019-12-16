@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="style.css">
+    <title>Kunst</title>
     <link rel="apple-touch-icon" sizes="57x57" href="favikon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favikon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favikon/apple-icon-72x72.png">
@@ -23,24 +22,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Catrine Brink</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <header class="forside">
-        <a href="index.html">
-            <div class="logo"></div>
+    <header>
+        <a href="catrinebrink.html">
+            <div class="logo2"></div>
         </a>
         <nav>
             <ul id="menu" class="hidden">
                 <li class="dropdown">
-                    <a class="dropbtn" href="Vaelgkunst.html">VÆRKER
+                    <a class="dropbtn menupunkt_valgt" href="vaelgvaerker.html">VÆRKER
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
                         <a href="malerier.html">MALERIER</a>
-                        <a href="plaketer.html">PLAKATER</a>
+                        <a href="plakater.html">PLAKATER</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -72,100 +70,30 @@
     </header>
 
     <main>
-        <section id="splash">
-            <video autoplay muted loop playsinline muted id="video" poster="">
-                <source src="" type="video/mp4">
-            </video>
-            <a href="index.html#forside" class="fade-in">
-                <div class="pulse" id="splash_arrow"></div>
-            </a>
-            <div class="splash_container">
-                <div class="splash_h1">
-                    <h1>CATRINE BRINK</h1>
-                </div>
-                <div class="splash_p">
-                    <p>ENERGISK FARVERIG SPONTAN</p>
-                </div>
-
-                <a href="vaelgkunst.html">
-                    <div class="splash_knap">
-                        <button>SE VÆRKER</button>
+        <div class="header_billede"></div>
+        <section id="breadcrumbs">
+            <ul class="">
+                <li><a href="catrinebrink.html">STARTSIDE</a></li>
+                <li><a href="vaerker.html">VÆRKER</a></li>
+            </ul>
+        </section>
+        <section id="vaelgkunst">
+            <div class="vaelgkunst_container">
+                <a href="malerier.html">
+                    <div class="vaelgkunst_col1">
+                        <button>SE MALERIER</button>
                     </div>
                 </a>
-
-            </div>
-            <a href="index.html.forside_nyhed_container">
-                <div class="pulse splash_arrow" id="splash_arrow"></div>
-            </a>
-
-        </section>
-        <section id="forside_nyhed">
-
-            <div class="forside_nyhed_container">
-                <div class="forside_nyhed_col">
-                    <div class="nyhed_tekst">
-                        <h1>NYHED!</h1>
-                        <h2>NYT ATELIER FEBRUAR 2020</h2>
-                        <p>Er du interesseret i kunstneriske udfoldelser, så læg vejen forbi mit nye atelier, der åbner i februar 2020!</p>
-                        <p>
-                            Kom forbi til et glas vin, en snak om kunst og læs mere nedenfor om eventet på begivenheden på Facebook </p>
+                <a href="plaketer.html">
+                    <div class="vaelgkunst_col2">
+                        <button>SE PLAKATER</button>
                     </div>
-                    <a href="https://www.facebook.com/">
-                        <div class="nyhed_knap">
-                            <button>DELTAG HER</button>
-                        </div>
-                    </a>
-                </div>
-                <div class="forside_nyhed_col">
-                    <div class="nyhed_billede">
-                    </div>
-                </div>
+                </a>
             </div>
-
-        </section>
-        <section id="forside_vaerker">
-            <a href="vaelgkunst.html">
-                <div class="forside_vaerker_container">
-                    <button>SE VÆRKER</button>
-                </div>
-            </a>
-        </section>
-        <section id="forside_kiv">
-
-            <div class="forside_kiv_container">
-                <div class="forside_kiv_col">
-                    <div class="kiv_tekst">
-                        <h1>KUNST I VIRKSOMHEDEN</h1>
-                        <p>Ønsker I at udsmykke virksomhedens lokaler og bygninger med kvalitetskunst?</p>
-                        <p>
-                            Det abstrakte maleri giver et liv og leger med fantasien på en unik måde, der spreder energi og glæde i virksomheden.</p>
-                        <p>
-                            Så læs om mulighederne for at købe eller leje mine farverige og energiske kunstværker som udsmykning i jeres virksomhed nedenunder.</p>
-                    </div><a href="kunst_i_virksomheden.html">
-                        <div class="kiv_knap">
-                            <button>LÆS MERE</button>
-                        </div>
-                    </a>
-                </div>
-                <div class="forside_kiv_col">
-                    <div class="forside_kiv_billede">
-                    </div>
-                </div>
-
+            <div class="vaelgkunst_billede">
             </div>
         </section>
-        <section id="forside_om">
-            <div class="forside_om_col">
-                <h1>CATRINE BRINK</h1>
-                <p>‘’Jeg har skabt kunst i mange år og jeg elsker det.</p>
-                <p>
-                    Som datter af en af Danmarks nulevende landskabsmalere, er jeg drevet af lysten til at forene tradition med nye tendenser.</p>
-                <p>At male er min passion!,,</p>
-                <a href="om.html"><button>LÆS MERE</button></a>
-            </div>
-        </section>
-        <section id="instagram">
-        </section>
+
     </main>
 
     <footer>
@@ -234,6 +162,5 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body></html>
