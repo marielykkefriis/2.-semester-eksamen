@@ -11,12 +11,27 @@
 /******  Kontakt           *******/
 /******  Footer           *******/
 
-/****** Generelle regler ******/
 
+
+
+
+/********font*******/
+
+@font-face {
+    font-family: 'avenir';
+    src: url('fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('fonts/AvenirLTStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
 /******knap tilbage til toppen******/
+
+
+
+/****** Generelle regler ******/
 
 h1 {
     font-family: 'avenir';
@@ -345,13 +360,13 @@ header li a {
     margin: 0 1rem;
     position: absolute;
     z-index: 1;
-    top: 80px;
+    top: 120px;
     left: -10px;
 }
 
 #splash h1 {
-    font-size: 3.3rem;
-    line-height: 4rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
     letter-spacing: 1rem;
 
 }
@@ -1638,10 +1653,6 @@ footer a {
 
 @media only screen and (min-width: 750px) {
 
-    #enkeltside .billede {
-        max-width: 400px;
-        height: 500px;
-    }
 
     h1 {
         font-size: 2.5rem;
@@ -1713,6 +1724,11 @@ footer a {
 
 @media only screen and (min-width: 900px) {
 
+    #enkeltside .billede {
+        max-width: 400px;
+        height: 500px;
+    }
+
 
     .splash_container {
         padding: 2rem 1rem 0;
@@ -1724,7 +1740,7 @@ footer a {
     #splash h1 {
         font-size: 7rem;
         line-height: 6rem;
-        letter-spacing: 1rem;
+        letter-spacing: 2rem;
 
     }
 
