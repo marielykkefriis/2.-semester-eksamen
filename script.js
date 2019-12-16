@@ -20,9 +20,11 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "☰";
         document.querySelector("main").classList = "";
         document.querySelector("footer").classList = "";
+        document.querySelector(".forside #menuknap").style.color = "white";
     } else {
         document.querySelector("#menuknap").textContent = "X";
         document.querySelector("main").classList = "hidden";
         document.querySelector("footer").classList = "hidden";
+        ocument.querySelector(".forside #menuknap").style.color = "#444C59";
     }
 }
