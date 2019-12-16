@@ -63,6 +63,26 @@ button:hover {
     transition: 0.5s;
 }
 
+.knapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 10px auto;
+}
+
+.knap_1 {
+    background-image: url(img/udfyldt_cirkel.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.knap_2 {
+    background-image: url(img/tom_cirkel.svg);
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
 
 *,
 html * {

@@ -216,6 +216,30 @@
             });
 
         }
+
+        //       Skift fotografi fra A til B
+
+
+        document.querySelector(".knap_2").addEventListener("click", visVaerk2);
+
+        function visVaerk2() {
+
+            const liste = document.querySelector(".indhold");
+            liste.querySelector("img").src = vaerk.billede2.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede2.guid;
+        }
+
+        //       Skift fotografi fra B til A
+
+        document.querySelector(".knap_1").addEventListener("click", visVaerk);
+
+        function visVaerk() {
+
+            const liste = document.querySelector(".indhold");
+            liste.querySelector("img").src = vaerk.billede_front.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+        }
+
     </script>
 </body>
 

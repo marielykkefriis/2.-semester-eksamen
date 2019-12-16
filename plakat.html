@@ -90,6 +90,10 @@
                 <div class="billede">
                     <img id="img">
                 </div>
+                <div class="knapper">
+                    <div class="knap_1"></div>
+                    <div class="knap_2"></div>
+                </div>
                 <div class="specifikationer">
                     <p class="maal"></p>
                     <p class="materiale"></p>
@@ -210,11 +214,37 @@
             liste.querySelector("img").src = vaerk.billede_front.guid;
             liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
 
-            document.querySelector(".tilbage").addEventListener("click", () => {
-                history.back();
-
-            });
+            //       document.querySelector(".tilbage").addEventListener("click", () => {
+            // history.back();
+            //
+            // });
 
         }
+
+        //       Skift fotografi fra A til B
+
+
+        document.querySelector(".knap_2").addEventListener("click", visVaerk2);
+
+        function visVaerk2() {
+
+            const liste = document.querySelector(".indhold");
+            liste.querySelector("img").src = vaerk.billede2.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede2.guid;
+        }
+
+        //       Skift fotografi fra B til A
+
+        document.querySelector(".knap_1").addEventListener("click", visVaerk);
+
+        function visVaerk() {
+
+            const liste = document.querySelector(".indhold");
+            liste.querySelector("img").src = vaerk.billede_front.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+        }
+
     </script>
-</body></html>
+</body>
+
+</html>
