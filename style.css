@@ -900,6 +900,10 @@ input[type=submit] {
     text-align: center;
 }
 
+#events_udstillinger h1 {
+    margin-bottom: 30px;
+}
+
 #events_billede {
     background-image: url(img/workshop_1.jpg);
     width: 100vw;
@@ -1151,8 +1155,6 @@ input[type=submit] {
     font-size: 0.8rem;
 }
 
-.udstilling_billede_1 p,
-.udstilling_billede_2 p,
 .udstilling_billede_3 p,
 .udstilling_billede_4 p,
 .udstilling_billede_5 p,
