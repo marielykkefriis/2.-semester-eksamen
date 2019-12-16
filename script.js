@@ -25,6 +25,6 @@ function toggleMenu() {
         document.querySelector("#menuknap").textContent = "X";
         document.querySelector("main").classList = "hidden";
         document.querySelector("footer").classList = "hidden";
-        ocument.querySelector(".forside #menuknap").style.color = "#444C59";
+        document.querySelector(".forside #menuknap").style.color = "#444C59";
     }
 }
