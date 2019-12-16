@@ -41,8 +41,8 @@
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
-                        <a href="vaerker.html?filter=Malerier">MALERIER</a>
-                        <a href="vaerker.html?filter=Plakater">PLAKATER</a>
+                        <a href="malerier.html">MALERIER</a>
+                        <a href="plaketer.html">PLAKATER</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -180,7 +180,7 @@
         let vaerk;
         let urlParams = new URLSearchParams(window.location.search);
         let id = urlParams.get("id");
-        const url = "http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/vaerker/" + id;
+        const url = "http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/malerier/" + id;
 
         document.addEventListener("DOMContentLoaded", start);
 

@@ -20,8 +20,8 @@
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
-                        <a href="vaerker.html?filter=Malerier">MALERIER</a>
-                        <a href="vaerker.html?filter=Plakater">PLAKATER</a>
+                        <a href="malerier.html">MALERIER</a>
+                        <a href="plaketer.html">PLAKATER</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -68,9 +68,12 @@
         <div class="grid_container">
             <div class="sidebar">
                 <nav class="filter_knapper">
-                    <button class="filter" data-kategori="Malerier">MALERIER</button>
-
-                    <button class="filter" data-kategori="Plakater">PLAKATER</button>
+                    <a href="">
+                        <button class="filter">MALERIER</button>
+                    </a>
+                    <a href="">
+                        <button class="filter">PLAKATER</button>
+                    </a>
                 </nav>
             </div>
 
@@ -175,7 +178,7 @@
         document.addEventListener("DOMContentLoaded", hentjson);
 
         let vaerker;
-        let filter = "";
+        //        let filter = "";
 
         const listevisning = document.querySelector(".data_container");
         const template = document.querySelector("template");
@@ -184,7 +187,7 @@
         async function hentjson() {
             console.log("hentjson");
 
-            let myRawjson = await fetch("http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/vaerker?per_page=100");
+            let myRawjson = await fetch("http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/malerier?per_page=100");
 
             vaerker = await myRawjson.json();
 
@@ -204,52 +207,52 @@
             // plante-array gennemgåes plante for plante og listevisningen bliver udfyldt
             vaerker.forEach((vaerk) => {
 
-                if (filter == "" || filter == vaerk.kategori) {
+                /* if (filter == "" || filter == vaerk.kategori) {*/
 
 
-                    const klon = template.cloneNode(true).content;
+                const klon = template.cloneNode(true).content;
 
-                    //placering for data fra json vælges
-                    klon.querySelector("img").src = vaerk.billede_front.guid;
+                //placering for data fra json vælges
+                klon.querySelector("img").src = vaerk.billede_front.guid;
 
-                    klon.querySelector("article h2").textContent = vaerk.navn;
+                klon.querySelector("article h2").textContent = vaerk.navn;
 
-                    klon.querySelector("article p").textContent = vaerk.maal;
+                klon.querySelector("article p").textContent = vaerk.maal;
 
 
-                    listevisning.appendChild(klon);
-                    listevisning.lastElementChild.addEventListener("click", () => {
-                        location.href = `enkeltside.html?id=${vaerk.id}`;
-                    });
+                listevisning.appendChild(klon);
+                listevisning.lastElementChild.addEventListener("click", () => {
+                    location.href = `maleri.html?id=${vaerk.id}`;
+                });
 
-                }
+                /* }*/
 
             });
         }
 
         //funktionen lytter efter om der bliver klikket på filterknapperne
-        function addEventlistenerToButton() {
-            document.querySelectorAll(".filter").forEach(elm => {
-                elm.addEventListener("click", filtrering);
-            });
-        }
+        //        function addEventlistenerToButton() {
+        //            document.querySelectorAll(".filter").forEach(elm => {
+        //                elm.addEventListener("click", filtrering);
+        //            });
+        //        }
 
         //funktionen fortælle hvilke data der skal vises alt efter hvilken filterknap der klikkes på
-        function filtrering() {
-            if (this.dataset.kategori) {
-                filter = this.dataset.kategori;
-                document.querySelector("h2").textContent = this.textContent;
-                if (document.querySelector(".valgt")) {
-                    document.querySelector(".valgt").classList.remove("valgt");
-                }
-                console.log("filter");
-            }
-
-            this.classList.add("valgt");
-            location.href = "#overskrift";
-
-            informationer();
-        }
+        //        function filtrering() {
+        //            if (this.dataset.kategori) {
+        //                filter = this.dataset.kategori;
+        //                document.querySelector("h2").textContent = this.textContent;
+        //                if (document.querySelector(".valgt")) {
+        //                    document.querySelector(".valgt").classList.remove("valgt");
+        //                }
+        //                console.log("filter");
+        //            }
+        //
+        //            this.classList.add("valgt");
+        //            location.href = "#overskrift";
+        //
+        //            informationer();
+        //        }
         /*else if (this.dataset.kategori) {
                        filter = this.dataset.kategori;
 

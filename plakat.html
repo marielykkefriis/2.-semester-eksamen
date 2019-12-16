@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="favikon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favikon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favikon/apple-icon-72x72.png">
@@ -22,8 +23,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="style.css">
+    <title>Catrine Brink</title>
 </head>
+
+
+
 
 <body>
     <header>
@@ -33,7 +37,7 @@
         <nav>
             <ul id="menu" class="hidden">
                 <li class="dropdown">
-                    <a class="dropbtn" href="Vaelgkunst.html">VÆRKER
+                    <a class="dropbtn  menupunkt_valgt" href="Vaelgkunst.html">VÆRKER
                         <div class="dropdown_pil"></div>
                     </a>
                     <div class="dropdown-content">
@@ -57,7 +61,7 @@
                     <a href="om.html">OM</a>
                 </li>
                 <li>
-                    <a class=" menupunkt_valgt" href="kontakt.html">KONTAKT</a>
+                    <a href="kontakt.html">KONTAKT</a>
                 </li>
                 <li>
                     <a class="burger_logo" href="index.html">
@@ -70,64 +74,39 @@
     </header>
     <main>
         <div class="header_billede"></div>
+        <!--    <button class="tilbage">←</button>-->
         <section id="breadcrumbs">
             <ul class="">
                 <li><a href="index.html">STARTSIDE</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
+                <li><a href="vaelgkunst.html">VÆRKER</a></li>
+                <li><a href="vaerker.html" id="inddeling">VÆRK</a></li>
             </ul>
         </section>
 
-        <section id="kontakt">
-            <div class="kontakt_col">
-                <h1>KONTAKT</h1>
-                <p>Er du interesseret i nogle af mine kunstværker eller ønsker et samarbejde? Så tøv ikke med at kontakte mig!</p>
-                <div class="formel_container">
-                    <form action="action_page.php">
-
-                        <input type="text" id="fname" name="firstname" placeholder="DIT NAVN*">
-
-                        <input type="text" id="lname" name="mail" placeholder="DIN EMAIL*">
-
-                        <input type="text" id="lname" name="telefonnummer" placeholder="DIT TELEFONNUMMER*">
-
-                        <input type="text" id="lname" name="emne" placeholder="EMNE*">
-
-                        <textarea id="subject" name="subject" placeholder="DIN BESKED" style="height:200px"></textarea>
-
-                        <input type="submit" value="SEND">
-
-                    </form>
+        <section id="enkeltside">
+            <article class="indhold">
+                <h1 class="navn"></h1>
+                <div class="billede">
+                    <img id="img">
                 </div>
-
-            </div>
-            <a href="kontakt.html#kontakt_nyhedsbrev">
-                <div class="pulse arrow_more_kontakt"></div>
-            </a>
-            <div class="kontakt_col">
-                <div class="kontakt_billede"></div>
-            </div>
-
+                <div class="specifikationer">
+                    <p class="maal"></p>
+                    <p class="materiale"></p>
+                </div>
+                <div class="pris_container">
+                    <p class="pris"></p>
+                    <p class="udsalgspris">Vejl. udsalgspris inkl. moms</p>
+                    <div class="enkeltside_kontakt">
+                        <p class="enkeltside_kontakt_col">Interesseret i værket? Tag endelig kontakt</p>
+                        <a class="enkeltside_kontakt_col" href="kontakt.html">
+                            <button>KONTAKT MIG</button></a>
+                    </div>
+                </div>
+            </article>
+            <div class="enkeltside_billede"></div>
         </section>
 
-        <section id="kontakt_nyhedsbrev">
-            <div class="nyhedsbrev_container">
-                <h2>FÅ DE NYESTE UPDATES</h2>
-                <p>Er du interesseret i min verden og forelsket dig i min kunst? Så tilmeld dig nyhedsbrev og
-                    få de nyeste updates såsom kommende ferniseringer, udstillinger, konkurrencer mv.</p>
-            </div>
-            <div class="nyhedsbrev_container">
-                <form action="action_page.php">
-
-                    <input type="text" id="lname" name="mail" placeholder="DIN EMAIL*">
-
-                    <input type="submit" value="TILMELD NYHEDSBREV">
-
-                </form>
-            </div>
-
-        </section>
     </main>
-
     <footer>
         <div class="instagram_wrapper">
             <h2>INSTAGRAM @CATRINEBRINK</h2>
@@ -194,5 +173,47 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
+
+    <script>
+        let vaerk;
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+        const url = "http://marollemarie.dk/kea/2.semester/Eksamen/wordpress/wp-json/wp/v2/plakater/" + id;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            getJson();
+        }
+
+        async function getJson() {
+            const response = await fetch(url);
+
+            vaerk = await response.json();
+            console.log(vaerk);
+            visVaerk();
+        }
+
+        function visVaerk() {
+
+
+            const liste = document.querySelector(".indhold");
+
+
+            liste.querySelector(".navn").textContent = vaerk.navn;
+            liste.querySelector(".maal").textContent = "Mål: " + vaerk.maal;
+            liste.querySelector(".materiale").textContent = "Materiale: " + vaerk.materiale;
+            liste.querySelector(".pris").textContent = "PRIS DKK " + vaerk.pris + ",-";
+            liste.querySelector("img").src = vaerk.billede_front.guid;
+            liste.querySelector("img").alt = "billede af" + vaerk.billede_front.guid;
+
+            document.querySelector(".tilbage").addEventListener("click", () => {
+                history.back();
+
+            });
+
+        }
+    </script>
 </body></html>
