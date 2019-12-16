@@ -417,12 +417,13 @@ header li a {
 
 
 #forside_om {
-    padding: 15px 32px;
-    margin: 0 1px;
     background-image: url(img/om_kort.jpg);
     background-size: cover;
+    background-position: top;
+    width: auto;
+    padding: 20px;
+    background-repeat: no-repeat;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
 }
 
 
@@ -648,7 +649,7 @@ input[type=submit] {
 }
 
 .catrine_billede {
-    background-image: url(img/om_kort.jpg);
+    background-image: url(img/om_lang.jpg);
     background-size: cover;
     opacity: 80%;
     width: 300px;
@@ -1326,7 +1327,6 @@ footer a {
 
     #forside_om {
         padding: 15px 32px;
-        background-position: 0 -330px;
     }
 
     .forside_om_col {
@@ -1485,7 +1485,6 @@ footer a {
     #events_billede {
         margin-bottom: 30px;
         height: 300px;
-        background-position: 0% 220%;
     }
 
     #events_workshops {
@@ -1641,7 +1640,6 @@ footer a {
     #events_workshops_billede {
         height: 300px;
         margin-top: 20px;
-        background-position: 0% 320%;
     }
 
 }
