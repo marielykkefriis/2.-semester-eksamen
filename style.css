@@ -1523,6 +1523,7 @@ footer a {
         flex-basis: 400px;
         flex-grow: 1;
         margin-top: 75px;
+        opacity: 80%;
     }
 
 
