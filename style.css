@@ -1319,7 +1319,7 @@ footer {
 }
 
 .insta_1 {
-    background-image: url(img/instagram_1.png);
+    background-image: url(img/instagram_1.jpg);
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -1333,7 +1333,7 @@ footer {
 }
 
 .insta_3 {
-    background-image: url(img/instagram_3.png);
+    background-image: url(img/instagram_3.jpg);
     background-size: cover;
     width: 100px;
     height: 100px;
@@ -1347,14 +1347,14 @@ footer {
 }
 
 .insta_5 {
-    background-image: url(img/instagram_5.png);
+    background-image: url(img/instagram_5.jpg);
     background-size: cover;
     width: 100px;
     height: 100px;
 }
 
 .insta_6 {
-    background-image: url(img/instagram_6.png);
+    background-image: url(img/instagram_6.jpg);
     background-size: cover;
     width: 100px;
     height: 100px;
