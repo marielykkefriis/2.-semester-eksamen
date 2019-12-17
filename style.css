@@ -445,7 +445,6 @@ video {
 #forside_kiv {
     max-width: 1200px;
     margin: auto;
-    background-color: white;
 }
 
 .forside_kiv_container {
@@ -1474,6 +1473,7 @@ footer a {
 
     .forside_kiv_container {
         padding: 50px 10px;
+        flex-direction: row-reverse;
 
     }
 
