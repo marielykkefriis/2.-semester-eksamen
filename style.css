@@ -331,6 +331,7 @@ video {
     position: fixed;
     z-index: -1;
     overflow: hidden;
+    width: 180vw;
 }
 
 #splash {
@@ -1434,18 +1435,6 @@ footer a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /******   MEDIA Q   ******/
 
 
@@ -1453,6 +1442,10 @@ footer a {
 
 
 @media only screen and (min-width: 600px) {
+
+    video {
+        width: inherit;
+    }
 
     #forside_vaerker,
     #om_udstillinger,
