@@ -33,6 +33,10 @@
 
 /****** Generelle regler ******/
 
+main {
+    background-color: white;
+}
+
 h1 {
     font-family: 'avenir';
     font-weight: 100;
@@ -322,7 +326,12 @@ header li a {
 
 
 /******   Forside   ******/
-
+video {
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    /*    height: 400px;*/
+}
 
 #splash {
     overflow: hidden;
@@ -330,7 +339,6 @@ header li a {
     left: 0;
     padding: 0;
     height: 400px;
-
     /*    background-image: url(img/forside_video.png)*/
 }
 
@@ -373,6 +381,7 @@ header li a {
 #forside_nyhed {
     max-width: 1200px;
     margin: auto;
+    background-color: white;
 
 }
 
@@ -418,6 +427,7 @@ header li a {
     padding-bottom: 20px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     margin: 20px 0;
+    background-color: white;
 
 }
 
@@ -434,6 +444,7 @@ header li a {
 #forside_kiv {
     max-width: 1200px;
     margin: auto;
+    background-color: white;
 }
 
 .forside_kiv_container {
@@ -474,6 +485,7 @@ header li a {
     padding: 20px;
     background-repeat: no-repeat;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    background-color: white;
 
 }
 
@@ -1269,6 +1281,10 @@ input[type=submit] {
 
 /******   Footer   *******/
 
+footer {
+    background-color: white;
+}
+
 .instagram_wrapper {
     background-color: #ffffff;
     text-align: center;
@@ -1440,7 +1456,6 @@ footer a {
 
 @media only screen and (min-width: 600px) {
 
-
     #forside_vaerker,
     #om_udstillinger,
     .vaelgkunst_billede {
@@ -1457,7 +1472,7 @@ footer a {
     #forside_om {
         padding: 15px 32px;
         margin: 0 1px;
-        margin: 50px 1px;
+        /*        margin: 50px 1px;*/
     }
 
     #forside_om p {
