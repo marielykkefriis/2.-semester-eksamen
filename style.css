@@ -33,6 +33,10 @@
 
 /****** Generelle regler ******/
 
+main {
+    background-color: white;
+}
+
 h1 {
     font-family: 'avenir';
     font-weight: 100;
@@ -322,7 +326,13 @@ header li a {
 
 
 /******   Forside   ******/
-
+video {
+    top: 0;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    width: 180vw;
+}
 
 #splash {
     overflow: hidden;
@@ -330,7 +340,6 @@ header li a {
     left: 0;
     padding: 0;
     height: 400px;
-
     /*    background-image: url(img/forside_video.png)*/
 }
 
@@ -374,6 +383,7 @@ header li a {
 #forside_nyhed {
     max-width: 1200px;
     margin: auto;
+    background-color: white;
 
 }
 
@@ -419,6 +429,7 @@ header li a {
     padding-bottom: 20px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     margin: 20px 0;
+    background-color: white;
 
 }
 
@@ -475,6 +486,7 @@ header li a {
     padding: 20px;
     background-repeat: no-repeat;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
+    background-color: white;
 
 }
 
@@ -765,8 +777,6 @@ input[type=submit] {
 .passion_billede2og3_col {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .passion_billede2 {
@@ -1270,6 +1280,10 @@ input[type=submit] {
 
 /******   Footer   *******/
 
+footer {
+    background-color: white;
+}
+
 .instagram_wrapper {
     background-color: #ffffff;
     text-align: center;
@@ -1421,18 +1435,6 @@ footer a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /******   MEDIA Q   ******/
 
 
@@ -1441,6 +1443,9 @@ footer a {
 
 @media only screen and (min-width: 600px) {
 
+    video {
+        width: inherit;
+    }
 
     #forside_vaerker,
     #om_udstillinger,
@@ -1458,7 +1463,7 @@ footer a {
     #forside_om {
         padding: 15px 32px;
         margin: 0 1px;
-        margin: 50px 1px;
+        /*        margin: 50px 1px;*/
     }
 
     #forside_om p {
@@ -1469,6 +1474,7 @@ footer a {
 
     .forside_kiv_container {
         padding: 50px 10px;
+        flex-direction: row-reverse;
 
     }
 
