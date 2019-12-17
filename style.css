@@ -346,6 +346,7 @@ header li a {
     max-width: 1200px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     grid-row-gap: 0rem;
     margin: 0 1rem;
     position: absolute;
@@ -1747,7 +1748,6 @@ footer a {
 
     #splash {
         height: 500px;
-        background-image: url(img/forside_video.png);
         background-attachment: fixed;
     }
 }
