@@ -1750,7 +1750,6 @@ footer a {
 
     #splash {
         height: 500px;
-        background-image: url(img/forside_video.png);
         background-attachment: fixed;
     }
 }
