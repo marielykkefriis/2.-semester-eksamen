@@ -330,7 +330,7 @@ video {
     top: 0;
     position: fixed;
     z-index: -1;
-    /*    height: 400px;*/
+    overflow: hidden;
 }
 
 #splash {
@@ -776,8 +776,6 @@ input[type=submit] {
 .passion_billede2og3_col {
     display: flex;
     flex-wrap: wrap;
-
-
 }
 
 .passion_billede2 {
