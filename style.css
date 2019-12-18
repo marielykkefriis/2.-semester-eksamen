@@ -130,7 +130,6 @@ a {
     height: 90px;
     /*    box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);*/
     background-attachment: fixed;
-    /*    opacity: 80%;*/
     /*gør at billedet ligger sig over dropdown menuen*/
 
 }
@@ -415,14 +414,13 @@ video {
     max-width: 500px;
     height: 360px;
     margin: auto;
-    opacity: 80%;
 
 }
 
 
 #forside_vaerker {
     text-align: center;
-    background-image: url(img/se_vaerker.png);
+    background-image: url(img/se_vaerker.jpg);
     background-size: cover;
     background-position: bottom;
     width: auto;
@@ -468,7 +466,6 @@ video {
     background-image: url(img/virksomhed_1.jpg);
     background-size: cover;
     margin: auto;
-    opacity: 80%;
     max-width: 400px;
     height: 400px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
@@ -538,7 +535,6 @@ video {
     background-size: cover;
     justify-content: center;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
 }
 
 .vaelgkunst_col2 {
@@ -553,7 +549,6 @@ video {
     background-size: cover;
     justify-content: center;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
 }
 
 
@@ -564,7 +559,6 @@ video {
     width: auto;
     height: 150px;
     padding-bottom: 20px;
-    opacity: 80%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
@@ -582,12 +576,11 @@ video {
 }
 
 .kontakt_billede {
-    background-image: url(img/catrine_om.jpg);
+    background-image: url(img/catrine_om2.jpg);
     background-size: cover;
     background-position: right;
-    opacity: 80%;
     max-width: 400px;
-    height: 400px;
+    height: 420px;
     margin: auto;
 
 }
@@ -700,7 +693,6 @@ input[type=submit] {
 .catrine_billede {
     background-image: url(img/om_lang.jpg);
     background-size: cover;
-    opacity: 80%;
     width: 300px;
     height: 300px;
 
@@ -768,7 +760,6 @@ input[type=submit] {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     max-width: 100%;
     height: 250px;
-    opacity: 80%;
 }
 
 .passion_billede2og3_col {
@@ -785,7 +776,6 @@ input[type=submit] {
     flex-grow: 1;
     max-width: 50%;
     height: 170px;
-    opacity: 80%;
     margin: 14px 7px 0 0;
 }
 
@@ -796,7 +786,6 @@ input[type=submit] {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
     max-width: 50%;
     height: 170px;
-    opacity: 80%;
     flex-grow: 1;
     flex-basis: 150px;
     margin: 14px 0px 0 7px;
@@ -807,7 +796,7 @@ input[type=submit] {
 #om_udstillinger {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_udstillinger.png);
+    background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: bottom;
     width: auto;
@@ -849,10 +838,9 @@ input[type=submit] {
 }
 
 .kiv_billede {
-    background-image: url(img/virksomhed_1-web-ready.JPG);
+    background-image: url(img/virksomhed_1.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 80%;
     box-shadow: 0px 7px 8px #888888;
     max-width: 400px;
     height: 400px;
@@ -900,13 +888,12 @@ input[type=submit] {
 }
 
 .styrkbrand_billede {
-    background-image: url(img/bluewawes%20med%20baggrund.jpg);
+    background-image: url(img/bluewaves.jpg);
     background-size: cover;
     background-position: center;
     max-width: 400px;
     height: 400px;
     margin: auto;
-    opacity: 80%;
 }
 
 .styrkbrand_knap {
@@ -916,7 +903,7 @@ input[type=submit] {
 #kiv_udstillinger {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_udstillinger.png);
+    background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: bottom;
     width: auto;
@@ -946,7 +933,6 @@ input[type=submit] {
     width: 100vw;
     height: 200px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
     background-size: cover;
     background-position: center;
     margin-top: 30px;
@@ -981,7 +967,6 @@ input[type=submit] {
     background-image: url(img/daase.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 80%;
     max-width: 400px;
     height: 400px;
     margin: auto;
@@ -996,7 +981,6 @@ input[type=submit] {
     width: 100vw;
     height: 200px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
     background-size: cover;
     background-position: center;
     margin: 30px auto;
@@ -1048,7 +1032,6 @@ input[type=submit] {
     width: auto;
     height: 250px;
     padding-bottom: 20px;
-    opacity: 80%;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 
 }
@@ -1133,7 +1116,7 @@ input[type=submit] {
 #link_til_udstillinger {
     display: flex;
     justify-content: center;
-    background-image: url(img/se_udstillinger.png);
+    background-image: url(img/se_udstillinger.jpg);
     background-size: cover;
     background-position: bottom;
     width: auto;
@@ -1228,7 +1211,7 @@ input[type=submit] {
 }
 
 .udstilling_1 {
-    background-image: url(img/regus_1.png);
+    background-image: url(img/regus_1.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -1313,7 +1296,6 @@ footer {
     width: 100px;
     margin: 10px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
-    opacity: 80%;
 }
 
 .insta_1 {
@@ -1520,7 +1502,6 @@ footer a {
         flex-basis: 400px;
         flex-grow: 1;
         margin-top: 75px;
-        opacity: 80%;
     }
 
 
