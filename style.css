@@ -246,7 +246,6 @@ header li a {
     line-height: 2.4;
     margin-left: 50px;
     color: #444C59;
-    font-style: uppercase;
 }
 
 .dropdown-content {
@@ -733,7 +732,6 @@ input[type=submit] {
 
 #video_om {
     background-color: hotpink;
-    width padding: 15px 32px;
     width: 100%;
     height: 120px;
     margin-top: 30px;
@@ -1489,8 +1487,7 @@ footer a {
 
 
     .nyhed_knap,
-    .kiv_knap,
-        {
+    .kiv_knap {
         text-align: right;
 
     }
@@ -1842,13 +1839,6 @@ footer a {
 
     .forside li a {
         color: white;
-
-    }
-
-
-
-    .forside a {
-        font-style: uppercase;
 
     }
 
