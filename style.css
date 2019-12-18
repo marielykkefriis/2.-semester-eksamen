@@ -13,7 +13,50 @@
 
 
 
+/*****animationer*****/
 
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.pulse_2 {
+    animation-name: pulse_kf;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 /********font*******/
 
@@ -69,6 +112,7 @@ p {
 a {
     font-family: 'avenir';
 }
+
 
 .button {
     padding: 15px 30px;
@@ -333,9 +377,7 @@ video {
     position: fixed;
     z-index: -1;
     overflow: hidden;
-    width: 180vw;
-
-
+    width: 200vw;
 }
 
 #splash {
@@ -345,6 +387,12 @@ video {
     padding: 0;
     height: 400px;
     /*    background-image: url(img/forside_video.png)*/
+}
+
+.splash_knap {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -361,7 +409,7 @@ video {
     grid-template-rows: auto 1fr auto;
     grid-template-rows: auto 1fr auto;
     grid-row-gap: 0rem;
-    margin: 0 1rem;
+    margin: -1rem 1rem;
     position: absolute;
     z-index: 1;
     top: 120px;
@@ -391,6 +439,11 @@ video {
 
 }
 
+.nyhed_knap {
+    margin: 30px 0;
+}
+
+
 .forside_nyhed_container {
     display: flex;
     flex-wrap: wrap;
@@ -404,10 +457,6 @@ video {
     max-width: 500px;
     padding: 10px;
     margin: auto;
-}
-
-#forside_nyhed .button {
-    margin: 30px 0;
 }
 
 
@@ -475,10 +524,9 @@ video {
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
-.forside_kiv_container .button {
+.kiv_knap {
     margin: 30px 0;
 }
-
 
 #forside_om {
     background-image: url(img/om_kort.jpg);
@@ -506,13 +554,16 @@ video {
 
 .forside_om_col {
     background-color: rgba(68, 75, 91, 0.83);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     max-width: 1200px;
     margin: 0 1rem;
     left: -10px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
+.om_knap {
+    margin: 30px 0;
+}
 
 /******   vaelgkunst  ******/
 
@@ -1030,6 +1081,10 @@ input[type=submit] {
     padding: 1.5rem 0;
 }
 
+.enkeltside_kontakt_col {
+    margin: 30px 0;
+}
+
 .enkeltside_kontakt p {
     margin-bottom: 10px;
 }
@@ -1071,13 +1126,19 @@ input[type=submit] {
     margin: 10px;
 }
 
+
 .filter_knapper .button {
-    padding: 15px;
-    width: 100vw;
     background-color: #E1E9F3;
     border: none;
-    margin: 5px;
     color: #444B5B;
+    padding: 10px 30vw;
+    text-align: center;
+}
+
+.filter {
+    margin: 25px;
+    text-align: center;
+    width:
 }
 
 .valgt {
@@ -1150,11 +1211,6 @@ input[type=submit] {
     margin: auto;
 }
 
-.udstilling_container .button {
-    margin: auto;
-    margin-top: 20vw;
-
-}
 
 .udstilling_container .billed_ramme {
     max-height: 300px;
@@ -1264,6 +1320,14 @@ input[type=submit] {
     width: 100%;
 }
 
+.udstilling_1,
+.udstilling_2,
+.udstilling_3,
+.udstilling_4,
+.udstilling_5,
+.udstilling_6 {
+    padding-top: 23vw;
+}
 
 
 
@@ -1301,52 +1365,52 @@ footer {
 .insta_billede_4,
 .insta_billede_5,
 .insta_billede_6 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
+    height: 90px;
+    width: 90px;
+    margin: 5px;
     box-shadow: 0px 11px 17px rgba(0, 0, 0, 0.16);
 }
 
 .insta_1 {
     background-image: url(img/instagram_1.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .insta_2 {
     background-image: url(img/instagram_2.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .insta_3 {
     background-image: url(img/instagram_3.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .insta_4 {
     background-image: url(img/instagram_4.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .insta_5 {
     background-image: url(img/instagram_5.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .insta_6 {
     background-image: url(img/instagram_6.jpg);
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .footer_signatur {
@@ -1429,12 +1493,20 @@ footer a {
 /* MEDIA PÅ MIN 600PX */
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {}
 
+/* MEDIA PÅ MIN 600PX */
+
+
+@media only screen and (min-width: 600px) {
 
 
     video {
         width: 100vw;
+    }
+
+    .splash_container {
+        margin-left: 40px;
     }
 
     #forside_vaerker,
@@ -1447,7 +1519,6 @@ footer a {
     .forside_nyhed_container {
         padding: 50px 10px;
     }
-
 
     #forside_om {
         padding: 15px 32px;
@@ -1499,6 +1570,16 @@ footer a {
         height: 350px;
     }
 
+
+    .udstilling_1,
+    .udstilling_2,
+    .udstilling_3,
+    .udstilling_4,
+    .udstilling_5,
+    .udstilling_6 {
+        padding-top: 20vw;
+    }
+
     /** Kontakt **/
 
     #kontakt {
@@ -1527,18 +1608,7 @@ footer a {
         max-width: 400px;
     }
 
-    .udstilling_container .button {
-        margin: auto;
-        margin-top: 15vw;
 
-    }
-
-}
-
-
-
-
-@media only screen and (min-width: 600px) {
 
     .indhold {
         max-width: 1200px;
@@ -1584,6 +1654,17 @@ footer a {
 /* MEDIA PÅ MIN 750PX */
 
 @media only screen and (min-width: 750px) {
+
+    .splash_knap {
+        margin-top: -40px;
+        margin-right: 40px;
+    }
+
+    .nyhed_knap {
+        margin: 116px 0 0;
+    }
+
+
     .data_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1611,9 +1692,17 @@ footer a {
 
     .sidebar .button {
         width: 100%;
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .filter_knapper .button {
+        padding: 10px 6vw;
+    }
+
+    .filter {
+        margin: 25px;
+        text-align: right;
     }
 
     #virksomhedsvideo iframe {
@@ -1621,16 +1710,23 @@ footer a {
         height: 500px;
         border: none;
     }
-}
-
-
-@media only screen and (min-width: 750px) {
 
     .udstilling_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-area: liste;
         max-width: 1000px;
+    }
+
+
+
+    .udstilling_1,
+    .udstilling_2,
+    .udstilling_3,
+    .udstilling_4,
+    .udstilling_5,
+    .udstilling_6 {
+        padding-top: 130px;
     }
 
     #events_billede {
@@ -1642,10 +1738,6 @@ footer a {
         margin: 50px 80px;
         padding: 3px 2px;
     }
-
-}
-
-@media only screen and (min-width: 750px) {
 
 
     h1 {
@@ -1678,6 +1770,11 @@ footer a {
 
     }
 
+
+    .kiv_knap {
+        margin-top: 110px;
+    }
+
     .styrkbrand_billede {
         max-width: 400px;
         height: 400px;
@@ -1688,10 +1785,6 @@ footer a {
         flex-direction: row-reverse;
     }
 
-    .om_catrine_col a {
-        display: flex;
-        justify-content: flex-end;
-    }
 
 
     #om_udstillinger {
@@ -1727,11 +1820,6 @@ footer a {
         font-size: 4rem;
     }
 
-    .splash_container {
-        padding: 2rem 1rem 0;
-        top: 60px;
-        left: 65px;
-    }
 
     #splash h1 {
         font-size: 7rem;
@@ -1748,6 +1836,9 @@ footer a {
         height: 500px;
         background-attachment: fixed;
     }
+
+
+
 }
 
 /*instagram desktop media*/
@@ -1775,6 +1866,13 @@ footer a {
         height: 120px;
     }
 
+    .workshops_knap {
+        padding-top: 50px;
+    }
+
+    .styrkbrand_knap {
+        padding-top: 50px;
+    }
 }
 
 
@@ -1973,27 +2071,6 @@ footer a {
         width: 45px;
         height: 25px;
         background-size: 100%;
-    }
-
-
-    .pulse {
-        animation-name: pulse_kf;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-direction: alternate-reverse;
-    }
-
-    @keyframes pulse_kf {
-        0% {
-            transform: scale(1);
-
-        }
-
-        100% {
-            transform: scale(1.1);
-        }
     }
 
 }
